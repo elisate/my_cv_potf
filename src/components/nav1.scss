@@ -1,0 +1,120 @@
+ #root
+ {
+  margin: 0;
+ padding: 0;
+ }
+ body {
+margin: 0;
+font-family: "Roboto Condensed", sans-serif;
+padding: 0;
+
+}
+button{
+    
+      border: 0;
+      border-radius: 4px;
+}
+button:hover{
+    color: black;
+}
+.container{
+    position: absolute;
+    position: fixed;
+.allhold{
+    display: flex;
+    flex-direction:row;
+   background-color: #6D6D6D;
+   padding-left: 5%;
+   padding-right: 5%;
+   gap: 35.6rem;
+   padding-top: 0.4rem;
+   height: 2rem;
+   width: 80rem;
+   
+
+
+.nav1{
+    
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 0.5rem;
+    color:white;
+
+}
+.email_p{
+    display: flex;
+    flex-direction:row;
+    gap:3rem;
+
+    .email1
+    {
+    display: flex;
+    flex-direction:row;
+    gap: 0.5rem;
+    }
+.email2{
+        color: #28AE60;
+    }
+    .email3{
+        color: white;
+    }
+.phone1
+{
+display: flex;
+flex-direction: row;
+gap:0.5rem;
+}
+.phone2{
+        color: #28AE60;
+    }
+    .phone3{
+        color: white;
+    }
+    .hr{
+        color: white;
+    }
+
+}
+}
+.second_nav{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 9rem;
+    padding-left: 5%;
+   padding-right: 5%;
+   padding-top: 0.4rem;
+   
+    .quate
+    {
+        background-color: #28AE60;
+        height: 2rem;
+        width: 7rem;
+      
+    }
+    .pages{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap:2rem
+    }
+    .icon1{
+        height: 3rem;
+        width: 1.5rem;
+        padding-top:0.5rem;
+    }
+.padding1{
+display: flex;
+flex-direction: row;
+gap: 0.5rem;
+    }
+    .quate2{
+        padding-top: 1rem;
+    }
+    ul li a{
+        text-decoration: none;
+        color: white;
+    }
+}}
