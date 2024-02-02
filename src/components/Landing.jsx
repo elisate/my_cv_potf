@@ -1,9 +1,9 @@
-import React from 'react'
-import './Landing.scss';
+import React from "react";
+import "./Landing.scss";
 import { GrCaretNext } from "react-icons/gr";
-import WordWriter from './WordWriter';
+import WordWriter from "./WordWriter";
 function Landing() {
-    const words = ["Web Developer", "UI/UX Designer","System Anlyser"];
+  const words = ["Web Developer", "UI/UX Designer", "System Anlyser"];
   return (
     <>
       <section className="land1" id="land1">
@@ -39,7 +39,8 @@ function Landing() {
       <section className="land2" id="land2">
         <div>
           <p className="text1">Explore Our Solutions</p>
-        </div><div className="type1">
+        </div>
+        <div className="type1">
           <div>I'm Elisa And I'm a</div>
           <div>
             <WordWriter words={words} />
@@ -53,10 +54,9 @@ function Landing() {
         <div className="imgh">
           <img src="about1.png" className="imge" />
         </div>
-        
       </section>
     </>
   );
 }
 
-export default Landing
+export default Landing;
