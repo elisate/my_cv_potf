@@ -3,10 +3,11 @@
   color: white;
   padding-left: 3rem;
   padding-right: 3rem;
-  width: 100wh;
 
   // gap: 18rem;
   justify-content: space-between;
+  display: flex;
+  flex-direction: column;
 
   .my_pic {
     height: 30rem;
