@@ -13,7 +13,7 @@ function Landing() {
             <div className="name">Dushimiyimana Elisa</div>
 
             <div className="type">
-              <div>And I'm a</div>{" "}
+              <div>And I'm a</div>
               <div>
                 <WordWriter words={words} />
               </div>
@@ -32,7 +32,7 @@ function Landing() {
               </div>
             </div>
           </div>
-
+         
           <div className="my_profile">
             <img src="elisa.png" className="my_pic" />
           </div>
