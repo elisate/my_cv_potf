@@ -71,7 +71,8 @@ button:hover {
     color: white;
     display: flex;
     flex-direction: row;
-    gap: 9.5rem;
+    // gap: 9.5rem;
+    justify-content: space-between;
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 0.4rem;
