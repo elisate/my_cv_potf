@@ -3,9 +3,10 @@
   color: white;
   padding-left: 3rem;
   padding-right: 3rem;
- width: 100wh;
+  width: 100wh;
 
-  gap: 18rem;
+  // gap: 18rem;
+  justify-content: space-between;
 
   .my_pic {
     height: 30rem;
