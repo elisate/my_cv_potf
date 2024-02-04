@@ -6,36 +6,36 @@ function Landing() {
   const words = ["Web Developer", "UI/UX Designer", "System Anlyser"];
   return (
     <>
-      <section  id="land1">
-        <div className="landf">
-        <div className="text_home">
-          <div className="name">Hello my name is</div>
-          <div className="name">Dushimiyimana Elisa</div>
+      <section className="land1" id="land1">
+        <div className="landf1">
+          <div className="text_home">
+            <div className="name">Hello my name is</div>
+            <div className="name">Dushimiyimana Elisa</div>
 
-          <div className="type">
-            <div>And I'm a</div>{" "}
-            <div>
-              <WordWriter words={words} />
+            <div className="type">
+              <div>And I'm a</div>{" "}
+              <div>
+                <WordWriter words={words} />
+              </div>
+            </div>
+
+            <div className="butto_holder">
+              <div>
+                <button type="button" className="butto1">
+                  Our services
+                </button>
+              </div>
+              <div>
+                <button type="button" className="butto2">
+                  <GrCaretNext /> See how it work
+                </button>
+              </div>
             </div>
           </div>
 
-          <div className="butto_holder">
-            <div>
-              <button type="button" className="butto1">
-                Our services
-              </button>
-            </div>
-            <div>
-              <button type="button" className="butto2">
-                <GrCaretNext /> See how it work
-              </button>
-            </div>
+          <div className="my_profile">
+            <img src="elisa.png" className="my_pic" />
           </div>
-        </div>
-
-        <div className="my_profile">
-          <img src="elisa.png" className="my_pic" />
-        </div>
         </div>
       </section>
       <section className="land2" id="land2">
