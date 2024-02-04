@@ -6,7 +6,8 @@ function Landing() {
   const words = ["Web Developer", "UI/UX Designer", "System Anlyser"];
   return (
     <>
-      <section className="land1" id="land1">
+      <section  id="land1">
+        <div className="landf">
         <div className="text_home">
           <div className="name">Hello my name is</div>
           <div className="name">Dushimiyimana Elisa</div>
@@ -34,6 +35,7 @@ function Landing() {
 
         <div className="my_profile">
           <img src="elisa.png" className="my_pic" />
+        </div>
         </div>
       </section>
       <section className="land2" id="land2">
