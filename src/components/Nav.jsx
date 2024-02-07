@@ -9,8 +9,8 @@ import { CiSearch } from "react-icons/ci";
 import './nav1.scss';
 function Nav() {
   return (
-    <section className='container'>
-      <div className="allhold">
+    <section className="container">
+      {/* <div className="allhold">
         <div>
           <div className="nav1">
             <div>
@@ -41,20 +41,26 @@ function Nav() {
             <div className="phone3">0787239952</div>
           </div>
         </div>
-      </div>
+      </div> */}
+
       <div className="second_nav">
         <div>
           <img src="logo.png.webp" />
         </div>
         <div>
           <ul className="pages">
-            <li><a href='#land1'>Home</a></li>
-            <li><a href='#land2'>About</a></li>
-            <li>Services</li>
+            <li>
+              <a href="#land1">Home</a>
+            </li>
+            <li>
+              <a href="#land2">About</a>
+            </li>
+            <li>
+             <a href="#land3">Services</a>
+            </li>
             <li>Blog</li>
             <li>Pages</li>
             <li>Contact</li>
-           
           </ul>
         </div>
 
@@ -68,9 +74,7 @@ function Nav() {
             </button>
           </div>
         </div>
-        
       </div>
-     
     </section>
   );
 }

@@ -65,21 +65,27 @@
 .land2 {
   padding-left: 3rem;
   padding-right: 3rem;
+  padding-bottom: 3rem;
+
   width: 100wh;
   .imge {
-    width: 30rem;
-    height: 20rem;
+    width: 18rem;
+    height: 25rem;
+  }
+  .about-exp {
+    border-left: #28ae60 solid 2px;
+    padding-left: 0.5rem;
   }
   .text1 {
     font-size: 2rem;
   }
+
   .imgh {
-    margin-top: -7rem;
+    margin-top: -5.5rem;
   }
   .text2 {
-    width: 25rem;
-    padding-left: 35rem;
-    padding-top: 4rem;
+    width: 31rem;
+    padding-top: 1rem;
   }
   .type1 {
     font-family: "Roboto Condensed", sans-serif;
@@ -87,10 +93,127 @@
     flex-direction: row;
     font-size: 2rem;
     gap: 4px;
-    padding-left: 35rem;
-    padding-top: 4rem;
+    padding-left: 31rem;
+    padding-top: 1rem;
   }
   .word-writer {
     color: #28ae60;
+  }
+  .img-text {
+    display: flex;
+    flex-direction: row;
+    gap: 13rem;
+    .img-text1 {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .but {
+        background-color: #28ae60;
+        height: 2rem;
+        width: 7rem;
+        font-weight: bold;
+      }
+      .text-icon {
+        gap: 2rem;
+
+        .text-a {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+        }
+        .text-b {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+        }
+        .text-c {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+        }
+        .icon-about {
+          color: #28ae60;
+          width: 2rem;
+          height: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.land3 {
+  background-color: black;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  .serv-text1 {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+  }
+  .serv-text2 {
+    text-align: center;
+    padding-top: 1rem;
+    .text-s1 {
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      .text-s1a {
+        color: #28ae60;
+      }
+    }
+  }
+  .card-service {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+    .card1-serv {
+      background-color: #6c757d;
+      width: 17rem;
+      height: 16rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5;
+
+      .text-head1
+      {
+        font-weight:bold;
+        font-size:1.5rem;
+        padding-top: 1rem;
+        color: white;
+      }
+      .text-head2
+      {
+        padding-top: 0.5rem;
+        color: white;
+      }
+      
+      .card1-a1 {
+      
+      .card-icon
+      {
+       color: #28ae60;
+        height: 3rem;
+        width: 4rem;
+      }
+      
+      }
+    }
+    .card1-serv:hover {
+  background-color:#28ae60 ;
+}
+
+.card1-serv:hover .text-head1,
+.card1-serv:hover .text-head2 {
+  color: #333;
+}
+.card1-serv:hover .card-icon
+{
+  color: #333;
+}
+
   }
 }
