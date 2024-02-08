@@ -184,7 +184,7 @@ function Landing() {
         </div>
       </section>
       <section className="pages" id="pages">
-        <div className="pages-1">Project</div>
+        <div className="pages-1">Projects</div>
         <div className="project-holder">
           <div className="page-card-holder">
             <div>
