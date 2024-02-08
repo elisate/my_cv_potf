@@ -10,7 +10,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import { RiAnticlockwise2Line } from "react-icons/ri";
 import { RiAppsFill } from "react-icons/ri";
 function Landing() {
-  const words = ["Web Developer", "UI/UX Designer", "System Anlyser"];
+  const words = ["Web Developer", "UI/UX Designer", "System Anlyser","Mobile App Developer"];
   return (
     <>
       <section className="land1" id="land1">
