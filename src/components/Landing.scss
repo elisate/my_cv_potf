@@ -263,3 +263,63 @@
   }
   
 }
+
+.pages
+{
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 3rem;
+  .pages-1
+  {
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+  }
+  .project-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  .page-card-holder{
+   padding-top: 3rem;
+
+
+  .pages-text1
+  {
+  width: 18rem;
+  padding-top: 1rem;
+  color:grey;
+    
+  }
+  .read-text1
+  {
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    padding-top: 1.9rem;
+  }
+  .read-text1 a
+  {
+    text-decoration: none;
+    color: black;
+  }
+  .icon-page
+  {
+    color: #28ae60;
+    height:5rem;
+    width: 5rem;
+  }
+  .project-title
+  {
+   font-weight: bold;
+   padding-top: 1rem;
+  }
+  }
+  }
+
+
+  
+}
+
+
+  

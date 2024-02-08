@@ -5,6 +5,10 @@ import WordWriter from "./WordWriter";
 import { CgWebsite } from "react-icons/cg";
 import { FaAppStoreIos } from "react-icons/fa";
 import { AiOutlineLineChart } from "react-icons/ai";
+import { MdAccountBalance } from "react-icons/md";
+import { FaLongArrowAltRight } from "react-icons/fa";
+import { RiAnticlockwise2Line } from "react-icons/ri";
+import { RiAppsFill } from "react-icons/ri";
 function Landing() {
   const words = ["Web Developer", "UI/UX Designer", "System Anlyser"];
   return (
@@ -87,7 +91,7 @@ function Landing() {
               </div>
             </div>
             <button type="button" className="but">
-              Download cv
+              Download CV
             </button>
           </div>
         </div>
@@ -157,7 +161,9 @@ function Landing() {
               collaborative effort between the Rwanda ICT Chamber and BITMi
               (Bundesverband IT-Mittelstand e.V.). […]
             </div>
-            <div className="blog-read"><a href="/">Read Blog</a></div>
+            <div className="blog-read">
+              <a href="/">Read Blog</a>
+            </div>
           </div>
           <div className="blog-holder1">
             <img src="blog1.jpg" className="blog-image1" />
@@ -171,7 +177,82 @@ function Landing() {
               collaborative effort between the Rwanda ICT Chamber and BITMi
               (Bundesverband IT-Mittelstand e.V.). […]
             </div>
-            <div className="blog-read"><a href="/">Read Blog</a></div>
+            <div className="blog-read">
+              <a href="/">Read Blog</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="pages" id="pages">
+        <div className="pages-1">Project</div>
+        <div className="project-holder">
+          <div className="page-card-holder">
+            <div>
+              <MdAccountBalance className="icon-page" />
+            </div>
+            <div className="project-title">Legal Tech</div>
+            <div className="pages-text1">
+              Revolutionize the way you handle legal cases! Our innovative legal
+              tech project enables seamless online case submissions,
+              streamlining the entire process for users.
+            </div>
+
+            <div className="read-text1">
+              <div>
+                <a href="https://legal-tech-seven.vercel.app/">Read more</a>
+              </div>
+              <div>
+                <a href="https://legal-tech-seven.vercel.app/">
+                  {" "}
+                  <FaLongArrowAltRight className="icon-page2" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="page-card-holder">
+            <div>
+              <RiAnticlockwise2Line className="icon-page" />
+            </div>
+            <div className="project-title">Holday Planner</div>
+            <div className="pages-text1">
+              Plan your dream getaway hassle-free! Our holiday planner project
+              simplifies tour booking online, offering a seamless experience for
+              users.
+            </div>
+
+            <div className="read-text1">
+              <div>
+                <a href="https://holyday-planner-k.vercel.app/">Read more </a>
+              </div>
+              <div>
+                <a href="https://holyday-planner-k.vercel.app/">
+                  <FaLongArrowAltRight className="icon-page2" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="page-card-holder">
+            <div>
+              <RiAppsFill className="icon-page" />
+            </div>
+            <div className="project-title">E-Buy</div>
+            <div className="pages-text1">
+              Welcome to E-Buy - your ultimate online shopping destination!
+              Browse, click, and purchase with ease using our user-friendly
+              platform.
+            </div>
+
+            <div className="read-text1">
+              <div>
+                <a href="https://elisaweb.vercel.app/">Read more </a>
+              </div>
+              <div>
+                <a href="https://elisaweb.vercel.app/">
+                  {" "}
+                  <FaLongArrowAltRight className="icon-page2" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -15,58 +15,9 @@ button:hover {
   position: absolute;
   position: fixed;
   width: 100%;
-  .allhold {
-    display: flex;
-    flex-direction: row;
-    background-color: #6d6d6d;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    justify-content: space-between;
-    padding-top: 0.4rem;
-    height: 2rem;
  
-
-    .nav1 {
-      display: flex;
-      flex-direction: row;
-      list-style: none;
-      gap: 0.5rem;
-      color: white;
-    }
-    .email_p {
-      display: flex;
-      flex-direction: row;
-      gap: 3rem;
-
-      .email1 {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-      }
-      .email2 {
-        color: #28ae60;
-      }
-      .email3 {
-        color: white;
-      }
-      .phone1 {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-      }
-      .phone2 {
-        color: #28ae60;
-      }
-      .phone3 {
-        color: white;
-      }
-      .hr {
-        color: white;
-      }
-    }
-  }
   .second_nav {
-    background-color: black;
+    background-color:black;
     color: white;
     display: flex;
     flex-direction: row;
@@ -74,6 +25,7 @@ button:hover {
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 0.4rem;
+    height: 4rem;
 
     .quate {
       background-color: #28ae60;
