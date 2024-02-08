@@ -58,7 +58,7 @@ function Nav() {
             <li>
              <a href="#land3">Services</a>
             </li>
-            <li>Blog</li>
+            <li><a href='#land4'>Blog</a></li>
             <li>Pages</li>
             <li>Contact</li>
           </ul>

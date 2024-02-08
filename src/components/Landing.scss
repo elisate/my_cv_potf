@@ -41,8 +41,6 @@
     }
 
     .my_profile {
-      // margin-top: -28rem;
-      // margin-left: 44rem;
       padding-top: 4rem;
       .my_pic {
         height: 30rem;
@@ -168,7 +166,7 @@
     padding-top: 4rem;
     display: flex;
     flex-direction: row;
-   justify-content: space-between;
+    justify-content: space-between;
     .card1-serv {
       background-color: #6c757d;
       width: 17rem;
@@ -178,42 +176,90 @@
       padding-top: 1.5rem;
       padding-bottom: 1.5;
 
-      .text-head1
-      {
-        font-weight:bold;
-        font-size:1.5rem;
+      .text-head1 {
+        font-weight: bold;
+        font-size: 1.5rem;
         padding-top: 1rem;
         color: white;
       }
-      .text-head2
-      {
+      .text-head2 {
         padding-top: 0.5rem;
         color: white;
       }
-      
+
       .card1-a1 {
-      
-      .card-icon
-      {
-       color: #28ae60;
-        height: 3rem;
-        width: 4rem;
-      }
-      
+        .card-icon {
+          color: #28ae60;
+          height: 3rem;
+          width: 4rem;
+        }
       }
     }
     .card1-serv:hover {
-  background-color:#28ae60 ;
-}
+      background-color: #28ae60;
+    }
 
-.card1-serv:hover .text-head1,
-.card1-serv:hover .text-head2 {
-  color: #333;
-}
-.card1-serv:hover .card-icon
-{
-  color: #333;
-}
-
+    .card1-serv:hover .text-head1,
+    .card1-serv:hover .text-head2 {
+      color: #333;
+    }
+    .card1-serv:hover .card-icon {
+      color: #333;
+    }
   }
+}
+.land4 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  .land4-head1 {
+    padding-left: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-left: #28ae60 solid 2px;
+    .blog-deco {
+      color: #28ae60;
+    }
+  }
+  .blogs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .blog-holder1{
+    padding-top: 6rem;
+    .blog-image1 {
+      height: 18rem;
+      width: 30rem;
+    }
+    .blog-date {
+      padding-top: 2rem;
+      font-size: 1.4rem;
+      color: #6c757d;
+    }
+    .blog-text1 {
+      font-size: 2.2rem;
+      width: 27rem;
+      padding-top: 2rem;
+    }
+    .blog-text2 {
+      width: 27rem;
+      font-size: 1.4rem;
+      font-weight: lighter;
+      color:black;
+      padding-top: 2rem;
+    }
+    .blog-read
+    {
+      font-weight: bold;
+      padding-top: 2rem;
+    }
+     .blog-read a
+     {
+      text-decoration: none;
+      color: black;
+     }
+  }
+  }
+  
 }

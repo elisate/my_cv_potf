@@ -4,7 +4,7 @@ import { GrCaretNext } from "react-icons/gr";
 import WordWriter from "./WordWriter";
 import { CgWebsite } from "react-icons/cg";
 import { FaAppStoreIos } from "react-icons/fa";
-import { AiOutlineLineChart } from "react-icons/ai";;
+import { AiOutlineLineChart } from "react-icons/ai";
 function Landing() {
   const words = ["Web Developer", "UI/UX Designer", "System Anlyser"];
   return (
@@ -135,8 +135,43 @@ function Landing() {
               Enhance user satisfaction and engagement with our UI/UX design
               services. We specialize in creating intuitive interfaces that
               delight users and elevate your brand's digital experience.
-              
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="land4" id="land4">
+        <div className="land4-head1">
+          Discover the latest updates and insights on our{" "}
+          <span className="blog-deco">blog!</span>
+        </div>
+        <div className="blogs">
+          <div className="blog-holder1">
+            <img src="blog4.jpg" className="blog-image1" />
+            <div className="blog-date">07 Feb 2024</div>
+            <div className="blog-text1">
+              THE ONGOING IMPACTFUL JOURNEY OF TECH TALENTS IN ELISA TECH
+            </div>
+            <div className="blog-text2">
+              The Tech UpSkill program, an initiative under the umbrella of AIPI
+              (Access International Partnership in IT), represents a
+              collaborative effort between the Rwanda ICT Chamber and BITMi
+              (Bundesverband IT-Mittelstand e.V.). […]
+            </div>
+            <div className="blog-read"><a href="/">Read Blog</a></div>
+          </div>
+          <div className="blog-holder1">
+            <img src="blog1.jpg" className="blog-image1" />
+            <div className="blog-date">30 May 2024</div>
+            <div className="blog-text1">
+              THE ONGOING IMPACTFUL JOURNEY OF TECH TALENTS IN ELISA TECH
+            </div>
+            <div className="blog-text2">
+              The Tech UpSkill program, an initiative under the umbrella of AIPI
+              (Access International Partnership in IT), represents a
+              collaborative effort between the Rwanda ICT Chamber and BITMi
+              (Bundesverband IT-Mittelstand e.V.). […]
+            </div>
+            <div className="blog-read"><a href="/">Read Blog</a></div>
           </div>
         </div>
       </section>
