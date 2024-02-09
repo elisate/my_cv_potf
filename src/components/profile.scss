@@ -1,0 +1,93 @@
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  display: flex;
+justify-content: right;
+padding-top: 3.5rem;
+
+.profile-container {
+  height: 10rem;
+  background-color: white;
+  color: black;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  height: fit-content;
+ 
+}
+.prof-a
+{
+    display: flex;
+    flex-direction: row;
+   gap: 12rem;
+   border-bottom: solid 1px gray;
+   .prof-text{
+   
+    font-size:1.5rem;
+   }
+  
+   
+.close-profile
+{
+    color:#28ae60;
+    font-size: 2rem;
+}
+
+}
+.icon-profile
+{
+    font-size: 1.4rem;
+}
+.prof-user1
+{
+    display:flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-top: 2rem;
+    text-decoration: none;
+}
+.prof-user2
+{
+    display:flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+.prof-user3
+{
+    display:flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-top: 1rem;
+    text-decoration: none;
+   
+}
+.prof-user3 :link
+{
+    text-decoration: none;
+     color: black; 
+}
+.prof-user4
+{
+    .login-logout
+    {
+        background-color: #28ae60;
+        padding: 0.3rem;
+        font-weight: bold;
+       
+        width: fit-content;
+    }
+    display:flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+}
+
