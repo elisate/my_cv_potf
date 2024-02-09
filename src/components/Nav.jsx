@@ -1,6 +1,7 @@
 import React from 'react';
 import { CiSearch } from "react-icons/ci";
 import './nav1.scss';
+import { Link } from 'react-router-dom';
 function Nav() {
   return (
     <section className="container">
@@ -26,7 +27,8 @@ function Nav() {
               <a href="/#pages">Portfolio</a>
             </li>
             <li>
-               <a href="/contact">Contact</a> 
+              {/* <a href="/contact">Contact</a> */}
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>

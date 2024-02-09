@@ -4,6 +4,7 @@ import { FaStreetView, FaPhone} from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import { SlLocationPin } from "react-icons/sl";
 import { FaUser, FaEnvelope,FaRegEnvelope } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 function Contact() {
   return (
@@ -87,7 +88,7 @@ function Contact() {
                 required
               ></input>
             </div>
-            <button type="button" className='cont-button'>Send Message</button>
+            <button type="submit" className='cont-button'>Send Message</button>
           </form>
         </div>
       </div>
