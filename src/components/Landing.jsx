@@ -9,8 +9,14 @@ import { MdAccountBalance } from "react-icons/md";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { RiAnticlockwise2Line } from "react-icons/ri";
 import { RiAppsFill } from "react-icons/ri";
+import { HiArrowLongRight } from "react-icons/hi2";
 function Landing() {
-  const words = ["Web Developer", "UI/UX Designer", "System Anlyser","Mobile App Developer"];
+  const words = [
+    "Web Developer",
+    "UI/UX Designer",
+    "System Anlyser",
+    "Mobile App Developer",
+  ];
   return (
     <>
       <section className="land1" id="land1">
@@ -203,8 +209,7 @@ function Landing() {
               </div>
               <div>
                 <a href="https://legal-tech-seven.vercel.app/">
-                  {" "}
-                  <FaLongArrowAltRight className="icon-page2" />
+                  <HiArrowLongRight className="icon-page2" />
                 </a>
               </div>
             </div>
@@ -226,7 +231,7 @@ function Landing() {
               </div>
               <div>
                 <a href="https://holyday-planner-k.vercel.app/">
-                  <FaLongArrowAltRight className="icon-page2" />
+                  <HiArrowLongRight className="icon-page2" />
                 </a>
               </div>
             </div>
@@ -248,8 +253,7 @@ function Landing() {
               </div>
               <div>
                 <a href="https://elisaweb.vercel.app/">
-                  {" "}
-                  <FaLongArrowAltRight className="icon-page2" />
+                  <HiArrowLongRight className="icon-page2" />
                 </a>
               </div>
             </div>

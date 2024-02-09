@@ -15,6 +15,11 @@ button:hover {
   position: absolute;
   position: fixed;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
  
   .second_nav {
     background-color:black;

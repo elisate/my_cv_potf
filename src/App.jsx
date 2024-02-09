@@ -4,6 +4,7 @@ import './App.css'
 import Footer from './components/Footer';
 import Landing from './components/Landing';
 import Nav from './components/Nav';
+import Contact from './components/Contact';
  const Layout =()=>{
   return(
    <>
@@ -26,6 +27,9 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout/>}>
       <Route index element={<Landing/>}/>
+      <Route path='/contact' element={<Contact/>}/>
+      < Route path='/#land1' element={<Landing/>}/>
+      
       
       </Route>
     </Routes>

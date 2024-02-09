@@ -4,7 +4,6 @@ import './nav1.scss';
 function Nav() {
   return (
     <section className="container">
-
       <div className="second_nav">
         <div>
           <img src="logo.png.webp" />
@@ -12,17 +11,23 @@ function Nav() {
         <div>
           <ul className="pages">
             <li>
-              <a href="#land1">Home</a>
+              <a href="/#land1">Home</a>
             </li>
             <li>
-              <a href="#land2">About</a>
+              <a href="/#land2">About</a>
             </li>
             <li>
-             <a href="#land3">Services</a>
+              <a href="/#land3">Services</a>
             </li>
-            <li><a href='#land4'>Blog</a></li>
-            <li><a href='#pages'>pages</a></li>
-            <li>Contact</li>
+            <li>
+              <a href="/#land4">Blog</a>
+            </li>
+            <li>
+              <a href="/#pages">Portfolio</a>
+            </li>
+            <li>
+               <a href="/contact">Contact</a> 
+            </li>
           </ul>
         </div>
 
