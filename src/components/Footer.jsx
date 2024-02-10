@@ -1,4 +1,3 @@
-
 import React from "react";
 import "./footer.scss";
 import { FaFacebook } from "react-icons/fa";
@@ -11,13 +10,13 @@ import { FaHome } from "react-icons/fa";
 function Footer() {
   return (
     <div className="footer-holder" id="contact">
-      <footer class="footer">
-        <div class="footer-container">
+      <div class="footer">
+        <div>
           <div class="footer-top">
             <div>
-              <h6 class="footer-title">
+              <span class="footer-title">
                 <img src="logo.png.webp" className="im" />
-              </h6>
+              </span>
               <div className="edit2">
                 We believe that as a boutique practice,
                 <div>we are better placed to respond quickly</div>
@@ -26,8 +25,8 @@ function Footer() {
               </div>
             </div>
             <div>
-              <h6 class="footer-title">Qick Links</h6>
-              <ul class="footer-list">
+              <span class="footer-title">Qick Links</span>
+              <div class="footer-list">
                 <li class="footer-list-item">
                   <a href="/#home" class="footer-list-link">
                     Home
@@ -43,14 +42,10 @@ function Footer() {
                     Services
                   </a>
                 </li>
+
                 <li class="footer-list-item">
                   <a href="#" class="footer-list-link">
-                    Testmonial
-                  </a>
-                </li>
-                <li class="footer-list-item">
-                  <a href="#" class="footer-list-link">
-                    Team
+                    Projects
                   </a>
                 </li>
                 <li class="footer-list-item">
@@ -58,11 +53,11 @@ function Footer() {
                     contact
                   </a>
                 </li>
-              </ul>
+              </div>
             </div>
             <div>
-              <h6 class="footer-title">Support</h6>
-              <ul class="footer-list">
+              <span class="footer-title">Support</span>
+              <di class="footer-list">
                 <li class="footer-list-item">
                   <a href="#" class="footer-list-link">
                     About
@@ -83,10 +78,10 @@ function Footer() {
                     Professional Services
                   </a>
                 </li>
-              </ul>
+              </di>
             </div>
             <div>
-              <h6 class="footer-title">Address</h6>
+              <span class="footer-title">Address</span>
               <div className="can5">
                 <div className="can1">
                   <div>
@@ -109,28 +104,27 @@ function Footer() {
           </div>
 
           <hr class="footer-divider" />
-
           <div className="but">
-            <span class="copyright">
-              &copy; Legal-Tech. All rights reserved.
-            </span>
-            <ul class="h">
-              <li class="footer-list-item">
+          <div class="copyright">
+           <div>&copy; Elisa-Tech.All rights reserved</div>
+            </div>
+            <div class="h">
+              <div class="footer-list-item">
                 <FaFacebook />
-              </li>
-              <li class="footer-list-item">
+              </div>
+              <div class="footer-list-item">
                 <FaInstagramSquare />
-              </li>
-              <li class="footer-list-item">
+              </div>
+              <div class="footer-list-item">
                 <FaXTwitter />
-              </li>
-              <li class="footer-list-item">
+              </div>
+              <div class="footer-list-item">
                 <FaSquareWhatsapp />
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
-      </footer>
+      </div>
     </div>
   );
 }
