@@ -97,6 +97,7 @@
   .word-writer {
     color: #28ae60;
   }
+  
   .img-text {
     display: flex;
     flex-direction: row;
@@ -226,6 +227,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
     .blog-holder1{
     padding-top: 6rem;
     .blog-image1 {
@@ -323,11 +325,189 @@
    padding-top: 1rem;
   }
   }
-  }
-
-
-  
+  } 
 }
 
+@media screen and (max-width: 768px) {
+  .land1{
+  background-color: black;
+  color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 0.7rem;
+  .landf1
+  {
+    .name
+    {
+      font-size: 1.2rem;
+    }
+    .text_home
+    {
+      padding-top: 6rem;
+    }
+    .type
+    {
+      font-size: 1rem;
+    }
+
+    .my_profile {
+      padding-top: 4rem;
+      .my_pic {
+        height:15rem;
+        width:10rem;
+      }
+    }
+    .butto_holder {
+      .butto1 {
+        background-color: #28ae60;
+        height: 2rem;
+        width: 8rem;
+        transition: background-color 0.1s ease;
+        
+      }
+      .butto2 {
+        background-color: black;
+        color: white;
+        border: solid 1px white;
+        height: 2rem;
+        width: 8rem;
+      }
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding-top: 4rem;
+    }
+  }
+  }
+
+  .land2
+  {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 0.7rem;
+   .img-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    .img-text1 {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .but {
+        background-color: #28ae60;
+        height: 2rem;
+        width: 7rem;
+        font-weight: bold;
+      }
+      .text-icon {
+        gap: 2rem;
+
+        .text-a {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+        }
+        .text-b {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+        }
+        .text-c {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+        }
+        .icon-about {
+          color: #28ae60;
+          width: 2rem;
+          height: 1rem;
+        }
+      }
+      .text2
+      {
+        width: fit-content;
+      }
+    }
+  }
+  .type1 {
+    display: none;
+  }
+  }
+  .land3{
+    width: fit-content;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    background-color: black;
+    .card-service {
+    padding-top: 2rem;
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+   
+  }
+  
+  }
+  .land4
+  {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    .blogs{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+
+    .blog-holder1{
+    padding-top: 6rem;
+    .blog-image1 {
+      height: 15;
+      width: fit-content;
+    }
+    .blog-date {
+      padding-top: 2rem;
+      font-size: 1.4rem;
+      color: #6c757d;
+    }
+    .blog-text1 {
+      font-size: 2rem;
+      width: fit-content;
+      padding-top: 2rem;
+    }
+    .blog-text2 {
+      width: fit-content;
+      font-size: 1.4rem;
+      font-weight: lighter;
+      color:black;
+      padding-top: 2rem;
+    }
+    .blog-read
+    {
+      font-weight: bold;
+      padding-top: 2rem;
+    }
+     .blog-read a
+     {
+      text-decoration: none;
+      color: black;
+     }
+  }
+  }
+ 
+  }
+  .pages
+  {
+    padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+
+  .project-holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  }
+  
+}
 
   

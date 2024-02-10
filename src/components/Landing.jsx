@@ -14,8 +14,8 @@ function Landing() {
   const words = [
     "Web Developer",
     "UI/UX Designer",
-    "System Anlyser",
-    "Mobile App Developer",
+    "System Designer",
+    "App Developer",
   ];
   return (
     <>
@@ -26,7 +26,7 @@ function Landing() {
             <div className="name">Dushimiyimana Elisa</div>
 
             <div className="type">
-              <div>And I'm a</div>
+              <div>And I'm</div>
               <div>
                 <WordWriter words={words} />
               </div>
