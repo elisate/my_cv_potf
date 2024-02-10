@@ -55,12 +55,14 @@ function Landing() {
         <div className="about-exp">
           <p className="text1">Explore Our Solutions</p>
         </div>
+        <div></div>
         <div className="type1">
           <div>I'm Elisa And I'm a</div>
           <div>
             <WordWriter words={words} />
           </div>
         </div>
+
         <div className="img-text">
           <div className="imgh">
             <img src="elisa4.jpeg" className="imge" />
@@ -101,6 +103,7 @@ function Landing() {
             </button>
           </div>
         </div>
+        
       </section>
       <section className="land3" id="land3">
         <div className="serv-text1">our services</div>

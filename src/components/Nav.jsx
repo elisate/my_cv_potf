@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { CiSearch } from "react-icons/ci";
-import './nav1.scss';
-import { Link } from 'react-router-dom';
-import Profile from './Profile';
+import "./nav1.scss";
+import { Link } from "react-router-dom";
+import Profile from "./Profile";
 function Nav() {
-  const[profile,setProfile]=useState(false)
-  const handleprofile=()=>
-  {
+  const [profile, setProfile] = useState(false);
+  const handleprofile = () => {
     setProfile(!profile);
-  }
+  };
   return (
     <>
       <section className="container">
@@ -40,7 +39,6 @@ function Nav() {
           </div>
 
           <div className="padding1">
-           
             <div className="quate2">
               <button type="button" className="quate" onClick={handleprofile}>
                 Get Quate
@@ -53,5 +51,4 @@ function Nav() {
     </>
   );
 }
-
-export default Nav
+export default Nav;
