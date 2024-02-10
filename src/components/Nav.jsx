@@ -30,7 +30,7 @@ function Nav() {
                 <a href="/#land4">Blog</a>
               </li>
               <li>
-                <a href="/#pages">Portfolio</a>
+                <a href="/#pages-land">Portfolio</a>
               </li>
               <li>
                 <Link to="/contact">Contact</Link>

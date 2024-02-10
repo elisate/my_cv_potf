@@ -192,7 +192,7 @@ function Landing() {
           </div>
         </div>
       </section>
-      <section className="pages" id="pages">
+      <section className="pages-land" id="pages-land">
         <div className="pages-1">Projects</div>
         <div className="project-holder">
           <div className="page-card-holder">

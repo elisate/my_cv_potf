@@ -214,6 +214,7 @@
   padding-right: 5rem;
   padding-top: 2rem;
   padding-bottom: 4rem;
+  background-color: white;
   .land4-head1 {
     padding-left: 0.5rem;
     font-size: 2rem;
@@ -266,11 +267,12 @@
   
 }
 
-.pages
+.pages-land
 {
   padding-left: 5rem;
   padding-right: 5rem;
   padding-bottom: 3rem;
+  background-color: white;
   .pages-1
   {
     text-align: center;
@@ -328,7 +330,7 @@
   } 
 }
 
-@media screen and (max-width: 467px) {
+@media screen and (max-width: 768px){
   .land1{
   background-color: black;
   color: white;
@@ -499,7 +501,7 @@
   }
  
   }
-  .pages
+  .pages-land
   {
     padding-left: 2rem;
   padding-right: 2rem;
