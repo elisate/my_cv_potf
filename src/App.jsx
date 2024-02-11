@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Landing from './components/Landing';
 import Nav from './components/Nav';
 import Contact from './components/Contact';
+import Resp_nav from './components/Resp_nav';
  const Layout =()=>{
   return(
    <>

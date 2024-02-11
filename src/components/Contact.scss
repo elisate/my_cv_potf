@@ -88,3 +88,24 @@ gap:9rem;
     height: 2rem;
 }
 }
+
+
+@media screen and (max-width: 768px) 
+{
+  .contact
+  {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    .cont-justfy
+    {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+.cont-big-text {
+    width: 15rem;
+  }
+    }
+  }
+
+}

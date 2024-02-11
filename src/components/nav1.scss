@@ -60,5 +60,37 @@ button:hover {
       text-decoration: none;
       color: white;
     }
+    .fabar
+    {
+      display: none;
+    }
   }
 }
+
+@media screen and (max-width: 768px) {
+    .container{
+
+      .second_nav
+      {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .pages
+        {
+          display: none;
+        }
+        .quate
+        {
+          display: none;
+        }
+        .fabar{
+            display: list-item;
+           font-size: 1.5rem;
+           padding-left: 7rem;
+           padding-top: 0.5rem;
+        }
+      }
+    }
+      }
