@@ -11,12 +11,14 @@
   .modal-content {
     background-color: black;
     color: white;
-    padding: 20px;
+    padding-left: 0rem;
+    padding-right: 2rem;
     width: 100%;
     
 
     .pages {
       list-style: none;
+      text-align: center;
       li {
         margin-bottom: 15px;
       }
@@ -26,13 +28,20 @@
         text-decoration: none;
         color:white;
         font-size: 18px;
-        padding: 10px;
-         transition: background-color 0.3s ease;
+        padding-bottom: 10px;
+        font-weight: bold;
+        transition:background-color 0.3s ease;
 
         &:hover {
           border: solid 1px #28ae60;
         }
       }
+    }
+    .close-resp
+    {
+      padding-left: 20rem;
+      padding-top: 1.2rem;
+      font-size: 1.5rem;
     }
   }
 }

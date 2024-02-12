@@ -6,7 +6,6 @@ import { CgWebsite } from "react-icons/cg";
 import { FaAppStoreIos } from "react-icons/fa";
 import { AiOutlineLineChart } from "react-icons/ai";
 import { MdAccountBalance } from "react-icons/md";
-import { FaLongArrowAltRight } from "react-icons/fa";
 import { RiAnticlockwise2Line } from "react-icons/ri";
 import { RiAppsFill } from "react-icons/ri";
 import { HiArrowLongRight } from "react-icons/hi2";
@@ -263,6 +262,7 @@ function Landing() {
           </div>
         </div>
       </section>
+      
     </>
   );
 }
