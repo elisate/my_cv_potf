@@ -42,7 +42,6 @@ function Profile({handleprofile}) {
           </div>
         </div>
         <div className="prof-user4">
-          {" "}
           <div>
             <IoMdLogIn className="icon-profile" />
           </div>

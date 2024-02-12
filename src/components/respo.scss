@@ -16,11 +16,12 @@
     width: 100%;
     
 
-    .pages {
+    .pages{
       list-style: none;
       text-align: center;
       li {
         margin-bottom: 15px;
+        padding: 10px;
       }
 
       a {
@@ -39,9 +40,16 @@
     }
     .close-resp
     {
-      padding-left: 20rem;
-      padding-top: 1.2rem;
+      padding-left: 19.2rem;
+      
+      padding-top: 1.3rem;
       font-size: 1.5rem;
+    }
+    .quate2
+    {
+      background-color: #28ae60;
+      height: 2rem;
+      width: 7rem;
     }
   }
 }

@@ -2,7 +2,15 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import './respo.scss';
 import { RiCloseFill } from "react-icons/ri";
-function Resp_nav({handleresp}) {
+import'./nav1.scss';
+import Profile from './Profile';
+import { useState } from 'react';
+
+function Resp_nav({ handleresp }) {
+  const [profile, setProfile] = useState(false);
+  const handleprofile = () => {
+    setProfile(!profile);
+  };
   return (
     <div className="overlay">
       <div className="modal-content">
@@ -40,8 +48,15 @@ function Resp_nav({handleresp}) {
               Contact
             </Link>
           </li>
+
+          <li>
+            <button type="button" className="quate2" onClick={handleprofile}>
+              Get Quate
+            </button>
+          </li>
         </ul>
       </div>
+      {profile && <Profile handleprofile={handleprofile} />}
     </div>
   );
 }
