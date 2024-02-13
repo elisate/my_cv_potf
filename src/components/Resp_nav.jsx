@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './respo.scss';
-import { RiCloseFill } from "react-icons/ri";
+import { IoCloseSharp } from "react-icons/io5";
 import'./nav1.scss';
 import Profile from './Profile';
 import { useState } from 'react';
@@ -15,7 +15,7 @@ function Resp_nav({ handleresp }) {
     <div className="overlay">
       <div className="modal-content">
         <div className="close-resp">
-          <RiCloseFill onClick={handleresp} />
+          <IoCloseSharp onClick={handleresp} />
         </div>
         <ul className="pages">
           <li>
