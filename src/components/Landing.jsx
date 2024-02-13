@@ -13,8 +13,9 @@ function Landing() {
   const words = [
     "Web Developer",
     "UI/UX Designer",
-    "System Designer",
+    "System Devpmt",
     "App Developer",
+    
   ];
   return (
     <>
