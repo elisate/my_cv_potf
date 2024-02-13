@@ -97,9 +97,11 @@ function Landing() {
                 </div>
               </div>
             </div>
-            <button type="button" className="but">
-              Download CV
-            </button>
+           
+              <a href="Elisa_Cv.pdf" download="Elisa_Cv.pdf" >  
+              <button type="button" className="but">
+              Download CV</button></a>
+            
           </div>
         </div>
         
