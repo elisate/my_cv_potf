@@ -42,7 +42,13 @@ background-color:black;
 .footer-list-item{
 list-style: none;
 }
-
+.footer-list-item a{
+color: #666873;
+}
+.footer-list-item  :hover
+{
+  color: #28ae60;
+}
 .footer-list-link{
     text-decoration: none;
     color: inherit;
@@ -143,6 +149,9 @@ height: 3rem;
 {
     list-style: none;
 }
+.but a{
+color: gray
+};
   .can5
     {  
     align-items: center;
@@ -175,5 +184,7 @@ height: 3rem;
      
     }
 }
+
 }
+
 }
