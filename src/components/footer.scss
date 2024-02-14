@@ -11,8 +11,10 @@ background-color:black;
 .footer-top{
    display: flex;
    flex-direction: row;
-   gap: 4.8rem;
+   gap: 7.2rem;
    padding-top: 1rem;
+   
+   
 }
 
 .footer-title{
@@ -111,6 +113,7 @@ gap: 0.5rem;
     {
     padding-left:1rem;
     padding-right:1rem;
+    
    
    .footer-top
     {
@@ -119,6 +122,7 @@ gap: 0.5rem;
    flex-direction: column;
    gap:1rem;
    padding-top: 1rem;
+
    .footer-list
    {
     padding-top:2rem;  

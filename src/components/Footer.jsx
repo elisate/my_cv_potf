@@ -11,7 +11,7 @@ function Footer() {
   return (
     <div className="footer-holder" id="contact">
       <div class="footer">
-        <div>
+        
           <div class="footer-top">
             <div>
               <span class="footer-title">
@@ -57,7 +57,7 @@ function Footer() {
             </div>
             <div>
               <span class="footer-title">Support</span>
-              <di class="footer-list">
+              <div class="footer-list">
                 <li class="footer-list-item">
                   <a href="#" class="footer-list-link">
                     About
@@ -78,7 +78,7 @@ function Footer() {
                     Professional Services
                   </a>
                 </li>
-              </di>
+              </div>
             </div>
             <div>
               <span class="footer-title">Address</span>
@@ -123,7 +123,7 @@ function Footer() {
               </div>
             </div>
           </div>
-        </div>
+        
       </div>
     </div>
   );
