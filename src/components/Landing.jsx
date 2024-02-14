@@ -34,14 +34,14 @@ function Landing() {
 
             <div className="butto_holder">
               <div>
-                <button type="button" className="butto1">
+              <a href="#land3" > <button type="button" className="butto1">
                   Our services
-                </button>
+                </button></a>
               </div>
               <div>
-                <button type="button" className="butto2">
+                <a href="#pages-land"><button type="button" className="butto2">
                   <GrCaretNext /> See how it work
-                </button>
+                </button></a>
               </div>
             </div>
           </div>

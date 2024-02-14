@@ -18,12 +18,11 @@ function Contact() {
       <div className="cont-justfy">
         <div className="cont-big-text">
           <div>
-          Please contact us using the information below. For additional
-          information on our management consulting services, please visit the
-          appropriate page on our site.
-        </div>
+            Please contact us using the information below. For additional
+            information on our management consulting services, please visit the
+            appropriate page on our site.
+          </div>
 
-        
           <div>
             <div className="contact-sub-sub">
               <div className="cont-sub-a">
@@ -56,17 +55,28 @@ function Contact() {
           </div>
         </div>
         <div className="contact-form-container">
-         
-          <form className="contact-form">
+          <form
+            form
+            action="https://formspree.io/f/xknlbzpz"
+            method="POST"
+            className="contact-form"
+          >
             <div className="input-container">
               <FaUser className="icon" />
-              <input type="text" name="name" placeholder="Your Name" required />
+              <input
+                type="text"
+                name="Name"
+                id="Name"
+                placeholder="Your Name"
+                required
+              />
             </div>
             <div className="input-container">
               <FaEnvelope className="icon" />
               <input
                 type="email"
-                name="email"
+                name="Email"
+                id="Email"
                 placeholder="Your Email"
                 required
               />
@@ -75,20 +85,24 @@ function Contact() {
               <FaPhone className="icon" />
               <input
                 type="tel"
-                name="phone"
+                name="Phone"
+                id="Phone"
                 placeholder="Your Phone (optional)"
               />
             </div>
             <div className="input-container">
-              <FaRegEnvelope className="icon" />
-              <input
+              {/* <FaRegEnvelope className="icon" /> */}
+              <textarea
                 name="message"
+                id="message"
                 placeholder="Your Message"
-                className='message'
+                className="memu"
                 required
-              ></input>
+              ></textarea>
             </div>
-            <button type="submit" className='cont-button'>Send Message</button>
+            <button type="submit" id="submit" className="cont-button">
+              Send Message
+            </button>
           </form>
         </div>
       </div>
