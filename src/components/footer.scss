@@ -44,10 +44,12 @@ list-style: none;
 }
 .footer-list-item a{
 color: #666873;
+transition: color 0.3s ease;
 }
 .footer-list-item  :hover
 {
   color: #28ae60;
+  transition: color 0.3s ease;
 }
 .footer-list-link{
     text-decoration: none;
@@ -149,9 +151,18 @@ height: 3rem;
 {
     list-style: none;
 }
-.but a{
-color: gray
-};
+
+.but{
+display: flex;
+flex-direction: column;
+gap: 0.7rem;
+padding-bottom: 0.7rem;
+align-items: center;
+.adata
+{
+  font-size: 2rem;
+}
+}
   .can5
     {  
     align-items: center;

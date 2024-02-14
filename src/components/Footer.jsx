@@ -110,9 +110,12 @@ function Footer() {
             <div>&copy; Elisa-Tech.All rights reserved</div>
           </div>
           <div class="h">
-            {/* <div class="footer-list-item">
-              <a href="https://www.facebook.com/elyse.dushimirimana.7"> <FaFacebook /></a>
-            </div> */}
+            <div class="footer-list-item">
+              <a href="https://www.facebook.com/elyse.dushimirimana.7">
+                {" "}
+                <FaFacebook className="adata" />
+              </a>
+            </div>
             <div class="footer-list-item">
               <a href="https://www.instagram.com/elyse.dushimirimana?igsh=MTk4dG9icTZ2Y3BvZA==">
                 <FaInstagramSquare className="adata" />
@@ -120,17 +123,17 @@ function Footer() {
             </div>
             <div class="footer-list-item">
               <a href="https://x.com/Dushelisa?t=oP7-kKcFYFU3NO01Fj5PDw&s=09">
-                <FaXTwitter />
+                <FaXTwitter className="adata" />
               </a>
             </div>
             <div class="footer-list-item">
               <a href="https://wa.me/250787239952">
-                <FaSquareWhatsapp />
+                <FaSquareWhatsapp className="adata" />
               </a>
             </div>
             <div className="footer-list-item">
               <a href="https://www.linkedin.com/in/dushimiyimana-elisa/">
-                <IoLogoLinkedin />
+                <IoLogoLinkedin className="adata" />
               </a>
             </div>
           </div>
