@@ -20,7 +20,7 @@ function Nav() {
       <section className="container">
         <div className="second_nav">
           <div>
-            <img src="elogo.png" />
+            <img src="elogoo.png" />
           </div>
           <div>
             <ul className="pages">
