@@ -92,7 +92,7 @@ function Footer() {
               </div>
               <div className="can2">
                 <MdEmail />
-                <div>info@teckel.com</div>
+                <div>infodtechel@gmail.com</div>
               </div>
               <div className="can3">
                 <div>

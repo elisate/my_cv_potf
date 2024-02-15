@@ -102,6 +102,20 @@ gap: 0.5rem;
       display: flex;
       flex-direction: row;
       gap: 0.5rem;
+      .cn a{
+        text-decoration: none;
+      }
+    }
+    .can2 a{
+    text-decoration: none;
+    
+    color: black;
+    };
+
+    .can2 :hover
+    {
+      text-decoration: underline;
+      color: #28ae60;
     }
       .can3
     {

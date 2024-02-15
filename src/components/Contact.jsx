@@ -43,7 +43,9 @@ function Contact() {
                 <div>
                   <CgMail className="cont-icon" />
                 </div>
-                <div className="cont-icon-tex">elisatech@gmail.com</div>
+                <div className="cont-icon-tex">
+                  <a href="/">infodtechel@gmail.com</a>
+                </div>
               </div>
               <div className="cont-sub-d">
                 <div>
