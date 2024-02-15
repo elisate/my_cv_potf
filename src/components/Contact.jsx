@@ -51,7 +51,10 @@ function Contact() {
                 <div>
                   <SlLocationPin className="cont-icon" />
                 </div>
-                <div className="cont-icon-tex">View On Map</div>
+                <div className="cont-icon-tex">
+                  <a href='https://www.google.com/maps/place/UR+College+of+Science+and+Technology/@-1.958692,30.0642158,17z/data=!3m1!4b1!4m6!3m5!1s0x19dca5d5b9897711:0x34e7b1e5cded7867!8m2!3d-1.958692!4d30.0642158!16zL20vMDgxMGJk?entry=ttu'
+                  >View On Map</a>
+                  </div>
               </div>
             </div>
           </div>
