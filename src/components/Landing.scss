@@ -67,8 +67,8 @@
 
   width: 100wh;
   .imge {
-    width: 18rem;
-    height: 25rem;
+    width: 27rem;
+    height: 21rem;
   }
   .about-exp {
     border-left: #28ae60 solid 2px;
@@ -79,7 +79,7 @@
   }
 
   .imgh {
-    margin-top: -5.5rem;
+    margin-top: -1.9rem;
   }
   .text2 {
     width: 31rem;
@@ -101,7 +101,7 @@
   .img-text {
     display: flex;
     flex-direction: row;
-    gap: 13rem;
+    gap: 3.9rem;
     .img-text1 {
       display: flex;
       flex-direction: column;
@@ -262,6 +262,49 @@
       }
     }
   }
+  .blog-gradu
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .blog-holder1-gradu {
+      padding-top: 6rem;
+      .blog-image1-gradu{
+        height: 32rem;
+        width: 29rem;
+      }
+      .blog-date-gradu {
+        padding-top: 2rem;
+        font-size: 1.4rem;
+        color: #6c757d;
+      }
+      .blog-text1-gradu {
+        font-size: 2.2rem;
+        width: 27rem;
+        padding-top: 2rem;
+      }
+      .blog-text2-gradu{
+        width: 27rem;
+        font-size: 1.4rem;
+        font-weight: lighter;
+        color: black;
+        padding-top: 2rem;
+      }
+      .blog-read-gradu {
+        font-weight: bold;
+        padding-top: 2rem;
+      }
+      .blog-read-gradu a {
+        text-decoration: none;
+        color: black;
+      }
+      .blog-image1-gradu1
+      {
+        height: 32rem;
+        width: 25rem;
+      }
+    }
+  }
 }
 
 .pages-land {
@@ -375,6 +418,12 @@
       gap: 3rem;
       .imgh {
         margin-top: -2.5rem;
+        padding-top: 2rem;
+        .imge
+        {
+          width: 19rem;
+          height: 16rem;
+        }
       }
       .img-text1 {
         display: flex;
@@ -469,6 +518,50 @@
           padding-top: 2rem;
         }
         .blog-read a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+      
+
+    }
+    .blog-gradu
+      {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      .blog-holder1-gradu {
+        padding-top: 6rem;
+        .blog-image1-gradu {
+          height: 19rem;
+          width: 18.5rem;
+        }
+        .blog-image1-gradu1{
+          height: 15;
+          width: 18.5rem;
+        }
+        .blog-date-gradu {
+          padding-top: 2rem;
+          font-size: 1.4rem;
+          color: #6c757d;
+        }
+        .blog-text1-gradu {
+          font-size: 2rem;
+          width: fit-content;
+          padding-top: 2rem;
+        }
+        .blog-text2-gradu {
+          width: fit-content;
+          font-size: 1.4rem;
+          font-weight: lighter;
+          color: black;
+          padding-top: 2rem;
+        }
+        .blog-read-gradu {
+          font-weight: bold;
+          padding-top: 2rem;
+        }
+        .blog-read-gradu a {
           text-decoration: none;
           color: black;
         }

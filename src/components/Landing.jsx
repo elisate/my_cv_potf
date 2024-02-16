@@ -34,14 +34,19 @@ function Landing() {
 
             <div className="butto_holder">
               <div>
-              <a href="#land3" > <button type="button" className="butto1">
-                  Our services
-                </button></a>
+                <a href="#land3">
+                  {" "}
+                  <button type="button" className="butto1">
+                    Our services
+                  </button>
+                </a>
               </div>
               <div>
-                <a href="#pages-land"><button type="button" className="butto2">
-                  <GrCaretNext /> See how it work
-                </button></a>
+                <a href="#pages-land">
+                  <button type="button" className="butto2">
+                    <GrCaretNext /> See how it work
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -65,7 +70,7 @@ function Landing() {
 
         <div className="img-text">
           <div className="imgh">
-            <img src="elisa4.jpeg" className="imge" />
+            <img src="aboutp.JPG" className="imge" />
           </div>
           <div className="img-text1">
             <div className="text2">
@@ -98,14 +103,14 @@ function Landing() {
                 </div>
               </div>
             </div>
-           
-              <a href="Elisa_Cv.pdf" download="Elisa_Cv.pdf" >  
+
+            <a href="Elisa_Cv.pdf" download="Elisa_Cv.pdf">
               <button type="button" className="but">
-              Download CV</button></a>
-            
+                Download CV
+              </button>
+            </a>
           </div>
         </div>
-        
       </section>
       <section className="land3" id="land3">
         <div className="serv-text1">our services</div>
@@ -162,9 +167,9 @@ function Landing() {
         <div className="blogs">
           <div className="blog-holder1">
             <img src="blog4.jpg" className="blog-image1" />
-            <div className="blog-date">07 Feb 2024</div>
+            <div className="blog-date">10 OCTOBER 2023 -TRAINING SESSION AT KLAB</div>
             <div className="blog-text1">
-              THE ONGOING IMPACTFUL JOURNEY OF TECH TALENTS IN ELISA TECH
+              THE ONGOING IMPACTFUL JOURNEY OF TECH TALENTS IN ICT Chamber
             </div>
             <div className="blog-text2">
               The Tech UpSkill program, an initiative under the umbrella of AIPI
@@ -178,7 +183,7 @@ function Landing() {
           </div>
           <div className="blog-holder1">
             <img src="blog1.jpg" className="blog-image1" />
-            <div className="blog-date">30 May 2024</div>
+            <div className="blog-date">30 FEB 2024 - UI DESIGN OF MY APP</div>
             <div className="blog-text1">
               THE ONGOING IMPACTFUL JOURNEY OF TECH TALENTS IN ELISA TECH
             </div>
@@ -189,6 +194,44 @@ function Landing() {
               (Bundesverband IT-Mittelstand e.V.). […]
             </div>
             <div className="blog-read">
+              <a href="/">Read Blog</a>
+            </div>
+          </div>
+        </div>
+        <div className="blog-gradu">
+          <div className="blog-holder1-gradu">
+            <img src="blog2.webp" className="blog-image1-gradu" />
+            <div className="blog-date-gradu">
+              13 JAN 2024 - LAUNCHING OF MP MOBILE APP
+            </div>
+            <div className="blog-text1-gradu">
+              THE ONGOING IMPACTFUL JOURNEY OF TECH TALENTS IN ICT Chamber
+            </div>
+            <div className="blog-text2-gradu">
+              The Tech UpSkill program, an initiative under the umbrella of AIPI
+              (Access International Partnership in IT), represents a
+              collaborative effort between the Rwanda ICT Chamber and BITMi
+              (Bundesverband IT-Mittelstand e.V.). […]
+            </div>
+            <div className="blog-read-gradu">
+              <a href="/">Read Blog</a>
+            </div>
+          </div>
+          <div className="blog-holder1-gradu">
+            <img src="blogklab.JPG" className="blog-image1-gradu1" />
+            <div className="blog-date-gradu">
+              16 Feb 2024 - MY GRADUTION IN KLAB
+            </div>
+            <div className="blog-text1-gradu">
+              THE ONGOING IMPACTFUL JOURNEY OF TECH TALENTS IN ICT Chamber
+            </div>
+            <div className="blog-text2-gradu">
+              The Tech UpSkill program, an initiative under the umbrella of AIPI
+              (Access International Partnership in IT), represents a
+              collaborative effort between the Rwanda ICT Chamber and BITMi
+              (Bundesverband IT-Mittelstand e.V.). […]
+            </div>
+            <div className="blog-read-gradu">
               <a href="/">Read Blog</a>
             </div>
           </div>
@@ -265,7 +308,6 @@ function Landing() {
           </div>
         </div>
       </section>
-      
     </>
   );
 }
