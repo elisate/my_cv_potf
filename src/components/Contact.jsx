@@ -4,9 +4,39 @@ import { FaStreetView, FaPhone} from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import { SlLocationPin } from "react-icons/sl";
 import { FaUser, FaEnvelope,FaRegEnvelope } from "react-icons/fa";
-
-
+import { useState } from 'react';
+import { useForm } from "react-hook-form";
+import { MdOutlineMessage } from "react-icons/md";
+import axios from "axios";
 function Contact() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  console.log(errors);
+  const onsubmit = async (data)=>{
+  console.log(data);
+  const{
+  name,
+  email,
+  subject,
+  message,
+  }=data;
+    try
+    {
+const formData= new FormData;
+formData.append("name",name);
+formData.append("email", email);
+formData.append("subject", subject);
+formData.append("message", message);
+const res = await axios.post("http://localhost:3000/contact",formData
+     )
+    }
+    catch(error){
+    console.log(error);
+    }
+  };
   return (
     <section className="contact">
       <div className="contact-title">
@@ -52,47 +82,44 @@ function Contact() {
                   <SlLocationPin className="cont-icon" />
                 </div>
                 <div className="cont-icon-tex">
-                  <a href='https://www.google.com/maps/place/UR+College+of+Science+and+Technology/@-1.958692,30.0642158,17z/data=!3m1!4b1!4m6!3m5!1s0x19dca5d5b9897711:0x34e7b1e5cded7867!8m2!3d-1.958692!4d30.0642158!16zL20vMDgxMGJk?entry=ttu'
-                  >View On Map</a>
-                  </div>
+                  <a href="https://www.google.com/maps/place/UR+College+of+Science+and+Technology/@-1.958692,30.0642158,17z/data=!3m1!4b1!4m6!3m5!1s0x19dca5d5b9897711:0x34e7b1e5cded7867!8m2!3d-1.958692!4d30.0642158!16zL20vMDgxMGJk?entry=ttu">
+                    View On Map
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div className="contact-form-container">
-          <form
-            form
-            action="https://formspree.io/f/xknlbzpz"
-            method="POST"
-            className="contact-form"
-          >
+          <form className="contact-form" onSubmit={handleSubmit(onsubmit)}>
             <div className="input-container">
               <FaUser className="icon" />
               <input
                 type="text"
-                name="Name"
-                id="Name"
+                name="name"
+                id="name"
                 placeholder="Your Name"
-                required
+                {...register("name", { required: true })}
               />
             </div>
             <div className="input-container">
               <FaEnvelope className="icon" />
               <input
                 type="email"
-                name="Email"
-                id="Email"
+                name="email"
+                id="email"
                 placeholder="Your Email"
-                required
+                {...register("email", { required: true })}
               />
             </div>
             <div className="input-container">
-              <FaPhone className="icon" />
+              <MdOutlineMessage className="icon" />
               <input
                 type="tel"
-                name="Phone"
-                id="Phone"
-                placeholder="Your Phone (optional)"
+                name="subject"
+                id="subject"
+                placeholder="message"
+                {...register("subject", { required: true })}
               />
             </div>
             <div className="input-container">
@@ -102,10 +129,10 @@ function Contact() {
                 id="message"
                 placeholder="Your Message"
                 className="memu"
-                required
-              ></textarea>
+                {...register("message", { required: true })}
+              />
             </div>
-            <button type="submit" id="submit" className="cont-button">
+            <button type="submit" className="cont-button">
               Send Message
             </button>
           </form>

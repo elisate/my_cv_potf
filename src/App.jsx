@@ -5,6 +5,8 @@ import Footer from './components/Footer';
 import Landing from './components/Landing';
 import Nav from './components/Nav';
 import Contact from './components/Contact';
+import Login from './components/Login';
+import Sign_up from './components/Sign_up';
  const Layout =()=>{
   return(
    <>
@@ -30,6 +32,8 @@ function App() {
       <Route path='/contact' element={<Contact/>}/>
       < Route path='/#land1' element={<Landing/>}/>
       </Route>
+      <Route path='/log' element={<Login/>}/>
+      <Route path='/sign' element={<Sign_up/>}/>
     </Routes>
     </BrowserRouter>
      

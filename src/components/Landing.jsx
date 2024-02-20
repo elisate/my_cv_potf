@@ -15,6 +15,7 @@ function Landing() {
     "UI/UX Designer",
     "System Devpmt",
     "App Developer",
+    "Backend dev"
     
   ];
   return (
@@ -34,17 +35,17 @@ function Landing() {
 
             <div className="butto_holder">
               <div>
-                <a href="#land3">
+                <a href="/contact">
                   {" "}
                   <button type="button" className="butto1">
-                    Our services
+                   Hire Me
                   </button>
                 </a>
               </div>
               <div>
-                <a href="#pages-land">
+                <a href="#land3">
                   <button type="button" className="butto2">
-                    <GrCaretNext /> See how it work
+                    <GrCaretNext />Our Services
                   </button>
                 </a>
               </div>
@@ -104,7 +105,7 @@ function Landing() {
               </div>
             </div>
 
-            <a href="Elisa_Cv.pdf" download="Elisa_Cv.pdf">
+            <a href="Elisa_Cv.pdf" download="Elisa_Cv.pdf" className="b">
               <button type="button" className="but">
                 Download CV
               </button>

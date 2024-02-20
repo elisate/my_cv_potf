@@ -23,16 +23,24 @@
         height: 2rem;
         width: 8rem;
         transition: background-color 0.1s ease;
-        .butto1:hover {
-          background-color: rgb(38, 36, 36);
-        }
+        font-weight: bold;
+       
       }
+       .butto1:hover {
+          background-color: #2F2E41;
+          color: #28ae60;
+        }
       .butto2 {
         background-color: black;
         color: white;
         border: solid 1px white;
         height: 2rem;
         width: 8rem;
+      }
+      .butto2:hover
+      {
+         background-color: #2F2E41;
+          color: #28ae60;
       }
       display: flex;
       flex-direction: row;
@@ -106,12 +114,17 @@
       display: flex;
       flex-direction: column;
       gap: 2rem;
-      .but {
+      .but{
         background-color: #28ae60;
         height: 2rem;
         width: 7rem;
         font-weight: bold;
       }
+   .b :hover
+   {
+    background-color: #2F2E41; 
+    color: #28ae60;
+   }
       .text-icon {
         gap: 2rem;
 
@@ -137,6 +150,7 @@
         }
       }
     }
+    
   }
 }
 
@@ -396,6 +410,7 @@
           height: 2rem;
           width: 8rem;
         }
+      
         .butto2 {
           background-color: black;
           color: white;
@@ -429,7 +444,7 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        .but {
+        .but{
           background-color: #28ae60;
           height: 2rem;
           width: 7rem;
@@ -462,6 +477,7 @@
         .text2 {
           width: fit-content;
         }
+        
       }
     }
     .type1 {

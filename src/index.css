@@ -2,3 +2,7 @@
 * {
   scroll-behavior: smooth;
 }
+button :hover
+{
+  background-color: #2F2E41;
+}

@@ -90,11 +90,20 @@ gap:9rem;
 .message
 {
     height: 3rem;
+    
 }
 .cont-button
 {
     background-color: #28ae60;
     height: 2rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.cont-button:hover
+{
+  background-color:#2F2E41 ;
+  color: #28ae60;
 }
 }
 

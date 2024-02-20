@@ -36,12 +36,26 @@ button:hover {
       background-color: #28ae60;
       height: 2rem;
       width: 7rem;
+      font-weight: bold;
     }
+     .quate:hover
+        {
+          background-color: #2F2E41;
+          color: #28ae60;
+        }
+       
     .pages {
       display: flex;
       flex-direction: row;
       list-style: none;
       gap: 2rem;
+    }
+    .pages :hover
+    {
+      color: #28ae60;
+      border-bottom: solid 1px #28ae60;
+      padding-bottom: 19px;
+     
     }
     .icon1 {
       height: 3rem;
@@ -60,6 +74,7 @@ button:hover {
       text-decoration: none;
       color: white;
     }
+  
     .fabar
     {
       display: none;

@@ -47,9 +47,9 @@ function Nav() {
           <FaBars  className="fabar" onClick={handleresp}/>
           <div className="padding1">
             <div className="quate2">
-              <button type="button" className="quate" onClick={handleprofile}>
-                Get Quate
-              </button>
+            <Link to="/log">  <button type="button" className="quate">
+                Login
+              </button></Link>
             </div>
           </div>
         </div>
