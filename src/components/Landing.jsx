@@ -9,6 +9,7 @@ import { MdAccountBalance } from "react-icons/md";
 import { RiAnticlockwise2Line } from "react-icons/ri";
 import { RiAppsFill } from "react-icons/ri";
 import { HiArrowLongRight } from "react-icons/hi2";
+import { Link } from "react-router-dom";
 function Landing() {
   const words = [
     "Web Developer",
@@ -35,19 +36,19 @@ function Landing() {
 
             <div className="butto_holder">
               <div>
-                <a href="/contact">
+                <Link to="/contact">
                   {" "}
                   <button type="button" className="butto1">
                    Hire Me
                   </button>
-                </a>
+                </Link>
               </div>
               <div>
-                <a href="#land3">
+                <Link to="#land3">
                   <button type="button" className="butto2">
                     <GrCaretNext />Our Services
                   </button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
