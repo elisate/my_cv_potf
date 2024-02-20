@@ -1,6 +1,6 @@
 import React from "react";
 import "./Login.scss";
-
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
@@ -11,7 +11,7 @@ function Login() {
           <div className="text-head1">
             Does n't have an account{" "}
             <span className="text-signup">
-              <a href="/sign">sign up</a>
+              <Link to="/sign">sign up</Link>
             </span>
           </div>
           <form className="form-container">
