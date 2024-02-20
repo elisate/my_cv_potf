@@ -50,9 +50,9 @@ function Resp_nav({ handleresp }) {
           </li>
 
           <li>
-            <button type="button" className="quate2" onClick={handleprofile}>
-              Get Quate
-            </button>
+       <Link to='/log'><button type="button" className="quate2">
+              Login
+            </button></Link>
           </li>
         </ul>
       </div>

@@ -4,7 +4,6 @@ import { FaStreetView, FaPhone} from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import { SlLocationPin } from "react-icons/sl";
 import { FaUser, FaEnvelope,FaRegEnvelope } from "react-icons/fa";
-import { useState } from 'react';
 import { useForm } from "react-hook-form";
 import { MdOutlineMessage } from "react-icons/md";
 import axios from "axios";
