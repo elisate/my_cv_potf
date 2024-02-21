@@ -1,11 +1,14 @@
-import React from 'react';
-import './Contact.scss';
-import { FaStreetView, FaPhone} from "react-icons/fa";
+import React from "react";
+import "./Contact.scss";
+import { FaStreetView, FaPhone } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import { SlLocationPin } from "react-icons/sl";
-import { FaUser, FaEnvelope,FaRegEnvelope } from "react-icons/fa";
+import { FaUser, FaEnvelope, FaRegEnvelope } from "react-icons/fa";
 import { useForm } from "react-hook-form";
 import { MdOutlineMessage } from "react-icons/md";
+import { BiSolidMessageAltCheck } from "react-icons/bi";
+import { FaMessage } from "react-icons/fa6";
+import { Notify } from "notiflix";
 import axios from "axios";
 function Contact() {
   const {
@@ -14,26 +17,36 @@ function Contact() {
     formState: { errors },
   } = useForm();
   console.log(errors);
-  const onsubmit = async (data)=>{
-  console.log(data);
-  const{
-  name,
-  email,
-  subject,
-  message,
-  }=data;
-    try
-    {
-const formData= new FormData;
-formData.append("name",name);
-formData.append("email", email);
-formData.append("subject", subject);
-formData.append("message", message);
-const res = await axios.post("http://localhost:3000/contact",formData
-     )
-    }
-    catch(error){
-    console.log(error);
+  const onsubmit = async (data) => {
+    console.log(data);
+    const { name, email, subject, message } = data;
+    try {
+      const formData = new FormData();
+      formData.append("name", name);
+      formData.append("email", email);
+      formData.append("subject", subject);
+      formData.append("message", message);
+
+      const res = await axios.post(
+        "https://api-potf.onrender.com/contact",
+        formData,
+        {
+          headers: {
+            "Content-Type": "application/json",
+            // "Content-Type": "multipart/form-data",
+          },
+        }
+      );
+
+      Notify.success("contact submitted successfuly");
+      if (res.data) {
+      console.log("contact submitted", res.data);
+      }
+      setTimeout(() => {
+        window.location.reload();
+      }, 3000);
+    } catch (error) {
+      console.log(error);
     }
   };
   return (
@@ -112,12 +125,12 @@ const res = await axios.post("http://localhost:3000/contact",formData
               />
             </div>
             <div className="input-container">
-              <MdOutlineMessage className="icon" />
+              <FaMessage className="icon" />
               <input
-                type="tel"
+                type="text"
                 name="subject"
                 id="subject"
-                placeholder="message"
+                placeholder="subject"
                 {...register("subject", { required: true })}
               />
             </div>
@@ -141,4 +154,4 @@ const res = await axios.post("http://localhost:3000/contact",formData
   );
 }
 
-export default Contact
+export default Contact;

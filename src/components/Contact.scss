@@ -71,14 +71,20 @@
 
 .input-container input,
 .input-container textarea {
-  padding: 10px 10px 10px 35px; /* Add left padding to accommodate the icon */
+  padding: 10px 10px 10px 35px; 
 }
 
 .input-container .icon {
   position: absolute;
   top: 50%;
-  left: 10px; /* Adjust the position as needed */
+  left: 10px; 
   transform: translateY(-50%);
+}
+.memu:focus {
+  outline: none;
+}
+.memu{
+  resize: none;
 }
 
 .cont-justfy
@@ -127,6 +133,7 @@ gap:9rem;
     .memu
     {
       width: 10.4rem;
+     
     }
   }
 
