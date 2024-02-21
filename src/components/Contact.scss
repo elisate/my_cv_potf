@@ -80,9 +80,7 @@
   left: 10px; 
   transform: translateY(-50%);
 }
-.memu:focus {
-  outline: none;
-}
+
 .memu{
   resize: none;
 }
@@ -129,12 +127,12 @@ gap:9rem;
 .cont-big-text {
     width: 15rem;
   }
+ .input-container .memu
+ {
+  width: 10.4rem;
+ }
     }
-    .memu
-    {
-      width: 10.4rem;
-     
-    }
+   
   }
 
 }

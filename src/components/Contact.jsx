@@ -135,7 +135,7 @@ function Contact() {
               />
             </div>
             <div className="input-container">
-              {/* <FaRegEnvelope className="icon" /> */}
+               {/* <FaRegEnvelope className="icon" />  */}
               <textarea
                 name="message"
                 id="message"
