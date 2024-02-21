@@ -28,19 +28,17 @@
       width: 1.5rem;
       height: 1.5rem;
     }
-    .cont-icon-tex
-    {
-        font-weight: bold;
+    .cont-icon-tex {
+      font-weight: bold;
     }
-    .cont-icon-tex :hover
-    {
-        text-decoration: underline;
-        color: #28ae60;
+    .cont-icon-tex :hover {
+      text-decoration: underline;
+      color: #28ae60;
     }
-    .cont-icon-tex a{
- color: black;
- text-decoration: none;
-    };
+    .cont-icon-tex a {
+      color: black;
+      text-decoration: none;
+    }
     .cont-sub-a {
       display: flex;
       flex-direction: row;
@@ -64,75 +62,62 @@
   }
 
   .input-container {
-  position: relative;
-  margin-bottom: 20px;
- 
-}
+    position: relative;
+    margin-bottom: 20px;
+  }
 
-.input-container input,
-.input-container textarea {
-  padding: 10px 10px 10px 35px; 
-}
+  .input-container input,
+  .input-container textarea {
+    padding: 10px 10px 10px 35px;
+  }
 
-.input-container .icon {
-  position: absolute;
-  top: 50%;
-  left: 10px; 
-  transform: translateY(-50%);
-}
+  .input-container .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
 
-.memu{
-  resize: none;
-}
+  .memu {
+    resize: none;
+  }
 
-.cont-justfy
-{
-display: flex;
-flex-direction: row;
-gap:9rem;
-}
-.message
-{
+  .cont-justfy {
+    display: flex;
+    flex-direction: row;
+    gap: 9rem;
+  }
+  .message {
     height: 3rem;
-    
-}
-.cont-button
-{
+  }
+  .cont-button {
     background-color: #28ae60;
     height: 2rem;
     font-weight: bold;
     padding-left: 1rem;
     padding-right: 1rem;
-}
-.cont-button:hover
-{
-  background-color:#2F2E41 ;
-  color: #28ae60;
-}
+  }
+  .cont-button:hover {
+    background-color: #2f2e41;
+    color: #28ae60;
+  }
 }
 
-
-@media screen and (max-width: 768px) 
-{
-  .contact
-  {
+@media screen and (max-width: 768px) {
+  .contact {
     padding-left: 2rem;
     padding-right: 2rem;
-    .cont-justfy
-    {
+    .cont-justfy {
       display: flex;
       flex-direction: column;
       gap: 2rem;
 
-.cont-big-text {
-    width: 15rem;
-  }
- .input-container .memu
- {
-  width: 10.4rem;
- }
+      .cont-big-text {
+        width: 15rem;
+      }
     }
-   
+    .memu {
+      width: 11rem;
+    }
   }
-
 }
