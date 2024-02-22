@@ -91,12 +91,12 @@ const onsubmit = async (data) => {
 
             <div className="butto_holder">
               <div>
-                <Link to="/contact">
+                <a href="/#cont">
                   {" "}
                   <button type="button" className="butto1">
                     Hire Me
                   </button>
-                </Link>
+                </a>
               </div>
               <div>
                 <Link to="#land3">
