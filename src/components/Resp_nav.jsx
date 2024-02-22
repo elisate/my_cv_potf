@@ -44,9 +44,9 @@ function Resp_nav({ handleresp }) {
             </a>
           </li>
           <li>
-            <Link to="/contact" onClick={handleresp}>
+            <a href="/#cont" onClick={handleresp}>
               Contact
-            </Link>
+            </a>
           </li>
 
           <li>
