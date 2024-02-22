@@ -10,6 +10,7 @@ import { RiAnticlockwise2Line } from "react-icons/ri";
 import { RiAppsFill } from "react-icons/ri";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { Link } from "react-router-dom";
+import Contact from "./Contact";
 function Landing() {
   const words = [
     "Web Developer",
@@ -309,6 +310,9 @@ function Landing() {
             </div>
           </div>
         </div>
+      </section>
+      <section id="cont">
+        <Contact/>
       </section>
     </>
   );
