@@ -43,12 +43,14 @@ function Contact() {
       console.log("contact submitted", res.data);
       }
      
-      // setTimeout(() => {
-      //   window.location.reload();
-      // }, 3000);
+      setTimeout(() => {
+        window.location.reload();
+      }, 3000);
     } catch (error) {
       console.log(error);
-       window.location.href = "/log";
+       setTimeout(() => {
+         window.location.href = "/contact";
+       }, 3000);
     }
   };
   return (
