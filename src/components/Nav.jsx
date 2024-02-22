@@ -40,7 +40,7 @@ function Nav() {
                 <a href="/#pages-land">Portfolio</a>
               </li>
               <li>
-                <Link to="/#cont">Contact</Link>
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </div>

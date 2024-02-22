@@ -311,7 +311,7 @@ function Landing() {
           </div>
         </div>
       </section>
-      <section id="cont">
+      <section className="conta">
         <Contact/>
       </section>
     </>

@@ -5,8 +5,6 @@ import { CgMail } from "react-icons/cg";
 import { SlLocationPin } from "react-icons/sl";
 import { FaUser, FaEnvelope, FaRegEnvelope } from "react-icons/fa";
 import { useForm } from "react-hook-form";
-import { MdOutlineMessage } from "react-icons/md";
-import { BiSolidMessageAltCheck } from "react-icons/bi";
 import { FaMessage } from "react-icons/fa6";
 import { Notify } from "notiflix";
 import axios from "axios";
