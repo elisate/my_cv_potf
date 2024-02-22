@@ -47,6 +47,7 @@ function Contact() {
       }, 3000);
     } catch (error) {
       console.log(error);
+       window.location.href = "/#land1";
     }
   };
   return (
