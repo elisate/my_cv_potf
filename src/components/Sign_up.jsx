@@ -37,11 +37,12 @@ function Sign_up() {
       if (res.data) {
         console.log("you have registered", res.data);
       }
+    
+      window.location.href = "/#log";
 
-     history.push("/log");
+  history.push("/#land1");
     } catch (error) {
       console.log(error);
-    
     }
   };
   return (
@@ -96,7 +97,7 @@ function Sign_up() {
               />
             </div>
             <div className="submit-login-s">
-              <button type="submit" className="button-login-s">
+              <button className="button-login-s">
                 Register
               </button>
             </div>
