@@ -38,7 +38,7 @@ function Sign_up() {
         console.log("you have registered", res.data);
       }
 
-       window.location.href = "/log";
+     history.push("/log");
     } catch (error) {
       console.log(error);
     
