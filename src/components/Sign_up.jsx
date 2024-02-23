@@ -70,7 +70,7 @@ function Sign_up() {
                 placeholder="info@gmail.com"
                 name="email"
                 id="email"
-                {...register("email", { required: true })}
+                {...register("email", { required: true})}
               />
             </div>
             <div className="phone-s">

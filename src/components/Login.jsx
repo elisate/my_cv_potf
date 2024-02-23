@@ -38,7 +38,7 @@ function Login() {
         console.log("you have logged", res.data);
       }
 
-      window.location.href = "/#land1";
+      history.push("/log");
     } catch (error) {
       console.log(error);
     }
