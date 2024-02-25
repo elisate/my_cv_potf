@@ -40,7 +40,7 @@ function Sign_up() {
     
       window.location.href = "/#log";
 
-  history.push("/#land1");
+      history.push("/#land1");
     } catch (error) {
       console.log(error);
     }

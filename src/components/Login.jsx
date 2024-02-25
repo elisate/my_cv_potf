@@ -32,6 +32,8 @@ function Login() {
           },
         }
       );
+      console.log(res.data);
+      localStorage.setItem("userData", JSON.stringify(res.data));
 
       Notify.success("you have logged successfuly");
       if (res.data) {

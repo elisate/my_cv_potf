@@ -99,12 +99,12 @@ const onsubmit = async (data) => {
                 </a>
               </div>
               <div>
-                <Link to="#land3">
+                <a href="/#land3">
                   <button type="button" className="butto2">
                     <GrCaretNext />
                     Our Services
                   </button>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
