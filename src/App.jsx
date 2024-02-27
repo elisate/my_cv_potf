@@ -7,6 +7,7 @@ import Nav from './components/Nav';
 import Contact from './components/Contact';
 import Login from './components/Login';
 import Sign_up from './components/Sign_up';
+import Services from './components/Services';
  const Layout =()=>{
   return(
    <>
@@ -29,10 +30,14 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout/>}>
       <Route index element={<Landing/>}/>
-      < Route path='/#land1' element={<Landing/>}/>
+      {/* < Route path='/home' element={<Landing/>}/> */}
+      <Route path='/contact' element={<Contact/>}/>
+      <Route path='/services' element={<Services/>}/>
+      <Route path='/blog' element={<Services/>}/>
       </Route>
       <Route path='/log' element={<Login/>}/>
       <Route path='/sign' element={<Sign_up/>}/>
+      
     </Routes>
     </BrowserRouter>
      

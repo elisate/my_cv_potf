@@ -27,56 +27,55 @@ function Landing() {
     "UI/UX Designer",
     "System Devpmt",
     "App Developer",
-    "Backend dev"
-    
+    "Backend dev",
   ];
-//contact fetching
-const {
-  register,
-  handleSubmit,
-  formState: { errors },
-} = useForm();
-console.log(errors);
-const onsubmit = async (data) => {
-  console.log(data);
-  const { name, email, subject, message } = data;
-  try {
-    const formData = new FormData();
-    formData.append("name", name);
-    formData.append("email", email);
-    formData.append("subject", subject);
-    formData.append("message", message);
+  //contact fetching
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  console.log(errors);
+  const onsubmit = async (data) => {
+    console.log(data);
+    const { name, email, subject, message } = data;
+    try {
+      const formData = new FormData();
+      formData.append("name", name);
+      formData.append("email", email);
+      formData.append("subject", subject);
+      formData.append("message", message);
 
-    const res = await axios.post(
-      "https://api-potf.onrender.com/contact",
-      formData,
-      {
-        headers: {
-          "Content-Type": "application/json",
-          // "Content-Type": "multipart/form-data",
-        },
+      const res = await axios.post(
+        "https://api-potf.onrender.com/contact",
+        formData,
+        {
+          headers: {
+            "Content-Type": "application/json",
+            // "Content-Type": "multipart/form-data",
+          },
+        }
+      );
+
+      Notify.success("contact submitted successfuly");
+      if (res.data) {
+        console.log("contact submitted", res.data);
       }
-    );
 
-    Notify.success("contact submitted successfuly");
-    if (res.data) {
-      console.log("contact submitted", res.data);
+      setTimeout(() => {
+        window.location.reload();
+      }, 3000);
+    } catch (error) {
+      console.log(error);
+      setTimeout(() => {
+        window.location.href = "/contact";
+      }, 3000);
     }
-
-    setTimeout(() => {
-      window.location.reload();
-    }, 3000);
-  } catch (error) {
-    console.log(error);
-    setTimeout(() => {
-      window.location.href = "/contact";
-    }, 3000);
-  }
-};
+  };
 
   return (
     <>
-      <section className="land1" id="land1">
+      <section className="land1" id="home">
         <div className="landf1">
           <div className="text_home">
             <div className="name">Hello my name is</div>
@@ -114,7 +113,7 @@ const onsubmit = async (data) => {
           </div>
         </div>
       </section>
-      <section className="land2" id="land2">
+      <section className="land2" id="about">
         <div className="about-exp">
           <p className="text1">Explore Our Solutions</p>
         </div>
@@ -170,7 +169,7 @@ const onsubmit = async (data) => {
           </div>
         </div>
       </section>
-      <section className="land3" id="land3">
+      <section className="land3" id="services">
         <div className="serv-text1">our services</div>
 
         <div className="serv-text2">
@@ -217,7 +216,7 @@ const onsubmit = async (data) => {
           </div>
         </div>
       </section>
-      <section className="land4" id="land4">
+      <section className="land4" id="blog">
         <div className="land4-head1">
           Discover the latest updates and insights on our{" "}
           <span className="blog-deco">blog!</span>
@@ -297,7 +296,7 @@ const onsubmit = async (data) => {
           </div>
         </div>
       </section>
-      <section className="pages-land" id="pages-land">
+      <section className="pages-land" id="portfolio">
         <div className="pages-1">Projects</div>
         <div className="project-holder">
           <div className="page-card-holder">
@@ -368,7 +367,7 @@ const onsubmit = async (data) => {
           </div>
         </div>
       </section>
-      <section className="contact" id="cont">
+      <section className="contact" id="contact">
         <div className="contact-title">
           <p className="contact-sub">
             Contact our support guys or make appointment with

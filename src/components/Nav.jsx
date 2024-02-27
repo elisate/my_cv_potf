@@ -25,22 +25,22 @@ function Nav() {
           <div>
             <ul className="pages">
               <li>
-                <a href="/#land1">Home</a>
+                <a href="/#home">Home</a>
               </li>
               <li>
-                <a href="/#land2">About</a>
+                <a href="/#about">About</a>
               </li>
               <li>
-                <a href="/#land3">Services</a>
+                <a href="/#services">Services</a>
               </li>
               <li>
-                <a href="/#land4">Blog</a>
+                <a href="/#blog">Blog</a>
               </li>
               <li>
-                <a href="/#pages-land">Portfolio</a>
+                <a href="/#portfolio">Portfolio</a>
               </li>
               <li>
-                <a href="/#cont">Contact</a>
+                <a href="/#contact">Contact</a>
               </li>
             </ul>
           </div>
