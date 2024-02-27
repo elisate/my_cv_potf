@@ -26,23 +26,21 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Layout/>}>
-      <Route index element={<Landing/>}/>
-      < Route path='/home' element={<Landing/>}/> 
-      <Route path='/contact' element={<Contact/>}/>
-      <Route path='/services' element={<Services/>}/>
-      <Route path='/blog' element={<Services/>}/>
-      </Route>
-      <Route path='/log' element={<Login/>}/>
-      <Route path='/sign' element={<Sign_up/>}/>
-      
-    </Routes>
-    </BrowserRouter>
-     
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Landing />} />
+            <Route path="/home" element={<Landing />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/blog" element={<Services />} />
+            <Route path="/log" element={<Login />} />
+            <Route path="/sign" element={<Sign_up />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
 export default App
