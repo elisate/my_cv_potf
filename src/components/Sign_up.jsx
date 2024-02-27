@@ -4,7 +4,11 @@ import { useState } from "react";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import { Notify } from "notiflix";
+import { useNavigate } from "react-router-dom";
+
 function Sign_up() {
+  const navigate = useNavigate(); // Use navigate from react-router-dom
+
   const {
     register,
     handleSubmit,
@@ -27,17 +31,16 @@ function Sign_up() {
         {
           headers: {
             "Content-Type": "application/json",
-            // "Content-Type": "multipart/form-data",
           },
         }
       );
 
-      Notify.success("you have registered successfuly");
+      Notify.success("you have registered successfully");
       if (res.data) {
         console.log("you have registered", res.data);
       }
 
-      window.location.href = "/log";
+      navigate("/log"); // Navigate to '/log' route using useNavigate
     } catch (error) {
       console.log(error);
     }
@@ -48,7 +51,7 @@ function Sign_up() {
         <div className="form-login-s">
           <div className="text-head-s">Sign up Form</div>
 
-          <form className="form-container-s" onClick={handleSubmit(onsubmit)}>
+          <form className="form-container-s" onSubmit={handleSubmit(onsubmit)}>
             <div className="user-n">
               <label className="form-container-label-s">Username</label>
               <br />
@@ -99,7 +102,7 @@ function Sign_up() {
           </form>
         </div>
         <div className="image-s">
-          <img src="login_svg.png" className="image-sv" />
+          <img src="login_svg.png" className="image-sv" alt="login" />
         </div>
       </div>
     </section>

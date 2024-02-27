@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { Notify } from "notiflix";
 import axios from "axios";
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
+
 
 function Login() {
 
@@ -32,15 +34,13 @@ function Login() {
           },
         }
       );
-      console.log(res.data);
-      localStorage.setItem("userData", JSON.stringify(res.data));
-
+      
       Notify.success("you have logged successfuly");
       if (res.data) {
         console.log("you have logged", res.data);
       }
 
-      window.location.href = "/home";
+       navigate("/home");
     } catch (error) {
       console.log(error);
     }

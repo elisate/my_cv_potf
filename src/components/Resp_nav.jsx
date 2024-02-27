@@ -1,11 +1,10 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import './respo.scss';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./respo.scss";
 import { IoCloseSharp } from "react-icons/io5";
-import'./nav1.scss';
-import Profile from './Profile';
-import { useState } from 'react';
-
+import "./nav1.scss";
+import Profile from "./Profile";
+import { useState } from "react";
 function Resp_nav({ handleresp }) {
   const [profile, setProfile] = useState(false);
   const handleprofile = () => {
@@ -19,40 +18,42 @@ function Resp_nav({ handleresp }) {
         </div>
         <ul className="pages">
           <li>
-            <a href="/#land1" onClick={handleresp}>
+            <a href="/#home" onClick={handleresp}>
               Home
             </a>
           </li>
           <li>
-            <a href="/#land2" onClick={handleresp}>
+            <a href="/#about" onClick={handleresp}>
               About
             </a>
           </li>
           <li>
-            <a href="/#land3" onClick={handleresp}>
+            <a href="/#services" onClick={handleresp}>
               Services
             </a>
           </li>
           <li>
-            <a href="/#land4" onClick={handleresp}>
+            <a href="/#blog" onClick={handleresp}>
               Blog
             </a>
           </li>
           <li>
-            <a href="/#pages-land" onClick={handleresp}>
+            <a href="/#portfolio" onClick={handleresp}>
               Portfolio
             </a>
           </li>
           <li>
-            <a href="/#cont" onClick={handleresp}>
+            <a href="/#contact" onClick={handleresp}>
               Contact
             </a>
           </li>
 
           <li>
-       <Link to='/log'><button type="button" className="quate2">
-              Login
-            </button></Link>
+            <Link to="/log">
+              <button type="button" className="quate2">
+                Login
+              </button>
+            </Link>
           </li>
         </ul>
       </div>
@@ -61,4 +62,4 @@ function Resp_nav({ handleresp }) {
   );
 }
 
-export default Resp_nav
+export default Resp_nav;
