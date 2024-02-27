@@ -1,11 +1,10 @@
-import React from 'react'
-import './Signup.scss'
-import { useState } from 'react';
-import axios from 'axios';
-import { useForm } from 'react-hook-form';
-import { Notify } from 'notiflix';
+import React from "react";
+import "./Signup.scss";
+import { useState } from "react";
+import axios from "axios";
+import { useForm } from "react-hook-form";
+import { Notify } from "notiflix";
 function Sign_up() {
-
   const {
     register,
     handleSubmit,
@@ -14,13 +13,13 @@ function Sign_up() {
   console.log(errors);
   const onsubmit = async (data) => {
     console.log(data);
-    const { name, email, phone, password} = data;
+    const { name, email, phone, password } = data;
     try {
       const formData = new FormData();
       formData.append("name", name);
       formData.append("email", email);
       formData.append("phone", phone);
-      formData.append("password",password);
+      formData.append("password", password);
 
       const res = await axios.post(
         "https://api-potf.onrender.com/signup",
@@ -37,10 +36,8 @@ function Sign_up() {
       if (res.data) {
         console.log("you have registered", res.data);
       }
-    
-      window.location.href = "/#log";
 
-      history.push("/#land1");
+      window.location.href = "/log";
     } catch (error) {
       console.log(error);
     }
@@ -71,7 +68,7 @@ function Sign_up() {
                 placeholder="info@gmail.com"
                 name="email"
                 id="email"
-                {...register("email", { required: true})}
+                {...register("email", { required: true })}
               />
             </div>
             <div className="phone-s">
@@ -97,9 +94,7 @@ function Sign_up() {
               />
             </div>
             <div className="submit-login-s">
-              <button className="button-login-s">
-                Register
-              </button>
+              <button className="button-login-s">Register</button>
             </div>
           </form>
         </div>
@@ -111,4 +106,4 @@ function Sign_up() {
   );
 }
 
-export default Sign_up
+export default Sign_up;

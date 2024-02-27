@@ -40,7 +40,7 @@ function Login() {
         console.log("you have logged", res.data);
       }
 
-      history.push("/#land1");
+      window.location.href = "/home";
     } catch (error) {
       console.log(error);
     }
