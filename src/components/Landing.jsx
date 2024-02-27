@@ -90,7 +90,7 @@ function Landing() {
 
             <div className="butto_holder">
               <div>
-                <a href="/#cont">
+                <a href="/#contact">
                   {" "}
                   <button type="button" className="butto1">
                     Hire Me
@@ -98,7 +98,7 @@ function Landing() {
                 </a>
               </div>
               <div>
-                <a href="/#land3">
+                <a href="/#services">
                   <button type="button" className="butto2">
                     <GrCaretNext />
                     Our Services
