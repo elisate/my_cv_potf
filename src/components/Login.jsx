@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 
 function Login() {
+const navigate = useNavigate();
 
   const {
     register,
@@ -40,7 +41,7 @@ function Login() {
         console.log("you have logged", res.data);
       }
 
-       navigate("/home");
+      navigate("/home");
     } catch (error) {
       console.log(error);
     }
