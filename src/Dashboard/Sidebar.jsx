@@ -23,7 +23,7 @@ function Sidebar() {
           </Link>
         </div>
         <div>
-          <a href="/dashboard">Dashboard</a>
+          <Link to="/dashboard">Dashboard</Link>
         </div>
       </div>
       <div className="side-3">
