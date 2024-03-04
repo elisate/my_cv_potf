@@ -25,11 +25,15 @@ function Sign_up() {
       formData.append("phone", phone);
       formData.append("password", password);
 
-      const res = await axios.post("http://localhost:3000/signup", formData, {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const res = await axios.post(
+        "https://api-potf.onrender.com/signup",
+        formData,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
       Notify.success("you have registered successfully");
       if (res.data) {
