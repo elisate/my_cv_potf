@@ -1,0 +1,107 @@
+.contact-holder-dash {
+  padding-left: 18rem;
+  padding-top: 7rem;
+  padding-right: 2rem;
+  padding-bottom: 3rem;
+
+  .delete-contact-icon {
+    color: #a94c4c;
+    font-size: 1.6rem;
+  }
+  .delete-contact-icon :hover {
+    color: black;
+  }
+  .cont-dash {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #2f2e41;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 0.9px rgba(0, 0, 0, 0.5);
+  }
+
+  thead {
+    background-color: #f2f2f2;
+  }
+
+  th,
+  td {
+    text-align: left;
+    padding: 8px;
+  }
+  td {
+    color: #2f2e41;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  tr:hover {
+    background-color: #ddd;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .pagination li {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  .pagination li a {
+    display: block;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .pagination li.active a {
+    background-color: #28ae60;
+    color: #fff;
+    border-color: #28ae60;
+  }
+
+  .pagination li a:hover {
+    background-color: #f2f2f2;
+  }
+
+  .pagination li.disabled a {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+   .previous-button,
+  .next-button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: 1px solid  #2f2e41;
+    background-color: #f2f2f2;
+    color:  #2f2e41;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .previous-button:hover,
+  .next-button:hover {
+    background-color:  #2f2e41;
+  }
+
+  .previous-button:disabled,
+  .next-button:disabled {
+    background-color: #ddd;
+    color: #999;
+    border-color: #ddd;
+    cursor: not-allowed;
+  }
+
+}

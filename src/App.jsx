@@ -8,6 +8,12 @@ import Contact from './components/Contact';
 import Login from './components/Login';
 import Sign_up from './components/Sign_up';
 import Services from './components/Services';
+import LayoutDash from './Dashboard/LayoutDash';
+import Board from './Dashboard/Board';
+import Contactget from './Dashboard/Contactget';
+import Booking from './Dashboard/Booking';
+import Users from './Dashboard/Users';
+
  const Layout =()=>{
   return(
    <>
@@ -37,6 +43,14 @@ function App() {
           </Route>
           <Route path="/log" element={<Login />} />
           <Route path="/sign" element={<Sign_up />} />
+
+          <Route path="/" element={<LayoutDash />}>
+            <Route index element={<Board />} />
+            <Route path="/dashboard" element={<Board/>}/>
+            <Route path="/contactdash" element={<Contactget/>}/>
+            <Route path="/booking" element={<Booking/>}/>
+            <Route path="/getusers" element={<Users/>}/>
+          </Route>
         </Routes>
       </BrowserRouter>
     </>

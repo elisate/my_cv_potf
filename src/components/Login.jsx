@@ -6,9 +6,8 @@ import axios from "axios";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 
-
 function Login() {
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const {
     register,
@@ -18,34 +17,37 @@ const navigate = useNavigate();
   console.log(errors);
   const onsubmit = async (data) => {
     console.log(data);
-    const {email,password } = data;
+    const { email, password } = data;
     try {
       const formData = new FormData();
-      
+
       formData.append("email", email);
       formData.append("password", password);
 
-      const res = await axios.post(
-        "https://api-potf.onrender.com/login",
-        formData,
-        {
-          headers: {
-            "Content-Type": "application/json",
-            // "Content-Type": "multipart/form-data",
-          },
-        }
-      );
-      
-      Notify.success("you have logged successfuly");
-      if (res.data) {
-        console.log("you have logged", res.data);
-      }
+      const res = await axios.post("http://localhost:3000/login", formData, {
+        headers: {
+          "Content-Type": "application/json",
+          // "Content-Type": "multipart/form-data",
+        },
+      });
 
-      navigate("/home");
+      // Notify.success("you have logged successfuly");
+      // if (res.data) {
+      //   console.log("you have logged", res.data);
+      // }
+      // Save data to local storage
+      console.log(res.data);
+      localStorage.setItem("userLogin", JSON.stringify(res.data));
+      if (res.data.role == "admin") {
+        navigate("/dashboard");
+      } else {
+        navigate("/home");
+      }
     } catch (error) {
       console.log(error);
     }
   };
+
   return (
     <section className="login-container">
       <div className="log-form-image">

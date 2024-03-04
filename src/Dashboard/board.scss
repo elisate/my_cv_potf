@@ -1,0 +1,167 @@
+.board {
+  padding-left: 18rem;
+  padding-top: 7rem;
+  padding-right: 3rem;
+  // position: absolute;
+  .card-holder {
+    display: flex;
+    // justify-content:space-between;
+    gap: 1rem;
+
+    .card-board1 {
+      background-color: #cfe4f0;
+      width: 23rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 1rem;
+      border-radius: 1rem;
+      .card-text-a {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+
+        justify-content: center;
+
+        .icon-b {
+          font-size: 1.7rem;
+          color: #4c8b9e;
+        }
+        .text-hold {
+          display: flex;
+          flex-direction: column;
+          font-weight: bold;
+          font-size: 1.7rem;
+          color: #2f2e41;
+          .text {
+            text-align: center;
+          }
+        }
+      }
+    }
+    .card-board2 {
+      background-color: #afc7ea;
+      width: 23rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 1rem;
+      border-radius: 1rem;
+      .card-text-a {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+
+        justify-content: center;
+
+        .icon-b {
+          font-size: 1.7rem;
+          color: #4c8b9e;
+        }
+        .text-hold {
+          display: flex;
+          flex-direction: column;
+          font-weight: bold;
+          font-size: 1.7rem;
+          color: #2f2e41;
+          .text {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .card-holder1 {
+    display: flex;
+    // justify-content:space-between;
+    gap: 1rem;
+    padding-top: 1.5rem;
+
+    .card-board3 {
+      background-color: #f5d6f4;
+      width: 23rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 1rem;
+      border-radius: 1rem;
+      .card-text-a {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+
+        justify-content: center;
+
+        .icon-b {
+          font-size: 1.7rem;
+          color: #28ae60;
+        }
+        .text-hold {
+          display: flex;
+          flex-direction: column;
+          font-weight: bold;
+          font-size: 1.7rem;
+          color: #2f2e41;
+          .text {
+            text-align: center;
+          }
+        }
+      }
+    }
+    .card-board4 {
+      background-color: #f5d6f4;
+      width: 23rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 1rem;
+      border-radius: 1rem;
+      .card-text-a {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+
+        justify-content: center;
+
+        .icon-b {
+          font-size: 1.7rem;
+          color: #28ae60;
+        }
+        .text-hold {
+          display: flex;
+          flex-direction: column;
+          font-weight: bold;
+          font-size: 1.7rem;
+          color: #2f2e41;
+          .text {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .title-user {
+    font-size: 1.7rem;
+    padding-top: 2rem;
+    
+    color: #2f2e41;
+  }
+  .dashboard-table {
+  margin-top: -5rem;
+  margin-left: -10rem;
+  margin-bottom: -3rem;
+  }
+  .end-content
+  {
+    padding-top: 2rem;
+    .book-year-text
+    {
+      font-size: 1.7rem;
+    padding-top: 2rem;
+   
+    color: #2f2e41;   
+    }
+    .book-chart
+    {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+  }
+}
