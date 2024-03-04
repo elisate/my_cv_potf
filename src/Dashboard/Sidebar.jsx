@@ -28,13 +28,13 @@ function Sidebar() {
       </div>
       <div className="side-3">
         <div>
-          <Link to="">
+          <Link to="/">
             {" "}
             <FaAddressBook className="side-icon" />
           </Link>
         </div>
         <div>
-          <Link to="">Booking</Link>
+          <Link to="/">Booking</Link>
         </div>
       </div>
       <div className="side-4">
@@ -53,12 +53,12 @@ function Sidebar() {
       <div className="side-5">
         {" "}
         <div>
-          <a href="/contactdash">
+          <Link to="/contactdash">
             <MdContactMail className="side-icon" />
-          </a>
+          </Link>
         </div>
         <div>
-          <a a href="/contactdash">Contact</a>
+          <Link to="/contactdash">Contact</Link>
         </div>
       </div>
 
