@@ -165,3 +165,64 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .board
+  {
+    padding-left:1rem;
+  padding-top: 7rem;
+  padding-right: 1rem;
+
+  .card-holder
+  {
+ 
+      display: flex;
+      flex-direction: column;
+      .card-board1
+      {
+      width: 21rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-radius: 1rem; 
+    
+      }
+
+      .card-board2
+      {
+      width: 21rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-radius: 1rem; 
+    
+      }
+    
+  }
+  .card-holder1
+  {
+    display: flex;
+  flex-direction: column;
+
+   .card-board3
+      {
+      width: 21rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-radius: 1rem; 
+    
+      }
+      .card-board4
+      {
+      width: 21rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-radius: 1rem; 
+    
+      }
+  }
+
+  }
+}

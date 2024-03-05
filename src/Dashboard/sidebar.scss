@@ -86,3 +86,10 @@
 {
  color:#28ae60;
 }    
+
+@media screen and (max-width: 768px) {
+    .sidebar-container{
+        display: none;
+
+    }
+}

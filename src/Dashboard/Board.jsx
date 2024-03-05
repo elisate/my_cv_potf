@@ -60,7 +60,7 @@ function Board() {
     <section className="board">
       <div className="card-holder">
         <div className="card-board1">
-          <Chart />
+          <Chart className='prop-chart'/>
           <div className="card-text-a">
             <div className="text-hold">
               {" "}

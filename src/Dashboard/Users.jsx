@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "./Contactget.scss";
-import { MdDeleteForever } from "react-icons/md";
+// import "./Contactget.scss";
+import './user.scss';
+
 import ReactPaginate from "react-paginate";
 
 function Users() {
@@ -42,7 +43,7 @@ function Users() {
   };
 
   return (
-    <div className="contact-holder-dash">
+    <div className="contact-holder-dash-user">
       <div className="cont-dash">
         <span>All Users</span>
       </div>

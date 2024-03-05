@@ -69,7 +69,7 @@ export default class Example extends PureComponent {
     return (
       <div style={{ width: "23rem", height: "180px" }}>
         {/* Ensure the parent div has a defined size */}
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer width="94.7%" height="100%">
           <BarChart
             width={500}
             height={300}
