@@ -50,7 +50,8 @@ function Users() {
       <table>
         <thead>
           <tr className="tab1">
-            <th>name</th>
+            <th>First Name</th>
+            <th>Last Name</th>
             <th>Email</th>
             <th>Phone number</th>
             
@@ -60,6 +61,7 @@ function Users() {
           {currentItems.map((item) => (
             <tr key={item._id}>
               <td>{item.name}</td>
+              <td>{item.lastname}</td>
               <td>{item.email}</td>
               <td>{item.phone}</td>
               

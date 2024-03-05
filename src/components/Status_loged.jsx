@@ -16,6 +16,7 @@ const Status_loged = () => {
   let userLogin = JSON.parse(localStorage.getItem("userLogin"));
   let token = userLogin?.access_token;
   let username = userLogin?.name;
+  let appeared_name=userLogin?.lastname;
   let Email = userLogin?.email;
   let Xloged = userLogin?.role;
   console.log("wwww", Xloged);
@@ -43,7 +44,7 @@ const Status_loged = () => {
             />{" "}
             <div className="email" onClick={handleprofile}>
               {" "}
-              {Email}
+              {appeared_name}
             </div>
             <RiArrowDropDownLine onClick={handleprofile}
              className="drop-down-status"

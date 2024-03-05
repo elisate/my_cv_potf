@@ -17,10 +17,11 @@ function Sign_up() {
   console.log(errors);
   const onsubmit = async (data) => {
     console.log(data);
-    const { name, email, phone, password } = data;
+    const { name,lastname, email, phone, password } = data;
     try {
       const formData = new FormData();
       formData.append("name", name);
+      formData.append("lastname", lastname);
       formData.append("email", email);
       formData.append("phone", phone);
       formData.append("password", password);
@@ -53,14 +54,25 @@ function Sign_up() {
 
           <form className="form-container-s" onSubmit={handleSubmit(onsubmit)}>
             <div className="user-n">
-              <label className="form-container-label-s">Username</label>
+              <label className="form-container-label-s">First Name</label>
               <br />
               <input
                 type="text"
-                placeholder="mucyo Elive"
+                placeholder="mucyo"
                 name="name"
                 id="name"
                 {...register("name", { required: true })}
+              />
+            </div>
+            <div className="user-l">
+              <label className="form-container-label-s">Last Name</label>
+              <br />
+              <input
+                type="text"
+                placeholder="Elive"
+                name="lastname"
+                id="lastname"
+                {...register("lastname", { required: true })}
               />
             </div>
             <div className="email-s">
@@ -79,7 +91,7 @@ function Sign_up() {
               <br />
               <input
                 type="number"
-                placeholder="+250-------------"
+                placeholder="+250-----------"
                 name="phone"
                 id="phone"
                 {...register("phone", { required: true })}
@@ -90,7 +102,7 @@ function Sign_up() {
               <br />
               <input
                 type="password"
-                placeholder="---------"
+                placeholder="@xyH64x1"
                 name="password"
                 id="password"
                 {...register("password", { required: true })}

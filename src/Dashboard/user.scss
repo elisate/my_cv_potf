@@ -20,7 +20,7 @@
   }
 
   table {
-    width: 50%;
+    width: 100%;
     border-collapse: collapse;
     box-shadow: 0 0 0.9px rgba(0, 0, 0, 0.5);
   }
@@ -106,19 +106,4 @@
 
 }
 
-@media screen and (max-width: 768px) {
-    th, td {
-      padding: 4px;
-      font-size: 14px;
-    }
 
-    th {
-      display: none; // Hide table headers on smaller screens
-    }
-
-    td:before {
-      content: attr(data-label); // Show column label before cell content
-      font-weight: bold;
-      display: block;
-    }
-  }

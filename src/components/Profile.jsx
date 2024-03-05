@@ -13,6 +13,7 @@ function Profile({handleprofile}) {
   let userLogin = JSON.parse(localStorage.getItem("userLogin"));
   let token = userLogin?.access_token;
   let username = userLogin?.name;
+  let appeared_name = userLogin?.lastname;
   let Email = userLogin?.email;
   let Xloged = userLogin?.role;
   console.log("wwww", Xloged);
@@ -27,7 +28,7 @@ function Profile({handleprofile}) {
     <div className="modal-overlay">
       <div className="profile-container">
         <div className="prof-a">
-          <div className="prof-text">Welcome!</div>
+          <div className="prof-text">Welcome! <b>{appeared_name}</b></div>
 
           <IoMdCloseCircle onClick={handleprofile} className="close-profile" />
         </div>
@@ -36,7 +37,9 @@ function Profile({handleprofile}) {
           <div>
             <FaUserAlt className="icon-profile" />
           </div>
-          <div>{username}</div>
+          <div>{username} {appeared_name},<br/>
+         <span className='user-email'>{Email}</span> 
+          </div>
         </div>
         <div className="prof-user2">
           {" "}
