@@ -77,13 +77,13 @@ function Sidebar() {
       <div className="side-7">
         {" "}
         <div>
-          <Link to="">
+          <Link to="/home">
             {" "}
             <RiLogoutCircleRLine className="side-icon" />
           </Link>
         </div>
         <div>
-          <Link to="">Logout</Link>
+          <Link to="/home">Logout</Link>
         </div>
       </div>
     </section>

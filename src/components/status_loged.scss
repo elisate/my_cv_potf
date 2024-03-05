@@ -1,0 +1,38 @@
+.status-a
+{
+     .quate {
+      background-color: #28ae60;
+      height: 2rem;
+      width: 7rem;
+      font-weight: bold;
+    }
+     .quate:hover
+        {
+          background-color: #2F2E41;
+          color: #28ae60;
+        }
+}
+.logout-status
+{
+    
+    .text-status{
+      display: flex;
+      flex-direction: row;
+      gap: 0.4rem;
+         .update-profile
+    {
+        font-size: 1.7rem;
+    }
+   
+    }
+    .drop-down-status
+    {
+  font-size: 1.7rem;
+    }
+   
+}
+
+@media screen and (max-width: 768px) {
+
+}
+    

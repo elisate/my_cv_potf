@@ -35,10 +35,10 @@ function Login() {
         }
       );
 
-      // Notify.success("you have logged successfuly");
-      // if (res.data) {
-      //   console.log("you have logged", res.data);
-      // }
+      Notify.success("you have logged successfuly");
+      if (res.data) {
+        console.log("you have logged", res.data);
+      }
       // Save data to local storage
       console.log(res.data);
       localStorage.setItem("userLogin", JSON.stringify(res.data));

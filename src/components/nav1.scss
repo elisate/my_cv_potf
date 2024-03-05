@@ -79,6 +79,10 @@ button:hover {
     {
       display: none;
     }
+     .account-log
+         {
+          display: none;
+         }
   }
 }
 
@@ -87,26 +91,59 @@ button:hover {
 
       .second_nav
       {
+     
         padding-left: 1rem;
         padding-right: 1rem;
         display: flex;
         flex-direction: row;
       justify-content: space-between;
+      align-items: center;
      
         .pages
         {
           display: none;
         }
-        .quate
+        .quate1
         {
+          display:contents;
+          
+          
+        }
+        
+        .anychange-text
+        {
+          display: flex;
+          flex-direction: row;
+          // align-items: center;
+         gap: 2rem;
+         .account-log
+         {
           display: none;
-        }
-        .fabar{
-            display: list-item;
+         }
+          .imerge-resp
+        {
+          display: flex;
+          flex-direction: row;
+          gap: 0.5rem;
+          
+           .fabar{
+          display: list-item;
            font-size: 1.5rem;
-           padding-left: 7rem;
-           padding-top: 0.5rem;
+          
         }
+        .logo-resp
+        {
+          width: 6rem;
+          height: 1.5rem;
+
+        }
+        }
+        }
+        
+       .quate2
+       {
+        display: contents;
+       }
       }
     }
       }

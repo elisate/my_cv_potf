@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Profile from "./Profile";
 import { FaBars } from "react-icons/fa"; 
 import Resp_nav from "./Resp_nav";
+import Status_loged from "./Status_loged";
 function Nav() {
   const [profile, setProfile] = useState(false);
   const[resp,setResp]=useState(false);
@@ -19,8 +20,14 @@ function Nav() {
     <>
       <section className="container">
         <div className="second_nav">
-          <div>
-            <img src="elogoo.png" />
+          <div className="anychange-text">
+            <div className="imerge-resp">
+              <FaBars className="fabar" onClick={handleresp} />{" "}
+              <img src="elogoo.png" className="logo-resp" />
+            </div>
+            <div className="account-log">
+              <Status_loged />
+            </div>
           </div>
           <div>
             <ul className="pages">
@@ -44,17 +51,16 @@ function Nav() {
               </li>
             </ul>
           </div>
-          <FaBars  className="fabar" onClick={handleresp}/>
+          {/* <FaBars  className="fabar" onClick={handleresp}/> */}
           <div className="padding1">
             <div className="quate2">
-            <Link to="/log">  <button type="button" className="quate">
-                Login
-              </button></Link>
+             
+              <Status_loged />
             </div>
           </div>
         </div>
         {profile && <Profile handleprofile={handleprofile} />}
-        {resp && <Resp_nav handleresp={handleresp}/>}
+        {resp && <Resp_nav handleresp={handleresp} />}
       </section>
     </>
   );

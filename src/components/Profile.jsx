@@ -5,9 +5,24 @@ import { FaUserAlt, FaWhatsapp } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import { IoMdLogIn } from "react-icons/io";
 import { Link } from 'react-router-dom';
+import Status_loged from './Status_loged';
 
 
 function Profile({handleprofile}) {
+
+  let userLogin = JSON.parse(localStorage.getItem("userLogin"));
+  let token = userLogin?.access_token;
+  let username = userLogin?.name;
+  let Email = userLogin?.email;
+  let Xloged = userLogin?.role;
+  console.log("wwww", Xloged);
+  console.log("nnnnnnnnn",username);
+  function Logout() {
+    localStorage.removeItem("userLogin");
+    window.location.href = "/";
+  }
+
+
   return (
     <div className="modal-overlay">
       <div className="profile-container">
@@ -21,7 +36,7 @@ function Profile({handleprofile}) {
           <div>
             <FaUserAlt className="icon-profile" />
           </div>
-          <div>Dushimiyimana Elisa</div>
+          <div>{username}</div>
         </div>
         <div className="prof-user2">
           {" "}
@@ -46,8 +61,8 @@ function Profile({handleprofile}) {
             <IoMdLogIn className="icon-profile" />
           </div>
           <div>
-            <button type="submit" className="login-logout">
-              Login
+            <button type="submit" className="quate1" onClick={Logout}>
+              Logout
             </button>
           </div>
         </div>
