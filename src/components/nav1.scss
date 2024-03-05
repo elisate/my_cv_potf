@@ -96,8 +96,8 @@ button:hover {
         padding-right: 1rem;
         display: flex;
         flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
+        justify-content: space-between;
+        align-items: center;
      
         .pages
         {
@@ -114,7 +114,6 @@ button:hover {
         {
           display: flex;
           flex-direction: row;
-          // align-items: center;
          gap: 2rem;
          .account-log
          {
@@ -133,8 +132,8 @@ button:hover {
         }
         .logo-resp
         {
-          width: 6rem;
-          height: 1.5rem;
+          width: 4rem;
+          height: 1rem;
 
         }
         }
