@@ -1,4 +1,5 @@
 import React, { PureComponent } from "react";
+import './chart.scss';
 import {
   BarChart,
   Bar,
@@ -67,7 +68,7 @@ export default class Example extends PureComponent {
 
   render() {
     return (
-      <div style={{ width: "23rem", height: "180px" }}>
+      <div style={{ width: "23rem", height: "180px" }} className="res">
         {/* Ensure the parent div has a defined size */}
         <ResponsiveContainer width="94.7%" height="100%">
           <BarChart
@@ -80,6 +81,7 @@ export default class Example extends PureComponent {
               left: 20,
               bottom: 5,
             }}
+            className="chart-responsiveness"
           >
             <XAxis dataKey="name" />
             <Tooltip content={this.renderTooltip} />

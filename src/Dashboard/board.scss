@@ -178,23 +178,26 @@
  
       display: flex;
       flex-direction: column;
+      align-items: center;
       .card-board1
       {
-      width: 21rem;
-      padding-left: 0.5rem;
+      width: 19rem;
+       padding-left: 1rem;
       padding-right: 0.5rem;
-      padding-bottom: 0.5rem;
+       padding-bottom: 0.5rem;
+    
       border-radius: 1rem; 
     
       }
 
       .card-board2
       {
-      width: 21rem;
+      width: 19rem;
       padding-left: 0.5rem;
       padding-right: 0.5rem;
       padding-bottom: 0.5rem;
       border-radius: 1rem; 
+      
     
       }
     
@@ -203,10 +206,11 @@
   {
     display: flex;
   flex-direction: column;
+  align-items: center;
 
    .card-board3
       {
-      width: 21rem;
+      width: 19rem;
       padding-left: 0.5rem;
       padding-right: 0.5rem;
       padding-bottom: 0.5rem;
@@ -215,8 +219,8 @@
       }
       .card-board4
       {
-      width: 21rem;
-      padding-left: 0.5rem;
+      width: 19rem;
+      padding-left: 1rem;
       padding-right: 0.5rem;
       padding-bottom: 0.5rem;
       border-radius: 1rem; 
