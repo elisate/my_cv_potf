@@ -45,6 +45,10 @@ padding-top: 3.5rem;
 {
     font-size: 1.4rem;
 }
+.icon-profile :hover
+{
+  color: #28ae60;
+}
 .prof-user1
 {
     display:flex;
@@ -64,6 +68,39 @@ padding-top: 3.5rem;
     gap: 1rem;
     padding-top: 1rem;
 }
+.prof-user2 a {
+color: black;
+text-decoration: none
+}
+.prof-user2 a :hover
+{
+  color: #28ae60;
+}
+.texoc a:hover
+{
+  color: #28ae60;
+  text-decoration: underline;
+}
+.contacp a:hover
+{
+  color: #28ae60;
+  
+}
+.contacp a
+{
+  
+  color: black;
+}
+.contactp1 a
+{
+  color: black;
+}
+.contactp1 a:hover
+{
+  color: #28ae60;
+  text-decoration: underline;
+}
+
 .prof-user3
 {
     display:flex;

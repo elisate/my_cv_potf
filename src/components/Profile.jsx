@@ -28,7 +28,9 @@ function Profile({handleprofile}) {
     <div className="modal-overlay">
       <div className="profile-container">
         <div className="prof-a">
-          <div className="prof-text">Welcome! <b>{appeared_name}</b></div>
+          <div className="prof-text">
+            Welcome! <b>{appeared_name}</b>
+          </div>
 
           <IoMdCloseCircle onClick={handleprofile} className="close-profile" />
         </div>
@@ -37,31 +39,36 @@ function Profile({handleprofile}) {
           <div>
             <FaUserAlt className="icon-profile" />
           </div>
-          <div>{username} {appeared_name},<br/>
-         <span className='user-email'>{Email}</span> 
+          <div>
+            {username} {appeared_name},<br />
+            <span className="user-email">{Email}</span>
           </div>
         </div>
         <div className="prof-user2">
           {" "}
           <div>
-            <FaWhatsapp className="icon-profile" />
+            <Link to="https://wa.me/250787239952">
+              <FaWhatsapp className="icon-profile" />
+            </Link>
           </div>
-          <div>Click To Chat</div>
+          <div className="texoc">
+            <Link to="https://wa.me/250787239952">Click To Chat</Link>
+          </div>
         </div>
         <div className="prof-user3">
           {" "}
-          <div>
+          <div className="contacp">
             <Link to="/contact">
               <CgMail className="icon-profile" />
             </Link>
           </div>
-          <div>
+          <div className="contactp1">
             <Link to="/contact">Post Your Contact</Link>
           </div>
         </div>
         <div className="prof-user4">
           <div>
-            <IoMdLogIn className="icon-profile" />
+            <IoMdLogIn className="icon-profile" onClick={Logout} />
           </div>
           <div>
             <button type="submit" className="quate1" onClick={Logout}>
