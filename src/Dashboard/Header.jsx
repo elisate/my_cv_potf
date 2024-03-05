@@ -17,7 +17,7 @@ function Header() {
       <div className='head-profile'>
         <div><img src='admin.jpg' className='im-a'/></div>
         <div>
-       <span className='admin-color'>{Xloged}</span> ,{username} {appeared_name}
+       <span className='admin-color'>{Xloged}</span> ,<span className='nod'>{username}</span> {appeared_name}
         </div>
       </div>
     </section>

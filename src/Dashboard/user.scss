@@ -106,4 +106,27 @@
 
 }
 
+@media screen and (max-width: 768px) {
+  .contact-holder-dash-user {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+
+    table {
+     display: none;/* Adjust font size for smaller screens */
+    }
+
+    
+     .cont-dash
+     {
+      display: none;
+     }
+    .pagination {
+      display: none;
+    }
+  }
+}
+
+
 

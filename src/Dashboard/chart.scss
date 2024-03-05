@@ -1,14 +1,13 @@
-.chart-responsiveness
-{
-
-}
 .chart-responsiveness {
-  /* Add your styles for the chart container here */
+  // Add styles for the ResponsiveContainer if needed
 }
 
 @media screen and (max-width: 768px) {
-  .res {
-    width: 4rem; 
-
-  }
+      .chart-responsiveness {
+          width: 2rem;
 }
+.chart-responsiveness
+{
+  width: 10%;
+}
+  }

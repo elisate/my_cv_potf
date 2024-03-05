@@ -111,7 +111,7 @@ function Board() {
           <div className="title-user"> Latest Users</div>
 
           <div className="dashboard-table">
-            <Users />
+            <Users /><span className="text">{users.length}</span>
           </div>
         </div>
       </div>

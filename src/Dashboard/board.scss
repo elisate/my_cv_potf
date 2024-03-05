@@ -172,6 +172,8 @@
     padding-left:1rem;
   padding-top: 7rem;
   padding-right: 1rem;
+  align-items: center;
+  
 
   .card-holder
   {
@@ -179,11 +181,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      
       .card-board1
       {
-      width: 19rem;
-       padding-left: 1rem;
-      padding-right: 0.5rem;
+      width: 21rem;
+       padding-left: 0.1rem;
+      padding-right: 0.1rem;
        padding-bottom: 0.5rem;
     
       border-radius: 1rem; 
@@ -192,9 +195,9 @@
 
       .card-board2
       {
-      width: 19rem;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
+      width: 21rem;
+      padding-left: 0.1rem;
+      padding-right: 0.1rem;
       padding-bottom: 0.5rem;
       border-radius: 1rem; 
       
@@ -210,22 +213,27 @@
 
    .card-board3
       {
-      width: 19rem;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
+     width: 21rem;
+      padding-left: 0.1rem;
+      padding-right: 0.1rem;
       padding-bottom: 0.5rem;
       border-radius: 1rem; 
     
       }
       .card-board4
       {
-      width: 19rem;
-      padding-left: 1rem;
-      padding-right: 0.5rem;
+     width: 21rem;
+      padding-left: 0.1rem;
+      padding-right: 0.1rem;
       padding-bottom: 0.5rem;
       border-radius: 1rem; 
     
       }
+  }
+  .dashboard-table
+  {
+     
+   
   }
 
   }
