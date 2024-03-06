@@ -43,7 +43,17 @@ function Sign_up() {
 
       navigate("/log"); // Navigate to '/log' route using useNavigate
     } catch (error) {
-      console.log(error);
+
+        if (
+          error.response &&
+          error.response.data &&
+          error.response.data.message === "user already registered"
+        ) {
+          Notify.failure("User already registered");
+        } else {
+          console.log(error);
+        }
+      
     }
   };
   return (

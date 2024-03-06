@@ -48,7 +48,15 @@ function Login() {
         navigate("/home");
       }
     } catch (error) {
-      console.log(error);
+       if (
+         error.response &&
+         error.response.data &&
+         error.response.data.message === "Invalid credentials"
+       ) {
+         Notify.failure("Invalid credentials");
+       } else {
+         console.log(error);
+       }
     }
   };
 
