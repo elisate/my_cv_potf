@@ -254,7 +254,7 @@ function Landing() {
           Discover the latest updates and insights on our{" "}
           <span className="blog-deco">blog!</span>
         </div>
-        {/* <div className="blogs">
+         {/* <div className="blogs">
           <div className="blog-holder1">
             <img src="blog4.jpg" className="blog-image1" />
             <div className="blog-date">
@@ -289,8 +289,8 @@ function Landing() {
               <a href="/">Read Blog</a>
             </div>
           </div>
-        </div> */}
-        {/* <div className="blog-gradu">
+        </div>  */}
+         {/* <div className="blog-gradu">
           <div className="blog-holder1-gradu">
             <img src="blog2.webp" className="blog-image1-gradu" />
             <div className="blog-date-gradu">
@@ -327,7 +327,7 @@ function Landing() {
               <a href="/">Read Blog</a>
             </div>
           </div>
-        </div> */}
+        </div>  */}
         {/* online blog posting */}
         <div className="blogs-container">
           {blogss.map((item) => (

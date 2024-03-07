@@ -553,6 +553,16 @@
   .land4 {
     padding-left: 2rem;
     padding-right: 2rem;
+     .blogs-container {
+      grid-template-columns: 1fr; 
+.blog-image1 {
+          height: 15;
+          width: 19rem;
+        }
+       .blog-text1{
+        width:19rem;
+       }
+    }
     .blogs {
       display: flex;
       flex-direction: column;
