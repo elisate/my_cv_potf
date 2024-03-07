@@ -89,11 +89,14 @@ function Landing() {
   useEffect(() => {
     const fetchdata = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/getblogs", {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
+        const response = await axios.get(
+          "https://api-potf.onrender.com/getblogs",
+          {
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
         console.log(response.data);
         setBlogs(response.data);
       } catch (error) {
@@ -157,7 +160,7 @@ function Landing() {
 
         <div className="img-text">
           <div className="imgh">
-            <img src="aboutp.JPG" className="imge" />
+            <img src="elisa-b.png" className="imge" />
           </div>
           <div className="img-text1">
             <div className="text2">

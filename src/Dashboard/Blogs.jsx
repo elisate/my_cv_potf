@@ -96,7 +96,7 @@ function Blogs() {
             {...register("content", { required: true })}
           />
         </div>
-        <button>submit</button>
+    <div className="padding-b">   <button className="blog-sub">submit</button></div> 
       </form>
     </div>
   );
