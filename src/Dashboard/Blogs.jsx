@@ -1,57 +1,51 @@
-import React from 'react'
-import './blogs.scss';
-import axios from 'axios';
+import React from "react";
+import "./blogs.scss";
+import axios from "axios";
 
-import { useForm } from 'react-hook-form';
-import { Notify } from 'notiflix';
+import { useForm } from "react-hook-form";
+import { Notify } from "notiflix";
 import { FaUpload } from "react-icons/fa6";
 function Blogs() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
-      const {
-        register,
-        handleSubmit,
-        formState: { errors },
-      } = useForm();
+  console.log(errors);
+  const onsubmit = async (data) => {
+    console.log(data);
 
-      console.log(errors);
-      const onsubmit = async (data) => {
-        console.log(data);
+    const { image, date, title, content } = data;
 
-        const {
-         image,
-          date,
-         title,
-         content,
-        } = data;
-     
-        try {
-          const formData = new FormData();
-          formData.append("date", date);
-          formData.append("title", title);
-          formData.append("content", content);
-          formData.append("image", image[0]);
+    try {
+      const formData = new FormData();
+      formData.append("date", date);
+      formData.append("title", title);
+      formData.append("content", content);
+      formData.append("image", image[0]);
 
-          const res = await axios.post(
-            "http://localhost:3000/blogposting",
-            formData,
-            {
-              headers: {
-                "Content-Type": "multipart/form-data",
-                // "Content-Type": "application/json",
-              },
-            }
-          );
-           Notify.success("you have logged successfuly");
-           if (res.data) {
-             console.log("you have logged", res.data);
-           }
-         setTimeout(() => {
-           window.location.reload();
-         }, 3000);
-        } catch (error) {
-          console.log(error);
+      const res = await axios.post(
+        "https://api-potf.onrender.com/blogposting",
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+            // "Content-Type": "application/json",
+          },
         }
-      };
+      );
+      Notify.success("you have logged successfuly");
+      if (res.data) {
+        console.log("you have logged", res.data);
+      }
+      setTimeout(() => {
+        window.location.reload();
+      }, 3000);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <div className="Any">
@@ -98,7 +92,7 @@ function Blogs() {
             type="text"
             id="content"
             name="content"
-            className='text-fromarea'
+            className="text-fromarea"
             {...register("content", { required: true })}
           />
         </div>
@@ -106,6 +100,6 @@ function Blogs() {
       </form>
     </div>
   );
-  }
+}
 
-export default Blogs
+export default Blogs;

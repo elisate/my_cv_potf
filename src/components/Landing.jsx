@@ -20,7 +20,7 @@ import { useForm } from "react-hook-form";
 import { FaMessage } from "react-icons/fa6";
 import { Notify } from "notiflix";
 import axios from "axios";
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 
 function Landing() {
   const words = [
@@ -74,34 +74,34 @@ function Landing() {
     }
   };
   // blog array posting
-const blogs=[
-  {
-    image:"/pex1.webp",
-    date:"12/01/jan",
-    title:" Programmer Elisa",
-    content:" Hello Elisa",
-  }
-]
+  const blogs = [
+    {
+      image: "/pex1.webp",
+      date: "12/01/jan",
+      title: " Programmer Elisa",
+      content: " Hello Elisa",
+    },
+  ];
 
-//getting blogs
+  //getting blogs
 
-const [blogss, setBlogs] = useState([]);
-useEffect(() => {
-  const fetchdata = async () => {
-    try {
-      const response = await axios.get("http://localhost:3000/getblogs", {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-      console.log(response.data);
-      setBlogs(response.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-  fetchdata();
-}, []);
+  const [blogss, setBlogs] = useState([]);
+  useEffect(() => {
+    const fetchdata = async () => {
+      try {
+        const response = await axios.get("http://localhost:3000/getblogs", {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+        console.log(response.data);
+        setBlogs(response.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchdata();
+  }, []);
 
   return (
     <>
