@@ -63,11 +63,14 @@ function Board() {
   useEffect(() => {
     const fetchdata = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/getblogs", {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
+        const response = await axios.get(
+          "https://api-potf.onrender.com/getblogs",
+          {
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
         console.log(response.data);
         setBlogs(response.data);
       } catch (error) {
