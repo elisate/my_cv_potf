@@ -13,6 +13,7 @@ import Board from './Dashboard/Board';
 import Contactget from './Dashboard/Contactget';
 import Booking from './Dashboard/Booking';
 import Users from './Dashboard/Users';
+import Blogs from './Dashboard/Blogs';
 
  const Layout =()=>{
   return(
@@ -37,7 +38,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Landing />} />
             <Route path="/home" element={<Landing />} />
-            <Route path="/contact" element={<Contact/>} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/services" element={<Services />} />
             <Route path="/blog" element={<Services />} />
           </Route>
@@ -46,10 +47,11 @@ function App() {
 
           <Route path="/" element={<LayoutDash />}>
             <Route index element={<Board />} />
-            <Route path="/dashboard" element={<Board/>}/>
-            <Route path="/contactdash" element={<Contactget/>}/>
-            <Route path="/booking" element={<Booking/>}/>
-            <Route path="/getusers" element={<Users/>}/>
+            <Route path="/dashboard" element={<Board />} />
+            <Route path="/contactdash" element={<Contactget />} />
+            <Route path="/booking" element={<Booking />} />
+            <Route path="/getusers" element={<Users />} />
+            <Route path="/post-blog" element={<Blogs />} />
           </Route>
         </Routes>
       </BrowserRouter>

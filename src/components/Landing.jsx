@@ -20,6 +20,7 @@ import { useForm } from "react-hook-form";
 import { FaMessage } from "react-icons/fa6";
 import { Notify } from "notiflix";
 import axios from "axios";
+import { useEffect,useState } from "react";
 
 function Landing() {
   const words = [
@@ -72,6 +73,35 @@ function Landing() {
       }, 3000);
     }
   };
+  // blog array posting
+const blogs=[
+  {
+    image:"/pex1.webp",
+    date:"12/01/jan",
+    title:" Programmer Elisa",
+    content:" Hello Elisa",
+  }
+]
+
+//getting blogs
+
+const [blogss, setBlogs] = useState([]);
+useEffect(() => {
+  const fetchdata = async () => {
+    try {
+      const response = await axios.get("http://localhost:3000/getblogs", {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      console.log(response.data);
+      setBlogs(response.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  fetchdata();
+}, []);
 
   return (
     <>
@@ -221,7 +251,7 @@ function Landing() {
           Discover the latest updates and insights on our{" "}
           <span className="blog-deco">blog!</span>
         </div>
-        <div className="blogs">
+        {/* <div className="blogs">
           <div className="blog-holder1">
             <img src="blog4.jpg" className="blog-image1" />
             <div className="blog-date">
@@ -256,8 +286,8 @@ function Landing() {
               <a href="/">Read Blog</a>
             </div>
           </div>
-        </div>
-        <div className="blog-gradu">
+        </div> */}
+        {/* <div className="blog-gradu">
           <div className="blog-holder1-gradu">
             <img src="blog2.webp" className="blog-image1-gradu" />
             <div className="blog-date-gradu">
@@ -294,7 +324,24 @@ function Landing() {
               <a href="/">Read Blog</a>
             </div>
           </div>
+        </div> */}
+        {/* online blog posting */}
+        <div className="blogs-container">
+          {blogss.map((item) => (
+            <div className="blogs-database" key={item._id}>
+              <div>
+                <img src={item.image} className="blog-image1" />
+              </div>
+              <div className="blog-date">{item.date}</div>
+              <div className="blog-text1">{item.title}</div>
+              <div className="blog-text2">{item.content}</div>
+              <div className="blog-read">
+                <a href="/">Read Blog</a>
+              </div>
+            </div>
+          ))}
         </div>
+        {/* blogs */}
       </section>
       <section className="pages-land" id="portfolio">
         <div className="pages-1">Projects</div>

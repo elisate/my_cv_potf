@@ -6,6 +6,7 @@ import { FaRegUser } from "react-icons/fa6";
 import { MdContactMail } from "react-icons/md";
 import { IoMdAdd } from "react-icons/io";
 import { RiLogoutCircleRLine } from "react-icons/ri";
+import { FaUpload } from "react-icons/fa6";
 import './sidebar.scss';
 function Sidebar() {
   return (
@@ -65,13 +66,13 @@ function Sidebar() {
       <div className="side-6">
         {" "}
         <div>
-          <Link to="/contactdash">
+          <Link to="/post-blog">
             {" "}
-            <IoMdAdd className="side-icon" />
+            <FaUpload className="side-icon" />
           </Link>
         </div>
         <div>
-          <Link to="/">Upload Blogs</Link>
+          <Link to="/post-blog">Upload Blogs</Link>
         </div>
       </div>
       <div className="side-7">

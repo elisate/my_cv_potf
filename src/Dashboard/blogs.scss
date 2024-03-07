@@ -1,0 +1,74 @@
+.Any
+{
+padding-top: 5rem;
+padding-left: 20rem;
+padding-bottom: 5rem;
+.title-blog{
+  font-size: 1.7rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  font-weight: bold;
+
+  color:#2F2E41;
+}
+
+
+.whole-blog-form
+{
+box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+width: 29rem;
+padding-left: 5.5rem;
+padding-right: 5rem;
+padding-top: 3rem;
+padding-bottom: 3rem;
+align-content: center;
+.blog-input
+{
+    padding-top: 0.7rem;
+}
+.title-blog1
+{
+    color: #28AE60;
+    padding-bottom: 2rem;
+}
+.text-fromarea
+{
+    width: 28rem;
+    height: 5rem;
+    resize: none;
+}
+
+label {
+
+  margin-bottom: 5px;
+  color: #2F2E41;
+}
+.blogs-laber
+{
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+input[type="text"],
+input[type="file"] {
+  width: 27rem;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #2F2E41;
+  border-radius: 2px;
+}
+
+button {
+  background-color:#28AE60;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #28AE60;
+}
+}
+
+}

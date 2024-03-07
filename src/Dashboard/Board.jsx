@@ -10,7 +10,6 @@ import { FaBlog } from "react-icons/fa6";
 import { useState, useEffect } from "react";
 import axios from "axios";
 function Board() {
-  
   //users length
   const [users, setUsers] = useState([]);
   useEffect(() => {
@@ -56,11 +55,32 @@ function Board() {
     };
     fetchdata();
   }, []);
+
+  
+  //getting blogs
+
+  const [blogss, setBlogs] = useState([]);
+  useEffect(() => {
+    const fetchdata = async () => {
+      try {
+        const response = await axios.get("http://localhost:3000/getblogs", {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+        console.log(response.data);
+        setBlogs(response.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchdata();
+  }, []);
   return (
     <section className="board">
       <div className="card-holder">
         <div className="card-board1">
-          <Chart className='prop-chart'/>
+          <Chart className="prop-chart" />
           <div className="card-text-a">
             <div className="text-hold">
               {" "}
@@ -100,7 +120,7 @@ function Board() {
             <div className="text-hold">
               {" "}
               <span>Blogs Uploaded</span>
-              <span className="text">5</span>
+              <span className="text">{blogss.length}</span>
             </div>
             <FaBlog className="icon-b" />
           </div>
@@ -111,7 +131,8 @@ function Board() {
           <div className="title-user"> Latest Users</div>
 
           <div className="dashboard-table">
-            <Users /><span className="text">{users.length}</span>
+            <Users />
+            <span className="text">{users.length}</span>
           </div>
         </div>
       </div>

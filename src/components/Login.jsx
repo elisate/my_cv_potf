@@ -71,7 +71,7 @@ function Login() {
               <Link to="/sign">sign up</Link>
             </span>
           </div>
-          <form className="form-container" onClick={handleSubmit(onsubmit)}>
+          <form className="form-container" onSubmit={handleSubmit(onsubmit)}>
             <div className="username">
               <label className="form-container-label">username</label>
               <br />
