@@ -357,6 +357,12 @@
         font-weight: bold;
         padding-top: 2rem;
       }
+     
+      .blog-read a:hover
+      {
+        color: #28ae60;
+        text-decoration: underline;
+      }
       .blog-read a {
         text-decoration: none;
         color: black;
