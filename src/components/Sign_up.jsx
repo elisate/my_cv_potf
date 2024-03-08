@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Signup.scss";
-import { useState } from "react";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import { Notify } from "notiflix";
 import { useNavigate } from "react-router-dom";
+import { ClipLoader } from "react-spinners"; // Import ClipLoader from react-spinners
 
 function Sign_up() {
-  const navigate = useNavigate(); // Use navigate from react-router-dom
+  const navigate = useNavigate();
+
+  const [loading, setLoading] = useState(false);
 
   const {
     register,
@@ -15,10 +17,12 @@ function Sign_up() {
     formState: { errors },
   } = useForm();
   console.log(errors);
+
   const onsubmit = async (data) => {
     console.log(data);
     const { name, lastname, email, phone, password } = data;
     try {
+      setLoading(true);
       const formData = new FormData();
       formData.append("name", name);
       formData.append("lastname", lastname);
@@ -41,7 +45,7 @@ function Sign_up() {
         console.log("you have registered", res.data);
       }
 
-      navigate("/log"); // Navigate to '/log' route using useNavigate
+      navigate("/log");
     } catch (error) {
       if (
         error.response &&
@@ -52,8 +56,11 @@ function Sign_up() {
       } else {
         console.log(error);
       }
+    } finally {
+      setLoading(false);
     }
   };
+
   return (
     <section className="login-container-s">
       <div className="log-form-image-s">
@@ -117,7 +124,17 @@ function Sign_up() {
               />
             </div>
             <div className="submit-login-s">
-              <button className="button-login-s">Register</button>
+              <button
+                type="submit"
+                className="button-login-s"
+                disabled={loading}
+              >
+                {loading ? (
+                  <ClipLoader color="#ffffff" loading={loading} size={22} />
+                ) : (
+                  "Register"
+                )}
+              </button>
             </div>
           </form>
         </div>
