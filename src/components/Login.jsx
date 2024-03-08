@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Login.scss";
 import { Link } from "react-router-dom";
 import { Notify } from "notiflix";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
+import { ClipLoader } from "react-spinners"; // Import ClipLoader from react-spinners
 
 function Login() {
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(false); // Add loading state
 
   const {
     register,
@@ -19,6 +21,7 @@ function Login() {
     console.log(data);
     const { email, password } = data;
     try {
+      setLoading(true); // Set loading to true when submitting
       const formData = new FormData();
 
       formData.append("email", email);
@@ -42,21 +45,23 @@ function Login() {
       // Save data to local storage
       console.log(res.data);
       localStorage.setItem("userLogin", JSON.stringify(res.data));
-      if (res.data.role == "admin") {
+      if (res.data.role === "admin") {
         navigate("/dashboard");
       } else {
         navigate("/home");
       }
     } catch (error) {
-       if (
-         error.response &&
-         error.response.data &&
-         error.response.data.message === "Invalid credentials"
-       ) {
-         Notify.failure("Invalid credentials");
-       } else {
-         console.log(error);
-       }
+      if (
+        error.response &&
+        error.response.data &&
+        error.response.data.message === "Invalid credentials"
+      ) {
+        Notify.failure("Invalid credentials");
+      } else {
+        console.log(error);
+      }
+    } finally {
+      setLoading(false); // Set loading back to false when submission is completed
     }
   };
 
@@ -95,14 +100,18 @@ function Login() {
               />
             </div>
             <div className="submit-login">
-              <button type="submit" className="button-login">
-                Login
+              <button type="submit" className="button-login" disabled={loading}>
+                {loading ? (
+                  <ClipLoader color="#ffffff" loading={loading} size={22} />
+                ) : (
+                  "Login"
+                )}
               </button>
             </div>
           </form>
         </div>
         <div className="image">
-          <img src="login_svg.png" className="image-sv" />
+          <img src="login_svg.png" className="image-sv" alt="login image" />
         </div>
       </div>
     </section>
