@@ -1,20 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./blogs.scss";
 import axios from "axios";
-
 import { useForm } from "react-hook-form";
 import { Notify } from "notiflix";
 import { FaUpload } from "react-icons/fa6";
+import { ClipLoader } from "react-spinners"; // Import ClipLoader from react-spinners
+
 function Blogs() {
+  const [loading, setLoading] = useState(false);
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  console.log(errors);
   const onsubmit = async (data) => {
-    console.log(data);
+    setLoading(true);
 
     const { image, date, title, content } = data;
 
@@ -31,7 +33,6 @@ function Blogs() {
         {
           headers: {
             "Content-Type": "multipart/form-data",
-            // "Content-Type": "application/json",
           },
         }
       );
@@ -44,6 +45,8 @@ function Blogs() {
       }, 3000);
     } catch (error) {
       console.log(error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -96,7 +99,15 @@ function Blogs() {
             {...register("content", { required: true })}
           />
         </div>
-    <div className="padding-b">   <button className="blog-sub">submit</button></div> 
+        <div className="padding-b">
+          <button className="blog-sub" type="submit" disabled={loading}>
+            {loading ? (
+              <ClipLoader color="#ffffff" loading={loading} size={22} />
+            ) : (
+              "Submit"
+            )}
+          </button>
+        </div>
       </form>
     </div>
   );
