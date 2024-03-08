@@ -9,6 +9,7 @@ import { MdAccountBalance } from "react-icons/md";
 import { RiAnticlockwise2Line } from "react-icons/ri";
 import { RiAppsFill } from "react-icons/ri";
 import { HiArrowLongRight } from "react-icons/hi2";
+import { ClipLoader } from "react-spinners";
 import { Link } from "react-router-dom";
 //contact import
 import "./Contact.scss";
@@ -30,6 +31,8 @@ function Landing() {
     "App Developer",
     "Backend dev",
   ];
+  //cliper declation
+  const [loading, setLoading] = useState(false);
   //contact fetching
   const {
     register,
@@ -41,6 +44,7 @@ function Landing() {
     console.log(data);
     const { name, email, subject, message } = data;
     try {
+      setLoading(true);
       const formData = new FormData();
       formData.append("name", name);
       formData.append("email", email);
@@ -71,6 +75,8 @@ function Landing() {
       setTimeout(() => {
         window.location.href = "/contact";
       }, 3000);
+    } finally {
+      setLoading(false); 
     }
   };
   // blog array posting
@@ -254,7 +260,7 @@ function Landing() {
           Discover the latest updates and insights on our{" "}
           <span className="blog-deco">blog!</span>
         </div>
-         {/* <div className="blogs">
+        {/* <div className="blogs">
           <div className="blog-holder1">
             <img src="blog4.jpg" className="blog-image1" />
             <div className="blog-date">
@@ -290,7 +296,7 @@ function Landing() {
             </div>
           </div>
         </div>  */}
-         {/* <div className="blog-gradu">
+        {/* <div className="blog-gradu">
           <div className="blog-holder1-gradu">
             <img src="blog2.webp" className="blog-image1-gradu" />
             <div className="blog-date-gradu">
@@ -511,7 +517,14 @@ function Landing() {
                 />
               </div>
               <button type="submit" className="cont-button">
-                Send Message
+                {loading ? (
+                  <ClipLoader color="#ffffff" loading={loading} size={22} 
+                  
+                  className="clipper"
+                  />
+                ) : (
+                  " Send Message"
+                )}
               </button>
             </form>
           </div>
