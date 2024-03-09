@@ -51,12 +51,14 @@ function Login() {
         navigate("/home");
       }
     } catch (error) {
+      console.log(error.response.data); // Log the response data
       if (
         error.response &&
         error.response.data &&
-        error.response.data.message === "Invalid credentials"
+        (error.response.data.message === "Invalid credentials" ||
+          error.response.data.message === "User not found")
       ) {
-        Notify.failure("Invalid credentials");
+        Notify.failure(error.response.data.message);
       } else {
         console.log(error);
       }
