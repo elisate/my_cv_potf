@@ -15,7 +15,7 @@ function Sidebar() {
         <div>
           <img src="eo.png" className="im" />
         </div>
-        <div>Dtechel</div>
+        <div>DTTech</div>
       </div>
       <div className="side-2">
         <div>
