@@ -1,0 +1,127 @@
+.contact1{
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  height: fit-content;
+  .contact-title {
+    padding-top: 2rem;
+    .contact-sub {
+      color: black;
+      font-size: 2rem;
+      border-left: solid 2px #28ae60;
+      padding-left: 1rem;
+      .contact-sub1 {
+        color: #28ae60;
+        padding: 8px;
+      }
+    }
+  }
+  .cont-big-text {
+    width: 30rem;
+  }
+  .contact-sub-sub {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 2rem;
+    .cont-icon {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    .cont-icon-tex {
+      font-weight: bold;
+    }
+    .cont-icon-tex :hover {
+      text-decoration: underline;
+      color: #28ae60;
+    }
+    .cont-icon-tex a {
+      color: black;
+      text-decoration: none;
+    }
+    .cont-sub-a {
+      display: flex;
+      flex-direction: row;
+      gap: 0.9rem;
+    }
+    .cont-sub-b {
+      display: flex;
+      flex-direction: row;
+      gap: 0.9rem;
+    }
+    .cont-sub-c {
+      display: flex;
+      flex-direction: row;
+      gap: 0.9rem;
+    }
+    .cont-sub-d {
+      display: flex;
+      flex-direction: row;
+      gap: 0.9rem;
+    }
+  }
+
+  .input-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .input-container input,
+  .input-container textarea {
+    padding: 10px 10px 10px 35px;
+  }
+
+  .input-container .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+
+  .memu {
+    resize: none;
+  }
+
+  .cont-justfy {
+    display: flex;
+    flex-direction: row;
+    gap: 9rem;
+  }
+  .message {
+    height: 3rem;
+  }
+  .cont-button {
+    background-color: #28ae60;
+    height: 2rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 8rem;
+    
+  }
+  .cont-button:hover {
+    background-color: #2f2e41;
+    color: #28ae60;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    .cont-justfy {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .cont-big-text {
+        width: 15rem;
+      }
+    }
+    .memu {
+      width: 11rem;
+    }
+  }
+}

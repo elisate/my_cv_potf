@@ -5,8 +5,6 @@ import { FaUserAlt, FaWhatsapp } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import { IoMdLogIn } from "react-icons/io";
 import { Link } from 'react-router-dom';
-import Status_loged from './Status_loged';
-
 
 function Profile({handleprofile}) {
 
@@ -59,10 +57,10 @@ function Profile({handleprofile}) {
           {" "}
           <div className="contacp">
             <Link to="/contact">
-              <CgMail className="icon-profile" />
+              <CgMail className="icon-profile" onClick={handleprofile} />
             </Link>
           </div>
-          <div className="contactp1">
+          <div className="contactp1" onClick={handleprofile}>
             <Link to="/contact">Post Your Contact</Link>
           </div>
         </div>

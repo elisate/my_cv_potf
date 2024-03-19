@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contact.scss";
+import "./contact1.scss";
 import { FaStreetView, FaPhone } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import { SlLocationPin } from "react-icons/sl";
@@ -52,7 +53,7 @@ function Contact() {
     }
   };
   return (
-    <section className="contact">
+    <section className="contact1">
       <div className="contact-title">
         <p className="contact-sub">
           Contact our support guys or make appointment with
