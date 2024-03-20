@@ -16,7 +16,7 @@ function Footer() {
         <div class="footer-top">
           <div>
             <span class="footer-title">
-              <img src="elogoo.svg" className="im" />
+              <img src="elogoo.png" className="im" />
             </span>
             <div className="edit2">
               We believe that as a boutique practice,

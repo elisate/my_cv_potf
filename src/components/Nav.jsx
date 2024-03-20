@@ -23,7 +23,7 @@ function Nav() {
           <div className="anychange-text">
             <div className="imerge-resp">
               <FaBars className="fabar" onClick={handleresp} />{" "}
-              <img src="elogoo.svg" className="logo-resp" />
+              <img src="elogoo.png" className="logo-resp" />
             </div>
             <div className="account-log">
               <Status_loged />
