@@ -12,19 +12,22 @@ const WordWriter = ({ words }) => {
     let wordIndex = 0;
     let charIndex = 0;
 
-    const type = () => {
-      const word = words[wordIndex];
-      if (charIndex <= word.length) {
-        setDisplayedCharacters(word.substring(0, charIndex));
-        charIndex += 1;
-      } else {
-        charIndex = 0;
-        wordIndex = (wordIndex + 1) % words.length;
-        setTimeout(() => {
-          setShowPen(true);
-        }, 500); // Adjust timing for pen display between words
-      }
-    };
+  const type = () => {
+    const word = words[wordIndex];
+    if (charIndex <= word.length) {
+      setDisplayedCharacters(word.substring(0, charIndex));
+      charIndex += 1;
+    } else {
+      charIndex = 0;
+      wordIndex = (wordIndex + 1) % words.length;
+      setShowPen(true);
+      setDisplayedCharacters(""); // Clear displayedCharacters before displaying the next word
+      setTimeout(() => {
+        setShowPen(false);
+      }, 500); // Adjust timing for pen display between words
+    }
+  };
+
 
     wordInterval = setInterval(type, 250); // Adjust timing for character display speed
 
