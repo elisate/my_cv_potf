@@ -97,13 +97,11 @@
     padding-left: 1rem;
     padding-right: 1rem;
     width: 8rem;
-    
   }
   .cont-button:hover {
     background-color: #2f2e41;
     color: #28ae60;
   }
-  
 }
 
 @media screen and (max-width: 768px) {
@@ -119,8 +117,24 @@
         width: 15rem;
       }
     }
-    .memu {
-      width: 11rem;
-    }
+    // .memu {
+    //   width: 5rem;
+    // }
+
+     .input-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .input-container input
+  {
+    padding: 10px 10px 10px 35px;
+    width: 50%;
+  }
+  .input-container textarea {
+     padding: 10px 10px 10px 35px;
+     width: 50%;
+  }
+
   }
 }
