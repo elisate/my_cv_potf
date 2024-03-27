@@ -48,13 +48,17 @@ background-color: white;
     {
         padding-top: 1rem;
         color: #2F2E41;
-        font-weight: 450;
+        font-weight: 500;
+        .pinreseta
+        {
+            display: flex;
+            flex-direction:row;
+            align-items: center;
+            gap:0.2rem;
+        }
     }
-    .pinreset a
-    {
-        text-decoration: none;
-    }
-     .pinreset a:hover
+    
+     .pinreset:hover
     {
         text-decoration: underline;
         color: #28AE60;

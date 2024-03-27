@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Login.scss";
 import { Link } from "react-router-dom";
+import { MdLockReset } from "react-icons/md";
 import { Notify } from "notiflix";
 import axios from "axios";
 import { useForm } from "react-hook-form";
@@ -99,10 +100,14 @@ function Login() {
             </div>
 
             <div className="pinreset">
-              <span>
-                {" "}
-                <Link to="/reset"> Forget your password-reset </Link>{" "}
-              </span>{" "}
+              <div className="pinreseta">
+              
+                <div>Forget your password</div> 
+               <MdLockReset />
+                
+           
+              </div>
+              
             </div>
             <div className="submit-login">
               <button type="submit" className="button-login" disabled={loading}>
