@@ -98,10 +98,10 @@ function Login() {
               />
             </div>
 
-            <div>
+            <div className="pinreset">
               <span>
                 {" "}
-                <Link to="/reset"> forget your password </Link>{" "}
+                <Link to="/reset"> Forget your password-reset </Link>{" "}
               </span>{" "}
             </div>
             <div className="submit-login">
