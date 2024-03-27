@@ -28,12 +28,16 @@ function Login() {
       formData.append("email", email);
       formData.append("password", password);
 
-      const res = await axios.post("http://localhost:3000/login", formData, {
-        headers: {
-          "Content-Type": "application/json",
-          // "Content-Type": "multipart/form-data",
-        },
-      });
+      const res = await axios.post(
+        "http://api-potf.onrender.com/login",
+        formData,
+        {
+          headers: {
+            "Content-Type": "application/json",
+            // "Content-Type": "multipart/form-data",
+          },
+        }
+      );
 
       Notify.success("you have logged successfuly");
       if (res.data) {
