@@ -27,16 +27,12 @@ function Login() {
       formData.append("email", email);
       formData.append("password", password);
 
-      const res = await axios.post(
-        "https://api-potf.onrender.com/login",
-        formData,
-        {
-          headers: {
-            "Content-Type": "application/json",
-            // "Content-Type": "multipart/form-data",
-          },
-        }
-      );
+      const res = await axios.post("http://localhost:3000/login", formData, {
+        headers: {
+          "Content-Type": "application/json",
+          // "Content-Type": "multipart/form-data",
+        },
+      });
 
       Notify.success("you have logged successfuly");
       if (res.data) {
@@ -73,7 +69,7 @@ function Login() {
         <div className="form-login">
           <div className="text-head">Login Form</div>
           <div className="text-head1">
-            Does n't have an account{" "}
+            <span>Does n't have an account</span>
             <span className="text-signup">
               <Link to="/sign">sign up</Link>
             </span>
@@ -100,6 +96,13 @@ function Login() {
                 id="password"
                 {...register("password", { required: true })}
               />
+            </div>
+
+            <div>
+              <span>
+                {" "}
+                <Link to="/reset"> forget your password </Link>{" "}
+              </span>{" "}
             </div>
             <div className="submit-login">
               <button type="submit" className="button-login" disabled={loading}>
