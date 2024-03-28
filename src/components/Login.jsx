@@ -7,10 +7,15 @@ import axios from "axios";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { ClipLoader } from "react-spinners"; // Import ClipLoader from react-spinners
+import Forgetpassword from "./Forgetpassword";
 
 function Login() {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false); // Add loading state
+  const [modal, setModal] = useState(false);
+  const handlemodal = () => {
+    setModal(!modal);
+  };
 
   const {
     register,
@@ -29,7 +34,7 @@ function Login() {
       formData.append("password", password);
 
       const res = await axios.post(
-        "http://api-potf.onrender.com/login",
+        "https://api-potf.onrender.com/login",
         formData,
         {
           headers: {
@@ -71,6 +76,7 @@ function Login() {
   return (
     <section className="login-container">
       <div className="log-form-image">
+        {modal && <Forgetpassword handlemodal={handlemodal} />}
         <div className="form-login">
           <div className="text-head">Login Form</div>
           <div className="text-head1">
@@ -103,15 +109,11 @@ function Login() {
               />
             </div>
 
-            <div className="pinreset">
+            <div className="pinreset" onClick={handlemodal}>
               <div className="pinreseta">
-              
-                <div>Forget your password</div> 
-               <MdLockReset />
-                
-           
+                <div>Forget your password</div>
+                <MdLockReset />
               </div>
-              
             </div>
             <div className="submit-login">
               <button type="submit" className="button-login" disabled={loading}>

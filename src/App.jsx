@@ -15,6 +15,7 @@ import Booking from './Dashboard/Booking';
 import Users from './Dashboard/Users';
 import Blogs from './Dashboard/Blogs';
 import Forgetpassword from './components/Forgetpassword';
+import Resetform from './components/Resetform';
 
  const Layout =()=>{
   return(
@@ -46,6 +47,8 @@ function App() {
           <Route path="/log" element={<Login />} />
           <Route path="/sign" element={<Sign_up />} />
           <Route path="/reset" element={<Forgetpassword />} />
+          <Route path='/newpin' element={<Resetform/>}/>
+
 
           <Route path="/" element={<LayoutDash />}>
             <Route index element={<Board />} />

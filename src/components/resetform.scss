@@ -1,0 +1,46 @@
+.resetform
+{
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    padding-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 38%;
+    gap:0.9rem;
+  
+    .resettitle
+    {
+        font-weight: bold;
+        color: #2f2e41;
+        font-size: 1.3rem;
+        padding-bottom: 0.5rem;
+    }
+    .inputreset
+    {
+        width: 18rem;
+        padding: 10px;
+        border: solid 1px black;
+        border-radius: 3px;
+    }
+    .restformbutto
+    {
+        padding: 10px;
+        width:19.5rem;
+        background-color: #2f2e41;;
+    }
+     .restformbutto:hover
+    {
+        background-color:#28AE60;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .resetform
+{
+   padding-left: 3%;
+   padding-right: 3%;
+   align-items: center;
+}
+
+}

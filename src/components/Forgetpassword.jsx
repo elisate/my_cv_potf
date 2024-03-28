@@ -1,52 +1,63 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import'./forgot.scss';
-function Forgetpassword() {
+import "./forgot.scss";
+import { useNavigate } from "react-router-dom";
+import { Notify } from "notiflix";
+
+function Forgetpassword({ handlemodal }) {
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
-    formState:{ errors },
+    formState: { errors },
   } = useForm();
-  console.log(errors);
-  const onsubmit =async(data)=>{
-    const {email}=data;
-    console.log(data);
-   
-    try{
-        const formData = new FormData();
-        formData.append("email", email);
-       const res = await axios.post(
-         "http://localhost:3000/forgotpassword",
-         formData,
-         {
-           headers: {
-             "Content-Type": "application/json",
-           },
-         }
-       );
-    console.log(res.data);
-}
-catch(error)
-    {
-console.log(error);
+
+  const onsubmit = async (data) => {
+    const { email } = data;
+
+    try {
+      const formData = new FormData();
+      formData.append("email", email);
+      const res = await axios.post(
+        "https://api-potf.onrender.com/send-otp",
+        formData,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log(res.data);
+      Notify.success("otp verification have been sent");
+      if (res.data) {
+        console.log("otp verification", res.data);
+      }
+      navigate("/newpin");
+    } catch (error) {
+      console.log(error);
     }
-  }
+  };
+
   return (
-    <div>
+    <div className="overlay">
       <form onSubmit={handleSubmit(onsubmit)} className="for">
         <input
           type="text"
-          placeholder="reset pin"
+          placeholder=" Enter Your Email To Reset Pin"
           name="email"
           id="email"
           className="otp"
           {...register("email", { required: true })}
         />
-
-        <button type="submit" className="buttof">
-          Submit
-        </button>
+        <div className="buttocontainer">
+          <button type="submit" className="buttof">
+            Submit
+          </button>
+          <button className="closeButton" onClick={handlemodal}>
+            Close
+          </button>
+        </div>
       </form>
     </div>
   );
