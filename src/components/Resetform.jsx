@@ -46,48 +46,48 @@ function Resetform() {
   };
   return (
     <>
-      <form className="resetform" onSubmit={handleSubmit(onsubmit)}>
-        <div className="resettitle">Reset Form</div>
-        <div>
-          <input
-            type="email"
-            placeholder="Enter Your Email"
-            className="inputreset"
-            name="email"
-            id="email"
-            {...register("email", { required: true })}
-          />
-        </div>
-        <div>
-          <input
-            type="number"
-            placeholder="Enter OTP"
-            name="otp"
-            id="otp"
-            className="inputreset"
-            {...register("otp", {
-              required: true,
-              pattern: /^[0-9]{6}$/,
-            })}
-            maxLength={6}
-          />
-        </div>
-        <div>
-          <input
-            type="password"
-            name="newPassword"
-            id="password"
-            placeholder="Enter Your New Password"
-            className="inputreset"
-            {...register("newPassword", { required: true })}
-          />
-        </div>
-        <div>
-          <button type="submit" className="restformbutto">
-           
+      <form className="containerform" onSubmit={handleSubmit(onsubmit)}>
+        <div className="resetform">
+          <div className="resettitle">Reset Form</div>
+          <div>
+            <input
+              type="email"
+              placeholder="Enter Your Email"
+              className="inputreset"
+              name="email"
+              id="email"
+              {...register("email", { required: true })}
+            />
+          </div>
+          <div>
+            <input
+              type="number"
+              placeholder="Enter OTP"
+              name="otp"
+              id="otp"
+              className="inputreset"
+              {...register("otp", {
+                required: true,
+                pattern: /^[0-9]{6}$/,
+              })}
+              maxLength={6}
+            />
+          </div>
+          <div>
+            <input
+              type="password"
+              name="newPassword"
+              id="password"
+              placeholder="Enter Your New Password"
+              className="inputreset"
+              {...register("newPassword", { required: true })}
+            />
+          </div>
+          <div>
+            <button type="submit" className="restformbutto">
               Submit
-           
-          </button>
+            </button>
+          </div>
         </div>
       </form>
     </>
