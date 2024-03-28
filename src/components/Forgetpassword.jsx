@@ -19,7 +19,7 @@ function Forgetpassword({ handlemodal }) {
     const { email } = data;
 
     try {
-      setLoading(true);
+      
       const formData = new FormData();
       formData.append("email", email);
       const res = await axios.post(
@@ -54,12 +54,10 @@ function Forgetpassword({ handlemodal }) {
           {...register("email", { required: true })}
         />
         <div className="buttocontainer">
-          <button type="submit" className="buttof" disabled={loading}>
-            {loading ? (
-              <ClipLoader color="#ffffff" loading={loading} size={22} />
-            ) : (
-              " Submit"
-            )}
+          <button type="submit" className="buttof" >
+            
+              Submit
+           
           </button>
           <button className="closeButton" onClick={handlemodal}>
             Close

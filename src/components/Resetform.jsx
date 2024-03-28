@@ -20,7 +20,7 @@ function Resetform() {
     const { email, otp, newPassword } = data;
 
     try {
-        setLoading(true);
+      
       const formData = new FormData();
       formData.append("email", email);
       formData.append("otp", otp);
@@ -83,12 +83,10 @@ function Resetform() {
           />
         </div>
         <div>
-          <button type="submit" className="restformbutto" disabled={loading}>
-            {loading ? (
-              <ClipLoader color="#ffffff" loading={loading} size={22} />
-            ) : (
-              "Submit"
-            )}
+          <button type="submit" className="restformbutto">
+           
+              Submit
+           
           </button>
         </div>
       </form>
