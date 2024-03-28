@@ -4,8 +4,9 @@ import axios from "axios";
 import "./forgot.scss";
 import { useNavigate } from "react-router-dom";
 import { Notify } from "notiflix";
-
+import { ClipLoader } from "react-spinners";
 function Forgetpassword({ handlemodal }) {
+    const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const {
     register,
@@ -17,6 +18,7 @@ function Forgetpassword({ handlemodal }) {
     const { email } = data;
 
     try {
+      setLoading(true);
       const formData = new FormData();
       formData.append("email", email);
       const res = await axios.post(
@@ -51,8 +53,12 @@ function Forgetpassword({ handlemodal }) {
           {...register("email", { required: true })}
         />
         <div className="buttocontainer">
-          <button type="submit" className="buttof">
-            Submit
+          <button type="submit" className="buttof" disabled={loading}>
+            {loading ? (
+              <ClipLoader color="#ffffff" loading={loading} size={22} />
+            ) : (
+              " Submit"
+            )}
           </button>
           <button className="closeButton" onClick={handlemodal}>
             Close

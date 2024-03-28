@@ -4,8 +4,10 @@ import { useForm } from "react-hook-form";
 import axios from "axios";
 import { Notify } from "notiflix";
 import { useNavigate } from "react-router-dom";
+import { ClipLoader } from "react-spinners";
 function Resetform() {
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
 
   const {
     register,
@@ -17,6 +19,7 @@ function Resetform() {
     const { email, otp, newPassword } = data;
 
     try {
+        setLoading(true);
       const formData = new FormData();
       formData.append("email", email);
       formData.append("otp", otp);
@@ -79,8 +82,12 @@ function Resetform() {
           />
         </div>
         <div>
-          <button type="submit" className="restformbutto">
-            Submit
+          <button type="submit" className="restformbutto" disabled={loading}>
+            {loading ? (
+              <ClipLoader color="#ffffff" loading={loading} size={22} />
+            ) : (
+              "Submit"
+            )}
           </button>
         </div>
       </form>
