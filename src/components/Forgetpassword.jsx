@@ -5,6 +5,7 @@ import "./forgot.scss";
 import { useNavigate } from "react-router-dom";
 import { Notify } from "notiflix";
 import { ClipLoader } from "react-spinners";
+import { useState } from "react";
 function Forgetpassword({ handlemodal }) {
     const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
