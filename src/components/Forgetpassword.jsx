@@ -43,7 +43,7 @@ function Forgetpassword({ handlemodal }) {
   };
 
   return (
-    <div className="overlay">
+    <div className="overlayFORGET">
       <form onSubmit={handleSubmit(onsubmit)} className="for">
         <input
           type="text"
