@@ -19,7 +19,6 @@ function Forgetpassword({ handlemodal }) {
     const { email } = data;
 
     try {
-      
       const formData = new FormData();
       formData.append("email", email);
       const res = await axios.post(
@@ -31,16 +30,19 @@ function Forgetpassword({ handlemodal }) {
           },
         }
       );
+
       console.log(res.data);
-      Notify.success("otp verification have been sent");
-      if (res.data) {
-        console.log("otp verification", res.data);
-      }
+      Notify.success("OTP verification has been sent");
       navigate("/newpin");
     } catch (error) {
-      console.log(error);
+      if (error.response && error.response.data.message === "User not found.") {
+        Notify.warning("User not found.");
+      } else {
+        console.log(error);
+      }
     }
   };
+
 
   return (
     <div className="overlayFORGET">
