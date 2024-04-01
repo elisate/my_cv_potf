@@ -6,6 +6,7 @@ import { Notify } from "notiflix";
 import { useNavigate } from "react-router-dom";
 import { ClipLoader } from "react-spinners";
 import { useState } from "react";
+
 function Resetform() {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
@@ -20,6 +21,7 @@ function Resetform() {
     const { email, otp, newPassword } = data;
 
     try {
+      setLoading(true); // Set loading state to true when submitting
       const formData = new FormData();
       formData.append("email", email);
       formData.append("otp", otp);
@@ -50,6 +52,8 @@ function Resetform() {
       } else {
         console.log(error);
       }
+    } finally {
+      setLoading(false); // Set loading state to false after request completion
     }
   };
 
@@ -93,8 +97,8 @@ function Resetform() {
             />
           </div>
           <div>
-            <button type="submit" className="restformbutto">
-              Submit
+            <button type="submit" className="restformbutto" disabled={loading}>
+              {loading ? "Loading..." : "Submit"}
             </button>
           </div>
         </div>
