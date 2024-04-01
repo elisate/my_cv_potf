@@ -32,7 +32,7 @@ function Forgetpassword({ handlemodal }) {
       );
 
       console.log(res.data);
-      Notify.success("OTP verification has been sent");
+      Notify.success("OTP verification have been sent");
       navigate("/newpin");
     } catch (error) {
       if (error.response && error.response.data.message === "User not found.") {
