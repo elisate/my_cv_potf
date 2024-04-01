@@ -20,7 +20,6 @@ function Resetform() {
     const { email, otp, newPassword } = data;
 
     try {
-      
       const formData = new FormData();
       formData.append("email", email);
       formData.append("otp", otp);
@@ -34,16 +33,26 @@ function Resetform() {
           },
         }
       );
+
       console.log(res.data);
-      Notify.success("password reset successfuly");
-      if (res.data) {
-        console.log("password reset sucessfully", res.data);
-      }
+      Notify.success("Password reset successfully");
       navigate("/log");
     } catch (error) {
-      console.log(error);
+      if (error.response) {
+        const errorMessage = error.response.data.message;
+        if (errorMessage === "User not found.") {
+          Notify.warning("User not found.");
+        } else if (errorMessage === "Invalid OTP.") {
+          Notify.warning("Invalid OTP.");
+        } else {
+          console.log(error);
+        }
+      } else {
+        console.log(error);
+      }
     }
   };
+
   return (
     <>
       <form className="containerform" onSubmit={handleSubmit(onsubmit)}>
