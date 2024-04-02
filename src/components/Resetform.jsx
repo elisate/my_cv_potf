@@ -6,6 +6,9 @@ import { Notify } from "notiflix";
 import { useNavigate } from "react-router-dom";
 import { ClipLoader } from "react-spinners";
 import { useState } from "react";
+let userLogin = JSON.parse(localStorage.getItem("userLogin"));
+let token = userLogin?.access_token;
+let Email = userLogin?.email;
 
 function Resetform() {
   const navigate = useNavigate();
@@ -69,6 +72,7 @@ function Resetform() {
               className="inputreset"
               name="email"
               id="email"
+              value={Email}
               {...register("email", { required: true })}
             />
           </div>

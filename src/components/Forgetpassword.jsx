@@ -46,6 +46,10 @@ function Forgetpassword({ handlemodal }) {
       setLoading(false);
     }
   };
+  let userReset= JSON.parse(localStorage.getItem("userReset"));
+  let token = userReset?.access_token;
+  let Email = userReset?.email;
+  console.log("userreset",Email);
 
   return (
     <div className="overlayFORGET">
@@ -55,6 +59,7 @@ function Forgetpassword({ handlemodal }) {
           placeholder=" Enter Your Email To Reset Pin"
           name="email"
           id="email"
+       
           className="otp"
           {...register("email", { required: true })}
         />
