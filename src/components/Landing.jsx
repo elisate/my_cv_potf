@@ -72,9 +72,6 @@ function Landing() {
       }, 3000);
     } catch (error) {
       console.log(error);
-      setTimeout(() => {
-        window.location.href = "/contact";
-      }, 3000);
     } finally {
       setLoading(false); 
     }
