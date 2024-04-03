@@ -72,10 +72,16 @@
     margin-bottom: 20px;
   }
 
-  .input-container input,
+   .input-container input
+  {
+    padding: 10px 10px 10px 35px;
+    width: 20rem;
+  }
+    
   .input-container textarea {
     padding: 10px 10px 10px 35px;
     width: 20rem;
+    height: 6rem;
   }
   .input-container .icon {
     position: absolute;
@@ -125,9 +131,7 @@
         width: 15rem;
       }
     }
-    // .memu {
-    //   width: 11rem;
-    // }
+   
     .contact-title
     {
       width: 90%;
