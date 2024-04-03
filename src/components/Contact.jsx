@@ -10,7 +10,10 @@ import { FaMessage } from "react-icons/fa6";
 import { Notify } from "notiflix";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { ClipLoader } from "react-spinners";
+import { useState } from "react";
 function Contact() {
+  const [loading, setLoading] = useState(false); 
   const navigate = useNavigate();
   const {
     register,
@@ -22,6 +25,7 @@ function Contact() {
     console.log(data);
     const { name, email, subject, message } = data;
     try {
+      setLoading(true);
       const formData = new FormData();
       formData.append("name", name);
       formData.append("email", email);
@@ -40,13 +44,13 @@ function Contact() {
       );
       Notify.success("contact submitted successfuly");
       if (res.data) {
-      console.log("contact submitted", res.data);
-      navigate("/home");
+        console.log("contact submitted", res.data);
+        navigate("/home");
       }
-      
-      
     } catch (error) {
       console.log(error);
+    } finally {
+      setLoading(false); // Set loading back to false when submission is completed
     }
   };
   return (
@@ -144,7 +148,11 @@ function Contact() {
               />
             </div>
             <button type="submit" className="cont-button">
-              Send Message
+              {loading ? (
+                <ClipLoader color="#ffffff" loading={loading} size={22} />
+              ) : (
+                "Send Message"
+              )}
             </button>
           </form>
         </div>
