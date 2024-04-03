@@ -67,11 +67,16 @@
     margin-bottom: 20px;
   }
 
+  .input-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
   .input-container input,
   .input-container textarea {
     padding: 10px 10px 10px 35px;
+    width: 20rem;
   }
-
   .input-container .icon {
     position: absolute;
     top: 50%;

@@ -9,7 +9,9 @@ import { useForm } from "react-hook-form";
 import { FaMessage } from "react-icons/fa6";
 import { Notify } from "notiflix";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 function Contact() {
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -39,10 +41,10 @@ function Contact() {
       Notify.success("contact submitted successfuly");
       if (res.data) {
       console.log("contact submitted", res.data);
+      navigate("/home");
       }
-      setTimeout(() => {
-        window.location.reload();
-      }, 3000);
+      
+      
     } catch (error) {
       console.log(error);
     }

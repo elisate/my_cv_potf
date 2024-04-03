@@ -246,7 +246,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Set two columns */
   grid-gap: 20px;
- 
+ }
 
   .blogs {
     display: flex;
@@ -370,7 +370,7 @@
         color: black;
       }
     }
-}}
+}
 .pages-land{
   padding-left: 5rem;
   padding-right: 5rem;
@@ -556,8 +556,9 @@
     padding-left: 2rem;
     padding-right: 2rem;
      .blogs-container {
-      grid-template-columns: 1fr; 
-.blog-image1 {
+      grid-template-columns:1fr; 
+
+        .blog-image1 {
           height: 15;
           width: 19rem;
         }
