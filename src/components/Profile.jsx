@@ -69,7 +69,7 @@ function Profile({handleprofile}) {
             <IoMdLogIn className="icon-profile" onClick={Logout} />
           </div>
           <div>
-            <button type="submit" className="quate1" onClick={Logout}>
+            <button type="submit" className="quateprofile" onClick={Logout}>
               Logout
             </button>
           </div>
