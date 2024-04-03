@@ -27,7 +27,7 @@ function Contact() {
       formData.append("message", message);
 
       const res = await axios.post(
-        "https://api-potf.onrender.com/contact",
+        "https://api-potf.onrender.com/postcontact",
         formData,
         {
           headers: {
@@ -47,9 +47,6 @@ function Contact() {
       }, 3000);
     } catch (error) {
       console.log(error);
-       setTimeout(() => {
-         window.location.href = "/contact";
-       }, 3000);
     }
   };
   return (

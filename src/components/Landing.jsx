@@ -52,7 +52,7 @@ function Landing() {
       formData.append("message", message);
 
       const res = await axios.post(
-        "https://api-potf.onrender.com/contact",
+        "https://api-potf.onrender.com/postcontact",
         formData,
         {
           headers: {
@@ -66,12 +66,14 @@ function Landing() {
       if (res.data) {
         console.log("contact submitted", res.data);
       }
-
-      setTimeout(() => {
-        window.location.reload();
-      }, 3000);
+     
+       setTimeout(() => {
+         window.location.reload();
+       }, 3000);
+      
     } catch (error) {
       console.log(error);
+     
     } finally {
       setLoading(false); 
     }

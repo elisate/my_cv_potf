@@ -245,8 +245,9 @@
  .blogs-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Set two columns */
-  grid-gap: 20px
-}
+  grid-gap: 20px;
+ 
+
   .blogs {
     display: flex;
     flex-direction: row;
@@ -369,7 +370,7 @@
         color: black;
       }
     }
-}
+}}
 .pages-land{
   padding-left: 5rem;
   padding-right: 5rem;
