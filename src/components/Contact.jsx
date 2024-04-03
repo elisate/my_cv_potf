@@ -4,7 +4,7 @@ import "./contact1.scss";
 import { FaStreetView, FaPhone } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import { SlLocationPin } from "react-icons/sl";
-import { FaUser, FaEnvelope, FaRegEnvelope } from "react-icons/fa";
+import { FaUser, FaEnvelope } from "react-icons/fa";
 import { useForm } from "react-hook-form";
 import { FaMessage } from "react-icons/fa6";
 import { Notify } from "notiflix";
@@ -36,15 +36,13 @@ function Contact() {
           },
         }
       );
-
       Notify.success("contact submitted successfuly");
       if (res.data) {
       console.log("contact submitted", res.data);
       }
-     
-      setTimeout(() => {
-        window.location.reload();
-      }, 3000);
+      // setTimeout(() => {
+      //   window.location.reload();
+      // }, 3000);
     } catch (error) {
       console.log(error);
     }
