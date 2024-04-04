@@ -250,7 +250,7 @@ function Landing() {
           Discover the latest updates and insights on our{" "}
           <span className="blog-deco">blog!</span>
         </div>
-       
+
         <div className="blogs-container">
           {blogss.map((item) => (
             <div className="blogs-database" key={item._id}>
@@ -306,10 +306,10 @@ function Landing() {
 
             <div className="read-text1">
               <div>
-                <a href="https://holyday-planner-k.vercel.app/">Read more </a>
+                <a href="https://tour-booking-alpha.vercel.app/">Read more </a>
               </div>
               <div>
-                <a href="https://holyday-planner-k.vercel.app/">
+                <a href="https://tour-booking-alpha.vercel.app/">
                   <HiArrowLongRight className="icon-page2" />
                 </a>
               </div>
@@ -434,9 +434,11 @@ function Landing() {
               </div>
               <button type="submit" className="cont-button">
                 {loading ? (
-                  <ClipLoader color="#ffffff" loading={loading} size={22} 
-                  
-                  className="clipper"
+                  <ClipLoader
+                    color="#ffffff"
+                    loading={loading}
+                    size={22}
+                    className="clipper"
                   />
                 ) : (
                   " Send Message"
