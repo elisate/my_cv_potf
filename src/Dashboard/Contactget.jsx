@@ -56,7 +56,7 @@ function Contactget() {
          );
         //  window.location.reload();
          setTimeout(() => {
-           window.location.reload();
+           window.history.reload();
          }, 3000);
 
       }
