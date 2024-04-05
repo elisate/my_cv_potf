@@ -54,13 +54,16 @@ function Contactget() {
          const res = await axios.delete(
            `https://api-potf.onrender.com/deletecontact/${id}`
          );
-         window.location.reload();
+        //  window.location.reload();
+         setTimeout(() => {
+           window.location.reload();
+         }, 3000);
 
-      },
-      ()=>{
-        alert("If you say so...")
-      },
-      {}
+      }
+      // ()=>{
+      //   alert("If you say so...")
+      // },
+      // {}
     );
   }
   catch(error){
