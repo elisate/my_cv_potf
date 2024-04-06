@@ -30,6 +30,7 @@ function Landing() {
     "System Dev",
     "App Developer",
     "Backend dev",
+    "Full Stack "
   ];
 
   const [loading, setLoading] = useState(false);

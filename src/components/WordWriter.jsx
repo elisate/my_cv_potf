@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import './WordWriter.scss';
-import './Landing.scss';
+import "./WordWriter.scss";
+import "./Landing.scss";
 
 const WordWriter = ({ words }) => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -12,34 +12,31 @@ const WordWriter = ({ words }) => {
     let wordIndex = 0;
     let charIndex = 0;
 
-  const type = () => {
-    const word = words[wordIndex];
-    if (charIndex <= word.length) {
-      setDisplayedCharacters(word.substring(0, charIndex));
-      charIndex += 1;
-    } else {
-      charIndex = 0;
-      wordIndex = (wordIndex + 1) % words.length;
-      setShowPen(true);
-      setDisplayedCharacters(""); // Clear displayedCharacters before displaying the next word
-      setTimeout(() => {
-        setShowPen(false);
-      }, 500); // Adjust timing for pen display between words
-    }
-  };
+    const type = () => {
+      const word = words[wordIndex];
+      if (charIndex <= word.length) {
+        setDisplayedCharacters(word.substring(0, charIndex));
+        charIndex += 1;
+      } else {
+        setShowPen(true);
+        setTimeout(() => {
+          setShowPen(false);
+          charIndex = 0;
+          wordIndex = (wordIndex + 1) % words.length;
+          setDisplayedCharacters(""); // Clear displayedCharacters before displaying the next word
+        }, 2000); // Wait 5 seconds before moving to the next word
+      }
+    };
 
-
-    wordInterval = setInterval(type, 250); // Adjust timing for character display speed
+    wordInterval = setInterval(type, 260); // Adjust timing for character display speed
 
     return () => clearInterval(wordInterval);
   }, [words]);
 
   return (
     <div className="word-writer">
-     
-        {displayedCharacters}
-        <span className={`pen ${showPen ? "show" : ""}`} />
-     
+      {displayedCharacters}
+      <span className={`pen ${showPen ? "show" : ""}`} />
     </div>
   );
 };
