@@ -245,7 +245,7 @@
  .blogs-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Set two columns */
-  grid-gap: 20px;
+  grid-gap:5px;
  }
 
   .blogs {
@@ -401,6 +401,11 @@
         padding-top: 1.9rem;
         flex-direction: row;
         gap: 0.5rem;
+      }
+      .read-text1 a:hover
+      {
+        text-decoration: underline;
+        color: #28ae60;
       }
       .read-text1 a {
         text-decoration: none;
