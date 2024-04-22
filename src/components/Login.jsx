@@ -83,7 +83,7 @@ function Login() {
             <span>Does n't have an account</span>
             <span className="text-signup">
               <Link to="/sign">sign up</Link>
-            </span>
+            </span> 
           </div>
           <form className="form-container" onSubmit={handleSubmit(onsubmit)}>
             <div className="username">

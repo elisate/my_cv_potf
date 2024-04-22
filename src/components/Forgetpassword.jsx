@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import "./forgot.scss";
 import { useNavigate } from "react-router-dom";
 import { Notify } from "notiflix";
-import { ClipLoader } from "react-spinners";
-import { useState } from "react";
+
 
 function Forgetpassword({ handlemodal }) {
   const [loading, setLoading] = useState(false);
@@ -23,17 +22,15 @@ function Forgetpassword({ handlemodal }) {
       setLoading(true);
       const formData = new FormData();
       formData.append("email", email);
-      const res = await axios.post(
-        "https://api-potf.onrender.com/send-otp",
-        formData,
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      const res = await axios.post("http://localhost:3000/send-otp", formData, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
 
-      console.log(res.data);
+      // Store session data in sessionStorage
+      sessionStorage.setItem("resetEmail", email);
+
       Notify.success("OTP verification has been sent");
       navigate("/newpin");
     } catch (error) {
@@ -46,10 +43,6 @@ function Forgetpassword({ handlemodal }) {
       setLoading(false);
     }
   };
-  let userReset= JSON.parse(localStorage.getItem("userReset"));
-  let token = userReset?.access_token;
-  let Email = userReset?.email;
-  console.log("userreset",Email);
 
   return (
     <div className="overlayFORGET">
@@ -59,7 +52,6 @@ function Forgetpassword({ handlemodal }) {
           placeholder=" Enter Your Email To Reset Pin"
           name="email"
           id="email"
-       
           className="otp"
           {...register("email", { required: true })}
         />

@@ -6,11 +6,10 @@ import { Notify } from "notiflix";
 import { useNavigate } from "react-router-dom";
 import { ClipLoader } from "react-spinners";
 import { useState } from "react";
-let userLogin = JSON.parse(localStorage.getItem("userLogin"));
-let token = userLogin?.access_token;
-let Email = userLogin?.email;
-
 function Resetform() {
+  const resetEmail = sessionStorage.getItem("resetEmail");
+
+
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
 
@@ -30,7 +29,7 @@ function Resetform() {
       formData.append("otp", otp);
       formData.append("newPassword", newPassword);
       const res = await axios.post(
-        "https://api-potf.onrender.com/verify-otp",
+        "http://localhost:3000/verify-otp",
         formData,
         {
           headers: {
@@ -72,7 +71,7 @@ function Resetform() {
               className="inputreset"
               name="email"
               id="email"
-              value={Email}
+              value={resetEmail}
               {...register("email", { required: true })}
             />
           </div>
