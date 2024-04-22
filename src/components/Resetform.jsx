@@ -29,7 +29,7 @@ function Resetform() {
       formData.append("otp", otp);
       formData.append("newPassword", newPassword);
       const res = await axios.post(
-        "http://localhost:3000/verify-otp",
+        "https://api-potf.onrender.com/verify-otp",
         formData,
         {
           headers: {
