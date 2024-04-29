@@ -156,21 +156,23 @@
 }
 
 .land3 {
-  background-color: black;
+  // background-color: black;
   padding-left: 5rem;
   padding-right: 5rem;
   padding-top: 2rem;
   padding-bottom: 4rem;
   .serv-text1 {
-    text-align: center;
-    color: white;
+     text-align: center;
+    color: black;
     font-size: 2rem;
   }
   .serv-text2 {
-    text-align: center;
+    // text-align: center;
+    display: flex;
+    flex-direction: row;
     padding-top: 1rem;
     .text-s1 {
-      color: white;
+      color: black;
       font-size: 2rem;
       font-weight: bold;
       .text-s1a {
