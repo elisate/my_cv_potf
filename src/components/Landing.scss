@@ -171,6 +171,9 @@
     display: flex;
     flex-direction: row;
     padding-top: 1rem;
+    border-left: solid 2px #28ae60 ;
+    padding-left: 0.5rem;
+    
     .text-s1 {
       color: black;
       font-size: 2rem;
@@ -551,12 +554,20 @@
     padding-right: 2rem;
     padding-top: 2rem;
     padding-bottom: 3rem;
-    background-color: black;
+    
     .card-service {
       padding-top: 2rem;
       display: flex;
       flex-direction: column;
       gap: 1rem;
+    }
+    .serv-text2 {
+    // text-align: center;
+    display: flex;
+    flex-direction:column ;
+    padding-top: 1rem;
+    border-left: solid 2px #28ae60 ;
+    padding-left: 0.5rem;
     }
   }
   .land4 {
