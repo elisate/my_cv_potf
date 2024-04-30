@@ -24,11 +24,12 @@
         width: 8rem;
         transition: background-color 0.1s ease;
         font-weight: bold;
+        color: white;
        
       }
        .butto1:hover {
-          background-color: #2F2E41;
-          color: #28ae60;
+          background-color:  #21633d;
+          
         }
       .butto2 {
         background-color: black;
@@ -39,8 +40,7 @@
       }
       .butto2:hover
       {
-         background-color: #2F2E41;
-          color: #28ae60;
+         background-color:  #21633d;
       }
       display: flex;
       flex-direction: row;
@@ -120,11 +120,11 @@
         height: 2rem;
         width: 7rem;
         font-weight: bold;
+        color: white;
       }
    .b :hover
    {
-    background-color:#6c757d;; 
-    color: #28ae60;
+   background-color:  #21633d;
    }
       .text-icon {
         gap: 2rem;
@@ -156,7 +156,7 @@
 }
 
 .land3 {
-  // background-color: black;
+
   padding-left: 5rem;
   padding-right: 5rem;
   padding-top: 2rem;
@@ -189,9 +189,7 @@
     flex-direction: row;
     justify-content: space-between;
     .card1-serv {
-      // background-color: #6c757d;
-  //  background-color: black;
-      
+  
       
       width: 17rem;
       height: 16rem;
@@ -221,10 +219,7 @@
         }
       }
     }
-    .card1-serv:hover {
-      background-color: #28ae60;
-    }
-
+   
     .card1-serv:hover .text-head1,
     .card1-serv:hover .text-head2 {
       color: #333;
