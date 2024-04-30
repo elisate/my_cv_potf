@@ -160,14 +160,14 @@
   padding-left: 5rem;
   padding-right: 5rem;
   padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
   .serv-text1 {
      text-align: center;
     color: black;
     font-size: 2rem;
   }
   .serv-text2 {
-    // text-align: center;
+  
     display: flex;
     flex-direction: row;
     padding-top: 1rem;
@@ -184,7 +184,7 @@
     }
   }
   .card-service {
-    padding-top: 4rem;
+    padding-top: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
