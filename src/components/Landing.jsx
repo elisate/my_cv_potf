@@ -267,7 +267,6 @@ function Landing() {
             </div>
           ))}
         </div>
-        
       </section>
       <section className="pages-land" id="portfolio">
         <div className="pages-1">Projects</div>
@@ -283,7 +282,7 @@ function Landing() {
               streamlining the entire process for users.
             </div>
 
-            <div className="read-text1" >
+            <div className="read-text1">
               <div>
                 <a href="https://legal-tech-seven.vercel.app/">Read more</a>
               </div>
@@ -329,10 +328,12 @@ function Landing() {
 
             <div className="read-text1">
               <div>
-                <a href="https://elisaweb.vercel.app/" className="readhover">Read more </a>
+                <a href="https://elisa-cart.vercel.app/" className="readhover">
+                  Read more{" "}
+                </a>
               </div>
               <div>
-                <a href="https://elisaweb.vercel.app/">
+                <a href="https://elisa-cart.vercel.app/">
                   <HiArrowLongRight className="icon-page2" />
                 </a>
               </div>
