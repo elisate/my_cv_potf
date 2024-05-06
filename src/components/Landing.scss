@@ -73,7 +73,6 @@
   padding-right: 5rem;
   padding-bottom: 3rem;
   background-color: white;
-
   width: 100wh;
   .imge {
     width: 27rem;
@@ -157,8 +156,8 @@
 
 .land3 {
 
-  padding-left: 5rem;
   padding-right: 5rem;
+  padding-left: 5rem;
   padding-top: 2rem;
   padding-bottom: 1rem;
   .serv-text1 {
@@ -174,6 +173,7 @@
     border-left: solid 2px #28ae60 ;
     padding-left: 0.5rem;
     
+    
     .text-s1 {
       color: black;
       font-size: 2rem;
@@ -188,6 +188,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     .card1-serv {
   
       
@@ -229,6 +230,9 @@
   padding-top: 2rem;
   padding-bottom: 4rem;
   background-color: white;
+
+    
+ 
   .land4-head1 {
     padding-left: 0.5rem;
     font-size: 2rem;
@@ -240,9 +244,12 @@
   }
 
  .blogs-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Set two columns */
-  grid-gap:5px;
+     display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Set two columns */
+    grid-gap: 10px;
+   
+  
+   
  }
 
   .blogs {
@@ -482,6 +489,9 @@
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 0.7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
     .img-text {
       display: flex;
@@ -546,6 +556,9 @@
     padding-right: 2rem;
     padding-top: 2rem;
     padding-bottom: 3rem;
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center;
+  
     
     .card-service {
       padding-top: 2rem;
