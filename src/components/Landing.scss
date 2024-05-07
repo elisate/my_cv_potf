@@ -92,6 +92,7 @@
   .text2 {
     width: 31rem;
     padding-top: 1rem;
+    
   }
   .type1 {
     font-family: "Roboto Condensed", sans-serif;
@@ -397,7 +398,7 @@
       .pages-text1 {
         width: 18rem;
         padding-top: 1rem;
-        color: grey;
+        color: rgb(45, 44, 44);
       }
 
       .read-text1 
@@ -490,9 +491,7 @@
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 0.7rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    
 
     .img-text {
       display: flex;
