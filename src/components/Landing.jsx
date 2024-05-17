@@ -53,7 +53,7 @@ function Landing() {
       formData.append("message", message);
 
       const res = await axios.post(
-        "https://api-potf.onrender.com/postcontact",
+        "http://localhost:3000/postcontact",
         formData,
         {
           headers: {
