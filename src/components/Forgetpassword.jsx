@@ -21,11 +21,15 @@ function Forgetpassword({ handlemodal }) {
       setLoading(true);
       const formData = new FormData();
       formData.append("email", email);
-      const res = await axios.post("http://localhost:3000/send-otp", formData, {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const res = await axios.post(
+        "https://api-potf.onrender.com/send-otp",
+        formData,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
       // Store session data in sessionStorage
       sessionStorage.setItem("resetEmail", email);
