@@ -10,6 +10,7 @@ function Sign_up() {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
 
+
   const {
     register,
     handleSubmit,

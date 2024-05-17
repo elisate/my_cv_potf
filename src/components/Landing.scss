@@ -1,5 +1,5 @@
 .land1 {
-  background-color:black;
+  background-color: black;
   color: white;
   padding-left: 5rem;
   padding-right: 5rem;
@@ -25,12 +25,10 @@
         transition: background-color 0.1s ease;
         font-weight: bold;
         color: white;
-       
       }
-       .butto1:hover {
-          background-color:  #21633d;
-          
-        }
+      .butto1:hover {
+        background-color: #21633d;
+      }
       .butto2 {
         background-color: black;
         color: white;
@@ -38,9 +36,8 @@
         height: 2rem;
         width: 8rem;
       }
-      .butto2:hover
-      {
-         background-color:  #21633d;
+      .butto2:hover {
+        background-color: #21633d;
       }
       display: flex;
       flex-direction: row;
@@ -92,7 +89,6 @@
   .text2 {
     width: 31rem;
     padding-top: 1rem;
-    
   }
   .type1 {
     font-family: "Roboto Condensed", sans-serif;
@@ -115,17 +111,16 @@
       display: flex;
       flex-direction: column;
       gap: 2rem;
-      .but{
+      .but {
         background-color: #28ae60;
         height: 2rem;
         width: 7rem;
         font-weight: bold;
         color: white;
       }
-   .b :hover
-   {
-   background-color:  #21633d;
-   }
+      .b :hover {
+        background-color: #21633d;
+      }
       .text-icon {
         gap: 2rem;
 
@@ -151,30 +146,26 @@
         }
       }
     }
-    
   }
 }
 
 .land3 {
-
   padding-right: 5rem;
   padding-left: 5rem;
   padding-top: 2rem;
   padding-bottom: 1rem;
   .serv-text1 {
-     text-align: center;
+    text-align: center;
     color: black;
     font-size: 2rem;
   }
   .serv-text2 {
-  
     display: flex;
     flex-direction: row;
     padding-top: 1rem;
-    border-left: solid 2px #28ae60 ;
+    border-left: solid 2px #28ae60;
     padding-left: 0.5rem;
-    
-    
+
     .text-s1 {
       color: black;
       font-size: 2rem;
@@ -191,8 +182,6 @@
     justify-content: space-between;
     align-items: center;
     .card1-serv {
-  
-      
       width: 17rem;
       height: 16rem;
       // padding-left: 1rem;
@@ -200,15 +189,13 @@
       padding-top: 1.5rem;
       padding-bottom: 1.5;
 
-      .text-head1 
-      {
+      .text-head1 {
         font-weight: bold;
         font-size: 1.5rem;
         padding-top: 1rem;
         color: black;
       }
-      .text-head2
-       {
+      .text-head2 {
         padding-top: 0.5rem;
         color: black;
       }
@@ -221,8 +208,6 @@
         }
       }
     }
-   
-    
   }
 }
 .land4 {
@@ -232,8 +217,6 @@
   padding-bottom: 4rem;
   background-color: white;
 
-    
- 
   .land4-head1 {
     padding-left: 0.5rem;
     font-size: 2rem;
@@ -244,15 +227,12 @@
     }
   }
 
- .blogs-container {
-      display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Set two columns */
-  grid-column-gap:8rem;
-   grid-row-gap:10px;
-   
-  
-   
- }
+  .blogs-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Set two columns */
+    grid-column-gap: 8rem;
+    grid-row-gap: 10px;
+  }
 
   .blogs {
     display: flex;
@@ -292,14 +272,13 @@
       }
     }
   }
-  .blog-gradu
-  {
+  .blog-gradu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     .blog-holder1-gradu {
       padding-top: 6rem;
-      .blog-image1-gradu{
+      .blog-image1-gradu {
         height: 32rem;
         width: 29rem;
       }
@@ -308,15 +287,14 @@
         font-size: 1.4rem;
         color: #6c757d;
       }
-      .blog-text1-gradu
-       {
+      .blog-text1-gradu {
         font-size: 2.2rem;
         width: 27rem;
         padding-top: 2rem;
       }
-      .blog-text2-gradu{
-       max-width: 30; 
-       word-wrap: break-word;
+      .blog-text2-gradu {
+        max-width: 30;
+        word-wrap: break-word;
         font-size: 1.4rem;
         font-weight: lighter;
         color: black;
@@ -330,54 +308,52 @@
         text-decoration: none;
         color: black;
       }
-      .blog-image1-gradu1
-      {
+      .blog-image1-gradu1 {
         height: 32rem;
         width: 25rem;
       }
     }
   }
-    .blogs-database {
-      padding-top: 6rem;
-      .blog-image1 {
-        height: 18rem;
-        width: 30rem;
-      }
-      .blog-date {
-        padding-top: 2rem;
-        font-size: 1.4rem;
-        color: #6c757d;
-      }
-      .blog-text1 {
-        font-size:2.2rem;
-        width: 27rem;
-        padding-top: 2rem;
-      }
-      .blog-text2 {
-        max-width: 30rem;
-        word-wrap: break-word;
-        font-size: 1.4rem;
-        font-weight: lighter;
-        color: black;
-        padding-top: 2rem;
-      }
-      .blog-read {
-        font-weight: bold;
-        padding-top: 2rem;
-      }
-     
-      .blog-read a:hover
-      {
-        color: #28ae60;
-        text-decoration: underline;
-      }
-      .blog-read a {
-        text-decoration: none;
-        color: black;
-      }
+  .blogs-database {
+    padding-top: 6rem;
+    .blog-image1 {
+      height: 18rem;
+      width: 30rem;
     }
+    .blog-date {
+      padding-top: 2rem;
+      font-size: 1.4rem;
+      color: #6c757d;
+    }
+    .blog-text1 {
+      font-size: 2.2rem;
+      width: 27rem;
+      padding-top: 2rem;
+    }
+    .blog-text2 {
+      max-width: 30rem;
+      word-wrap: break-word;
+      font-size: 1.4rem;
+      font-weight: lighter;
+      color: black;
+      padding-top: 2rem;
+    }
+    .blog-read {
+      font-weight: bold;
+      padding-top: 2rem;
+    }
+
+    .blog-read a:hover {
+      color: #28ae60;
+      text-decoration: underline;
+    }
+    .blog-read a {
+      text-decoration: none;
+      color: black;
+    }
+  }
 }
-.pages-land{
+.pages-land {
   padding-left: 5rem;
   padding-right: 5rem;
   padding-bottom: 3rem;
@@ -396,20 +372,18 @@
       padding-top: 3rem;
 
       .pages-text1 {
-        width: 18rem;
+        width: 17rem;
         padding-top: 1rem;
         color: rgb(45, 44, 44);
       }
 
-      .read-text1 
-      {
+      .read-text1 {
         display: flex;
         padding-top: 1.9rem;
         flex-direction: row;
         gap: 0.5rem;
       }
-      .read-text1 a:hover
-      {
+      .read-text1 a:hover {
         text-decoration: underline;
         color: #28ae60;
       }
@@ -432,7 +406,7 @@
     }
   }
 }
-.conta{
+.conta {
   margin-top: -6rem;
 }
 
@@ -475,7 +449,7 @@
           height: 2rem;
           width: 8rem;
         }
-      
+
         .butto2 {
           background-color: black;
           color: white;
@@ -491,7 +465,6 @@
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 0.7rem;
-    
 
     .img-text {
       display: flex;
@@ -500,8 +473,7 @@
       .imgh {
         margin-top: -2.5rem;
         padding-top: 2rem;
-        .imge
-        {
+        .imge {
           width: 19rem;
           height: 16rem;
         }
@@ -510,7 +482,7 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        .but{
+        .but {
           background-color: #28ae60;
           height: 2rem;
           width: 7rem;
@@ -543,7 +515,6 @@
         .text2 {
           width: fit-content;
         }
-        
       }
     }
     .type1 {
@@ -558,8 +529,7 @@
     padding-bottom: 3rem;
     justify-content: center; /* Horizontally centers the content */
     align-items: center;
-  
-    
+
     .card-service {
       padding-top: 2rem;
       display: flex;
@@ -567,28 +537,27 @@
       gap: 1rem;
     }
     .serv-text2 {
-    // text-align: center;
-    display: flex;
-    flex-direction:column ;
-    padding-top: 1rem;
-    border-left: solid 2px #28ae60 ;
-    padding-left: 0.5rem;
+      // text-align: center;
+      display: flex;
+      flex-direction: column;
+      padding-top: 1rem;
+      border-left: solid 2px #28ae60;
+      padding-left: 0.5rem;
     }
   }
   .land4 {
     padding-left: 2rem;
     padding-right: 2rem;
-     .blogs-container {
-      grid-template-columns:1fr; 
-     
+    .blogs-container {
+      grid-template-columns: 1fr;
 
-        .blog-image1 {
-          height: 15;
-          width: 19rem;
-        }
-       .blog-text1{
-        width:19rem;
-       }
+      .blog-image1 {
+        height: 15;
+        width: 19rem;
+      }
+      .blog-text1 {
+        width: 19rem;
+      }
     }
     .blogs {
       display: flex;
@@ -627,21 +596,18 @@
           color: black;
         }
       }
-      
-
     }
-    .blog-gradu
-      {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    .blog-gradu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       .blog-holder1-gradu {
         padding-top: 6rem;
         .blog-image1-gradu {
           height: 19rem;
           width: 18.5rem;
         }
-        .blog-image1-gradu1{
+        .blog-image1-gradu1 {
           height: 15;
           width: 18.5rem;
         }

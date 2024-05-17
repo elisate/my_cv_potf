@@ -22,6 +22,7 @@ import { FaMessage } from "react-icons/fa6";
 import { Notify } from "notiflix";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { FaRegArrowAltCircleUp } from "react-icons/fa";
 
 function Landing() {
   const words = [
@@ -220,6 +221,7 @@ function Landing() {
               services. From custom designs to seamless functionality, we bring
               your vision to life. Let us help you stand out online
             </div>
+        
           </div>
           <div className="card1-serv">
             <div className="card1-a1">
