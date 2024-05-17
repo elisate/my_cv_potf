@@ -4,11 +4,11 @@ import "./Contactget.scss";
 import { MdDeleteForever } from "react-icons/md";
 import ReactPaginate from "react-paginate";
 import Notiflix from "notiflix";
+
 function Contactget() {
   const [contact, setContact] = useState([]);
-  const [currentPage, setCurrentPage] = useState(0); // Start from page 1, so currentPage should start from 0
+  const [currentPage, setCurrentPage] = useState(0);
   const [itemsPerPage] = useState(5);
-
 
   useEffect(() => {
     const fetchdata = async () => {
@@ -39,47 +39,30 @@ function Contactget() {
     const selectedPage = data.selected;
     setCurrentPage(selectedPage);
   };
- const [deleteC,setDeleteC]=useState(false);
- const[contactdel,setContactdel]=useState(null);
-  const handledelete= async (id) =>
-  {
-  try{
-    Notiflix.Confirm.show(
-      "confirm delete contact",
-      "do you want to delete?",
-      "Yes",
-      "No",
-      async ()=>{
-     
-         const res = await axios.delete(
-           `https://api-potf.onrender.com/deletecontact/${id}`
-         );
-        //  window.location.reload();
-         setTimeout(() => {
-           window.location.reload();
-         }, 3000);
 
-      }
-      // ()=>{
-      //   alert("If you say so...")
-      // },
-      // {}
-    );
-  }
-  catch(error){
-console.log(error);
-  }
-  }
+  const handledelete = async (id) => {
+    try {
+      Notiflix.Confirm.show(
+        "Confirm Delete Contact",
+        "Do you want to delete?",
+        "Yes",
+        "No",
+        async () => {
+          await axios.delete(`https://api-potf.onrender.com/deletecontact/${id}`);
+          // Update the contact list after deletion
+          setContact((prevContacts) => prevContacts.filter((contact) => contact._id !== id));
+          Notiflix.Notify.success("Contact deleted successfully");
+        },
+        () => {
+          Notiflix.Notify.info("Delete action canceled");
+        }
+      );
+    } catch (error) {
+      console.log(error);
+      Notiflix.Notify.failure("Failed to delete contact");
+    }
+  };
 
-// const handleClickdelete=(contact)=>
-//   {
-// setContactdel(contact);
-// handledelete();
-//   }
-  const handleCancel=()=>
-  {
-    setDeleteC(false);
-  }
   return (
     <div className="contact-holder-dash">
       <div className="cont-dash">
@@ -88,7 +71,7 @@ console.log(error);
       <table>
         <thead>
           <tr className="tab1">
-            <th>name</th>
+            <th>Name</th>
             <th>Email</th>
             <th>Subject</th>
             <th>Message</th>
@@ -110,13 +93,6 @@ console.log(error);
               </td>
             </tr>
           ))}
-          {deleteC && (
-            <div>
-              <p>Are you sure to delete {contactdel._id}</p>
-              <button onClick={handledelete}>Ok</button>
-              <button onClick={handleCancel}>Cancel</button>
-            </div>
-          )}
         </tbody>
       </table>
       <div className="pagination">
