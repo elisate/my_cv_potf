@@ -4,11 +4,10 @@ import axios from "axios";
 import { useForm } from "react-hook-form";
 import { Notify } from "notiflix";
 import { useNavigate } from "react-router-dom";
-import { ClipLoader } from "react-spinners"; // Import ClipLoader from react-spinners
+import { ClipLoader } from "react-spinners";
 
 function Sign_up() {
   const navigate = useNavigate();
-
   const [loading, setLoading] = useState(false);
 
   const {
@@ -16,19 +15,13 @@ function Sign_up() {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  console.log(errors);
 
   const onsubmit = async (data) => {
-    console.log(data);
     const { name, lastname, email, phone, password } = data;
+
     try {
       setLoading(true);
-      const formData = new FormData();
-      formData.append("name", name);
-      formData.append("lastname", lastname);
-      formData.append("email", email);
-      formData.append("phone", phone);
-      formData.append("password", password);
+      const formData = { name, lastname, email, phone, password };
 
       const res = await axios.post(
         "https://api-potf.onrender.com/signup",
@@ -40,22 +33,26 @@ function Sign_up() {
         }
       );
 
-      Notify.success("you have registered successfully");
+      Notify.success("You have registered successfully");
       if (res.data) {
-        console.log("you have registered", res.data);
+        console.log("You have registered", res.data);
+        navigate("/log");
       }
-
-      navigate("/log");
     } catch (error) {
       if (
         error.response &&
         error.response.data &&
-        error.response.data.message === "user already registered"
+        error.response.data.message
       ) {
-        Notify.failure("User already registered");
+        if (error.response.data.message === "user already registered") {
+          Notify.failure("User already registered");
+        } else {
+          Notify.failure(error.response.data.message);
+        }
       } else {
-        console.log(error);
+        Notify.failure("An unexpected error occurred. Please try again.");
       }
+      console.error("Error during registration:", error);
     } finally {
       setLoading(false);
     }
@@ -73,11 +70,14 @@ function Sign_up() {
               <br />
               <input
                 type="text"
-                placeholder="mucyo"
+                placeholder="Mucyo"
                 name="name"
                 id="name"
-                {...register("name", { required: true })}
+                {...register("name", { required: "First name is required" })}
               />
+              {errors.name && (
+                <p className="error-message">{errors.name.message}</p>
+              )}
             </div>
             <div className="user-l">
               <label className="form-container-label-s">Last Name</label>
@@ -87,8 +87,11 @@ function Sign_up() {
                 placeholder="Elive"
                 name="lastname"
                 id="lastname"
-                {...register("lastname", { required: true })}
+                {...register("lastname", { required: "Last name is required" })}
               />
+              {errors.lastname && (
+                <p className="error-message">{errors.lastname.message}</p>
+              )}
             </div>
             <div className="email-s">
               <label className="form-container-label-s">Email</label>
@@ -98,30 +101,39 @@ function Sign_up() {
                 placeholder="info@gmail.com"
                 name="email"
                 id="email"
-                {...register("email", { required: true })}
+                {...register("email", { required: "Email is required" })}
               />
+              {errors.email && (
+                <p className="error-message">{errors.email.message}</p>
+              )}
             </div>
             <div className="phone-s">
-              <label className="form-container-label-s">Phone number</label>
+              <label className="form-container-label-s">Phone Number</label>
               <br />
               <input
                 type="number"
                 placeholder="+250-----------"
                 name="phone"
                 id="phone"
-                {...register("phone", { required: true })}
+                {...register("phone", { required: "Phone number is required" })}
               />
+              {errors.phone && (
+                <p className="error-message">{errors.phone.message}</p>
+              )}
             </div>
             <div className="password-s">
-              <label className="form-container-label-s">password</label>
+              <label className="form-container-label-s">Password</label>
               <br />
               <input
                 type="password"
                 placeholder="@xyH64x1"
                 name="password"
                 id="password"
-                {...register("password", { required: true })}
+                {...register("password", { required: "Password is required" })}
               />
+              {errors.password && (
+                <p className="error-message">{errors.password.message}</p>
+              )}
             </div>
             <div className="submit-login-s">
               <button
