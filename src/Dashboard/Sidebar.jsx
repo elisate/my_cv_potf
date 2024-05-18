@@ -29,13 +29,13 @@ function Sidebar() {
       </div>
       <div className="side-3">
         <div>
-          <Link to="/">
+          <Link to="/dashboard">
             {" "}
             <FaAddressBook className="side-icon" />
           </Link>
         </div>
         <div>
-          <Link to="/">Booking</Link>
+          <Link to="/dashboard">Booking</Link>
         </div>
       </div>
       <div className="side-4">
