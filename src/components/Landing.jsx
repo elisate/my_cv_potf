@@ -10,7 +10,6 @@ import { RiAnticlockwise2Line } from "react-icons/ri";
 import { RiAppsFill } from "react-icons/ri";
 import { HiArrowLongRight } from "react-icons/hi2";
 import { ClipLoader } from "react-spinners";
-import { Link } from "react-router-dom";
 //contact import
 import "./Contact.scss";
 import { FaStreetView, FaPhone } from "react-icons/fa";
@@ -192,7 +191,7 @@ function Landing() {
               </div>
             </div>
 
-            <a href="Elisa_resume" download="Elisa_resume.pdf" className="b">
+            <a href="Elisa_Cv" download="Elisa_Cv.pdf" className="b">
               <button type="button" className="but">
                 Download CV
               </button>
