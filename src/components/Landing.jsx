@@ -192,7 +192,7 @@ function Landing() {
               </div>
             </div>
 
-            <a href="Elisa_Real_Cv" download="Elisa_Real_Cv.pdf" className="b">
+            <a href="Elisa_resume" download="Elisa_resume.pdf" className="b">
               <button type="button" className="but">
                 Download CV
               </button>
