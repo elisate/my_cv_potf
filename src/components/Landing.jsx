@@ -16,13 +16,13 @@ import "./Contact.scss";
 import { FaStreetView, FaPhone } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import { SlLocationPin } from "react-icons/sl";
-import { FaUser, FaEnvelope, FaRegEnvelope } from "react-icons/fa";
+import { FaUser, FaEnvelope} from "react-icons/fa";
 import { useForm } from "react-hook-form";
 import { FaMessage } from "react-icons/fa6";
 import { Notify } from "notiflix";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { FaRegArrowAltCircleUp } from "react-icons/fa";
+
 
 function Landing() {
   const words = [
