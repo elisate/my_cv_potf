@@ -104,7 +104,7 @@ function Blogs() {
             {loading ? (
               <ClipLoader color="#ffffff" loading={loading} size={22} />
             ) : (
-              "Submit"
+              "Upload"
             )}
           </button>
         </div>
