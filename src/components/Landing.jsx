@@ -23,6 +23,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 
+
 function Landing() {
   const words = [
     "Web Developer",
@@ -191,11 +192,12 @@ function Landing() {
               </div>
             </div>
 
-            <a href="Elisa_Cv" download="Elisa_Cv.pdf" className="b">
-              <button type="button" className="but">
-                Download CV
-              </button>
-            </a>
+    <a href="Elisa_resume.pdf" download="Elisa_resume.pdf" className="b">
+  <button type="button" className="but">
+    Download CV
+  </button>
+</a>
+
           </div>
         </div>
       </section>
