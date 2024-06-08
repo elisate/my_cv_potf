@@ -12,9 +12,7 @@ background-color:black;
    display: flex;
    flex-direction: row;
    gap: 7.2rem;
-   padding-top: 1rem;
-   
-   
+   padding-top: 1rem; 
 }
 
 .footer-title{
@@ -55,6 +53,10 @@ transition: color 0.3s ease;
     text-decoration: none;
     color: inherit;
     transition: color 0.25s;
+}
+.adata
+{
+  font-size: 1.4rem;
 }
 
 .footer-list-link:hover{
@@ -174,7 +176,7 @@ padding-bottom: 0.7rem;
 align-items: center;
 .adata
 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 }
   .can5

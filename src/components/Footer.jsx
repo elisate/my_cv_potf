@@ -8,6 +8,7 @@ import { FaPhoneFlip } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaHome } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io5";
+import { IoLogoGithub } from "react-icons/io";
 
 function Footer() {
   return (
@@ -134,6 +135,11 @@ function Footer() {
             <div className="footer-list-item">
               <a href="https://www.linkedin.com/in/dushimiyimana-elisa/">
                 <IoLogoLinkedin className="adata" />
+              </a>
+            </div>
+            <div className="footer-list-item">
+              <a href="https://github.com/elisate/">
+                <IoLogoGithub className="adata" />
               </a>
             </div>
           </div>
