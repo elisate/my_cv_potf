@@ -74,7 +74,7 @@ function Sign_up() {
                 placeholder="Mucyo"
                 name="name"
                 id="name"
-                {...register("name", { required: "First name is required" })}
+                {...register("name", { required: "First name is required!" })}
               />
               {errors.name && (
                 <p className="error-message">{errors.name.message}</p>
@@ -88,7 +88,7 @@ function Sign_up() {
                 placeholder="Elive"
                 name="lastname"
                 id="lastname"
-                {...register("lastname", { required: "Last name is required" })}
+                {...register("lastname", { required: "Last name is required!" })}
               />
               {errors.lastname && (
                 <p className="error-message">{errors.lastname.message}</p>
@@ -102,7 +102,7 @@ function Sign_up() {
                 placeholder="info@gmail.com"
                 name="email"
                 id="email"
-                {...register("email", { required: "Email is required" })}
+                {...register("email", { required: "Email is required!" })}
               />
               {errors.email && (
                 <p className="error-message">{errors.email.message}</p>
@@ -116,7 +116,7 @@ function Sign_up() {
                 placeholder="+250-----------"
                 name="phone"
                 id="phone"
-                {...register("phone", { required: "Phone number is required" })}
+                {...register("phone", { required: "Phone number is required!" })}
               />
               {errors.phone && (
                 <p className="error-message">{errors.phone.message}</p>
@@ -130,7 +130,7 @@ function Sign_up() {
                 placeholder="@xyH64x1"
                 name="password"
                 id="password"
-                {...register("password", { required: "Password is required" })}
+                {...register("password", { required: "Password is required!" })}
               />
               {errors.password && (
                 <p className="error-message">{errors.password.message}</p>
