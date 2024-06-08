@@ -6,7 +6,7 @@ import { IoCloseSharp } from "react-icons/io5";
 import "./nav1.scss";
 import Profile from "./Profile";
 import { useState } from "react";
-import Status_loged from "./Status_loged";
+
 function Resp_nav({ handleresp }) {
   const [profile, setProfile] = useState(false);
   const handleprofile = () => {
