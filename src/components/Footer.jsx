@@ -137,11 +137,7 @@ function Footer() {
                 <IoLogoLinkedin className="adata" />
               </a>
             </div>
-            <div className="footer-list-item">
-              <a href="https://github.com/elisate/">
-                <IoLogoGithub className="adata" />
-              </a>
-            </div>
+            
           </div>
         </div>
       </div>
