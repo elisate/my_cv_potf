@@ -467,19 +467,15 @@
       }
     }
   }
-   .container_div{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     padding:0.5rem;
+   
     
   .land2 {
-    // padding-left: 2rem;
-    // padding-right: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     padding-bottom: 0.7rem;
     display: flex;
     flex-direction: column;
-    // align-items: center;
+    align-items: center;
     gap:1rem;
     .text21
   {
@@ -674,5 +670,4 @@
       justify-content: space-between;
     }
   }
-}
 }

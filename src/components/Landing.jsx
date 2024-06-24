@@ -144,7 +144,7 @@ function Landing() {
           </div>
         </div>
       </section>
-      <section className="container_div">
+      
         <section className="land2" id="about">
           <div className="text21">Explore Our Solutions</div>
 
@@ -459,7 +459,7 @@ function Landing() {
             </div>
           </div>
         </section>
-      </section>
+    
     </>
   );
 }
